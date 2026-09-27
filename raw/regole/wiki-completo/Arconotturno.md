@@ -1,0 +1,31 @@
+# Arconotturno
+
+Fonte: https://starfinder.altervista.org/wiki/Arconotturno
+
+---
+
+{{Luogo
+| nome = Arconotturno
+| immagine=
+| tipo = Metropoli
+| pianeta = [[Apostae]]
+| regione = [[Mare Calmo]]
+| popolazione = 1.238.050 
+| demografia = 85% [[Razze/Drow|Drow]], 6% [[Mezzorco|Mezzorchi]],<br>6% [[Razze/Orco|Orchi]], 2% [[Umano|Umani]],<br>1% Altre
+| governo = Oligarchia (casati [[Razze/Drow|Drow]])
+| allineamento = [[Allineamento#Caotico Malvagio|Caotico Malvagio]]
+}}
+=Arconotturno=
+Arconotturno è la città più grande e potente di [[Apostae]]. Poiché quest'ultimo è una roccia priva di atmosfera, Arconotturno è una città a tenuta stagna, le cui centinaia di torri ed edifici sono dotate degli stessi sistemi di supporto vitale delle astronavi (e sono altrettanto resistenti). Al centro della città si trova l'enorme Cancello eponimo, mentre la Grande Porta, da cui si accede alle antiche stanze sotterranee del pianeta, è sita nel quartiere più a sud della città. Entrambi sono ben sorvegliati, e le spedizioni nel sottosuolo sono riservate a gruppi autorizzati dai casati.
+
+Arconotturno è un importante spazioporto e crocevia com-merciale. Molti casati drow hanno qui i loro affari e le loro roccaforti, e vi mantengono negozi che vendono di tutto, da armi per astronavi a veleni ai naniti, e offrono ogni genere di servizio. Molti degli affari che si svolgono ad Arconotturno sarebbero considerati illegali o immorali altrove, ma fintanto che i clienti sono informati dei rischi e dei pericoli connessi a ciascun oggetto acquistato, procedura intrapresa e libero professionista assoldato, i dettagli sono questioni locali che non competono ai [[Mondi del Patto]].
+
+Buona parte della città in superficie è composta da grandi sale e torri pressurizzate che offrono aria respirabile, temperature confortevoli e sistemi di gravità artificiale. I casati più grandi e facoltosi possiedono torri enormi munite di strutture per la produzione dell'atmosfera e fonti energetiche autonome, le quali possono essere sigillate e operare autonomamente dal resto della città per mesi. Le altre cupole e strutture di Arconotturno dipendono dall'Arconotturno Aria e Acqua, una società di proprietà del [[Casato Zeizerer]] che, oltre ad applicare una piccola tassa sui bisogni primari, può imporre un embargo sugli edifici più piccoli, le sale e le cupole più povere, e quasi tutto il distretto delle caverne. Mentre le torri degli altri casati principali sono autosufficienti, lo stesso non si può dire dei tunnel e dei distretti commerciali che le collegano al resto della città. Il [[Casato Zeizerer]] non può soffocare i suoi rivali, ma può costringerli e entrare e uscire di casa nelle tute ambientali.
+
+Le terribili torri offrono ricchezza e sicurezza, ma questi privilegi sono riservati ai potenti rampolli e dirigenti di ciascun casato e ai loro aiutanti selezionati personalmente. Le cupole e le torri più piccole, dove vivono i [[Razze/Drow|Drow]] comuni e i pochi cittadini affermati delle altre razze, sono significativamente meno esclusive. I pinnacoli minori hanno un aspetto meno accattivante e non sono altrettanto spaziosi, ma sono comunque sicuri, mentre le cupole e i complessi di sale sono spesso pericolosi. Queste grandi camere a tenuta stagna ospitano intere baraccopoli, e anche se sono ufficialmente di proprietà dei casati, spesso la loro manutenzione è a dir tanto approssimativa. Perdite di gas, interruzioni nella gravità, acqua contaminata e fonti energetiche inaffidabili rendono difficile la vita al loro interno, e le misure di sicurezza servono a tutelare i casati dalle insurrezioni, più che a proteggere i cittadini. In questo intricato labirinto i crimini vengono ignorati finché non danneggiano un nobile [[Razze/Drow|Drow]], e bande di quartiere e piccoli gruppi di mercenari sono la cosa che più si avvicina a un corpo di polizia.
+
+I distretti delle caverne, che si estendono nel sottosuolo per centinaia di chilometri in tutte le direzioni, sono ancora peggio dei bassifondi. Queste enormi grotte artificiali furono scavate durante l'[[Intervallo]], e adesso sono il rifugio permanente più povero e pericoloso di [[Apostae]]. La gran parte dei residenti sono [[Mezzorco|Mezzorchi]], [[Umano|Umani]] e [[Razze/Orco|Orchi]], ma ci sono anche comunità di ibridati e trogloditi. La vita in questi quartieri è una lotta continua. Ogni comunità deve effettuare pagamenti settimanali alla città in superficie per assicurarsi il flusso di aria e acqua, e aziende di proprietà dei casati governano come fossero possedimenti feudali. Sport violenti, strutture che praticano orrende mutilazioni genetiche chiamate storcicarni, campi di addestramento per brutali mercenari e laboratori segreti nei quali si svolgono indicibili esperimenti e test di armi sono le principali opportunità offerte dalle caverne. Gli abitanti che non riescono a entrare in queste attività finiscono col sintetizzare, trafficare o assumere gioia transdimensionale, che può essere cucinata combinando le droghe tradizionali con un fluido viscoso violaceo che a volte cola dalle pareti delle caverne inferiori.
+
+Il Cancello di Arconotturno esiste da prima dell'[[Intervallo]], ben prima dell'arrivo dei [[Razze/Drow|Drow]]. Di tanto in tanto, all'interno dell'alta struttura appare un portale che conduce a un mondo alieno. La formazione dei portali non segue un modello prevedibile e non è anticipata da alcun avvenimento. Il varco può restare aperto per qualche minuto od ora, prima di svanire nel nulla. Di solito se ne forma uno ogni qualche mese, ma a volte sono passati interi anni tra un evento e l'altro. Esploratori e coloni trascorrono spesso interi mesi ad Arconotturno nella speranza che si apra un portale che conduce ad altri mondi, ma sono più i gruppi che se ne vanno insoddisfatti di quelli che riescono a varcare un portale... e di questi ultimi non si è mai più saputo nulla. Ogni tentativo di controllare il Cancello di Arconotturno è fallito. Non è chiaro se la struttura abbia una connessione con gli aiudara che collegano vari luoghi dei [[Mondi del Patto]], una parte della funzione originale di [[Apostae]] o un manufatto lasciato da un'antica civiltà di esploratori spaziali che visitarono il planetoide.
+----
+Fonte: https://www.aonsrd.com/Settlements.aspx?ItemName=Nightarch

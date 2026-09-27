@@ -1,0 +1,25 @@
+# Abilità
+
+Catalogo di riferimento — 21 pagine mirrate localmente da [starfinder.altervista.org](https://starfinder.altervista.org/wiki/Il_Gioco) (wiki OGL italiano) in `raw/regole/wiki-completo/`. Consulta la pagina raw corrispondente per il testo completo (wikitext MediaWiki).
+
+- [[Abilità]]
+- [[Acrobazia]]
+- [[Atletica]]
+- [[Camuffare]]
+- [[Computer]]
+- [[Cultura]]
+- [[Diplomazia]]
+- [[Furtività]]
+- [[Ingegneria]]
+- [[Intimidire]]
+- [[Intuizione]]
+- [[Medicina]]
+- [[Misticismo]]
+- [[Percezione]]
+- [[Pilotare]]
+- [[Professione]]
+- [[Raggirare]]
+- [[Rapidità di Mano]]
+- [[Scienza Biologica]]
+- [[Scienza Fisica]]
+- [[Sopravvivenza]]

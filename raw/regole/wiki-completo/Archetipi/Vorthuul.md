@@ -1,0 +1,20 @@
+# Archetipi/Vorthuul
+
+Fonte: https://starfinder.altervista.org/wiki/Archetipi/Vorthuul
+
+---
+
+{{:Menù Alieni}}
+===Vorthuul (GS 6+)===
+I vorthuul vengono creati quando una creatura vivente muore all'interno di un buco nero. 
+*'''Tipo di Creatura Richiesto:''' [[Non Morto]].
+*'''Matrice Suggerita:''' Combattente
+*'''Tratti:''' Dualità Quantica (vedi sotto), Orizzonte degli eventi (vedi sotto), [[Volare]] 18 m (Sop, perfetta), Maelstorm Gravitazionale (vedi sotto), Cuordivuoto (vedi sotto).
+*'''Modificatori alle Caratteristiche Suggeriti:''' [[Forza]], [[Destrezza]].
+**''Cuordivuoto (Sop)'': come [[Azione Standard]], un vorthuul può tentare di toccare una creatura adiacente, con bonus al [[Tiro per Colpire]] +22 contro la [[CAE]] del bersaglio, per incanalare su di essa il tormento di essere consumato da una singolarità. Se il bersaglio fallisce un [[Tiro Salvezza]] su [[Tempra]] con [[CD]] 19, è immediatamente [[Immobilizzato]] e [[Barcollante]] per 1 minuto per via dell'agonia schiacciante. Come [[Azione Standard]] durante il suo turno, la creatura può tentare una prova di [[Acrobazia]] con [[CD]] 35 per fuggire o una prova di [[Forza]] con [[CD]] 25 per spezzare gli invisibili legami di gravità, ponendo fine alle condizioni [[Immobilizzato]] e [[Barcollante]].
+**''Dualità Quantica (Sop)'': i vorthuul mutano costantemente tra le forme di due spiriti eternamente intrecciati attraverso l'entanglement quantistico: un'apparizione che soffre continuamente, in agonia mentre la sua forma fisica è stirata dalle forze di marea di un buco nero, e una massa tranquilla e compressa creata dall'abisso schiacciante di una singolarità. Il vorthuul decide quale delle due forme è dominante all'inizio del combattimento e può passare dall'una all'altra come [[Azione di Movimento]].<br>Forma di tranquillità schiacciante: immunità ai danni contundenti e agli effetti di forza, e [[Bonus di Circostanza]] +4 ai [[Tiri Salvezza]] su [[Volontà]].<br>Forma di essenza inestinguibile: [[Immunità degli Elementali]] e [[Ferocia]].
+**''Esplosione Gravitazionale (Sop)'': L'esplosione gravitazionale di un vorthuul ha [[Effetti Caratteristici#Incremento di Gittata|Incremento di Gittata]] 18 metri.
+**''Maelstorm Gravitazionale (Sop)'': tre volte al giorno come [[Azione Completa]], un vorthuul può assumere le schiaccianti proprietà gravitazionali di un buco nero per 1d4+1 round, durante i quali la sua velocità viene dimezzata. Alla fine del suo turno, creature con taglia pari o inferiore a quella del vorthuul e oggetti e incustoditi di volume non superiore a leggero entro 9 metri dal vorthuul sono attratti verso di esso. Il vorthuul effettua una singola manovra di combattimento speciale con bonus al [[Tiro per Colpire]] +22, confrontando il risultato con la [[CAC]] +4 di ogni creatura. In caso di successo, la creatura viene attratta 1,5 metri più vicino al vorthuul, più 1,5 metri aggiuntivi per ogni 5 punti di cui il risultato supera la [[CAC]] del bersaglio +4. Gli oggetti incustoditi vengono automaticamente spostati di 3 metri più vicino al vorthuul ogni round. Finché questa abilità è attiva, qualsiasi creatura che inizia il suo turno adiacente al vorthuul subisce 2d10+10 danni contundenti ([[Tempra]] [[CD]] 17 dimezza); gli oggetti incustoditi subiscono automaticamente questi danni quando vengono spostati adiacenti al vorthuul. Inoltre, qualsiasi creatura entro 9 metri dal vorthuul mentre questa abilità è attiva ha la velocità dimezzata quando si allontana dal vorthuul o raddoppiata quando si muove verso di esso. Una creatura che non si muove verso il vorthuul né si allontana da esso durante questo periodo si muove alla sua velocità normale.
+**''Orizzonte degli Eventi (Sop)'': i vorthuul piegano la luce verso di sé, compresa quella prodotta dalle armi laser. Gli attacchi effettuati con armi laser contro un vorthuul hanno [[Bonus di Circostanza]] +4 al [[Tiro per Colpire]] e ignorano la probabilità di mancare data dall'[[Occultamento]].
+----
+Fonte: [https://www.aonsrd.com/TemplateGrafts.aspx?ItemName=Vorthuul&Family=Other Vorthuul]

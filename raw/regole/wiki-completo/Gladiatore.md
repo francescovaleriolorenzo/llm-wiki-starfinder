@@ -1,0 +1,20 @@
+# Gladiatore
+
+Fonte: https://starfinder.altervista.org/wiki/Gladiatore
+
+---
+
+{{:Menù Per Iniziare}}
+__NOTOC__
+==Gladiatore==
+Sei un veterano dell'industria degli sport cruenti, sopravvissuto a innumerevoli battaglie per conquistare un lucente credístick, l'acclamazione del pubblico entrambi. Magari sei un veterano delle fosse gladiatorie di [[Akiton]], uno studente dello stile ritualizzato dei fiori di battaglia di [[Triaxus]] o il tipo di masochista che non riesce a stare lontano a lungo dalle Sale dei Viventi di [[Eox]]. Probabilmente ci rimetterai la pelle prima di perdere il vizio, poiché poche cose ti emozionano più dell'adrenalina della battaglia e delle urla di migliaia di fan estasiati.
+===Conoscenza Specialistica (1°)===
+La tua esperienza nell'arena ti ha esposto a innumerevoli culture guerriere: sei in grado di riconoscere le più strane arti marziali e sai come impressionare gli altri con il tuo stile di combattimento. Riduci di 5 la [[CD]] delle prove di [[Cultura]] per [[Ricordare Conoscenze]] riguardo al combattimento sportivo, agli stili di combattimento e alle tradizioni gladiatorie. Per te [[Intimidire]] è un'abilità di classe, ma se è già un'abilità di classe della classe che hai preso al 1° livello ottieni invece bonus +1 alle prove di [[Intimidire]]. Inoltre, alla creazione del personaggio hai modificatore alla caratteristica di [[Costituzione]] +1.
+===Combattente Famoso (6°)===
+Molti fan ti adorano per le tue capacità nell'arena. Sei talmente famoso che agli altri basta superare una prova di [[Cultura]] con [[CD]] 15 per riconoscere il tuo nome, e con [[CD]] 25 per riconoscerti quando sei fuori dal tuo contesto. Poiché sei famoso per la tua brutale presenza scenica, quando usi [[Intimidire]] per [[Intimidire#Costringere|Costringere]] una creatura con atteggiamento [[Diplomazia#Indifferente|Indifferente]] o migliore puoi spendere il doppio del tempo e, se lo fai e superi la prova, quando l'effetto termina l'atteggiamento della creatura nei tuoi confronti scende solo a [[Diplomazia#Indifferente|Indifferente]], e non a [[Diplomazia#Maldisposto|Maldisposto]]. A discrezione del [[GM]], l'atteggiamento di un fan sfegatato potrebbe scendere ad [[Diplomazia#Amichevole|Amichevole]], oppure potresti essere in grado di usare questa abilità contro un bersaglio [[Diplomazia#Maldisposto|Maldisposto]].
+===Tutt'Uno con l'Equipaggiamento (12°)===
+Il tuo nome è ormai associato alla tua personalità e al tuo equipaggiamento da gladiatore. A patto che il tuo equipaggiamento sia in buone condizioni, non subisci alcuna penalità di circostanza se indossi un'armatura leggera o pesante in situazioni sociali (ad esempio se indossi un'armatura golem a un evento formale). Puoi usare [[Intimidire]] o [[Professione]] (gladiatore; [[Carisma]]) per "nascondere" su di te fino a due armi di dimensioni ridotte (come un'arma piccola o un'arma da mischia a una mano con volume leggero) o un'arma da mischia più grande, sebbene tu non stia effettivamente nascondendola, ma convincendo gli altri a non obiettare sul fatto che la porti con te. Puoi estrarre normalmente queste armi: non devi spendere un'[[Azione Standard]] come se stessi estraendo un'arma nascosta. Per il resto questa capacità funziona come il compito [[Rapidità di Mano#Nascondere Oggetto|Nascondere Oggetto]] dell'abilità [[Rapidità di Mano]]. A discrezione del [[GM]], in aree con un livello di sicurezza particolarmente alto ti potrebbe essere impedito di portare qualsiasi arma, a prescindere dalla tua reputazione.
+===Il Preferito della Folla (18°)===
+Ogni giorno, la prima volta che infliggi il [[Azioni in Combattimento#Colpo di Grazia|Colpo di Grazia]] (riduci una creatura a 0 [[Punti Ferita]]) a un nemico significativo davanti a un pubblico (composto da almeno un passante o un fan pagante, ma non da un altro nemico), recuperi 1 [[Punto Risolutezza]]. Se il pubblico è composto da 20 creature o più recuperi invece 2 [[Punti Risolutezza]].
+----
+Fonte: [https://www.aonsrd.com/Themes.aspx?ItemName=Gladiator Gladiator]

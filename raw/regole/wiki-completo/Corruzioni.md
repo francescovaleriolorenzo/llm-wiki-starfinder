@@ -1,0 +1,29 @@
+# Corruzioni
+
+Fonte: https://starfinder.altervista.org/wiki/Corruzioni
+
+---
+
+{{:Menù Game Master}}
+=Corruzioni=
+La corruzione è un'insidiosa malattia dell'anima. Ne esistono diverse forme, dal folle orrore della possessione spettrale alla mostruosa trasformazione della licantropia; tutte hanno un funzionamento simile. Quando un personaggio contrae una corruzione, questa si manifesta con qualche sintomo trascurabile, come brevi sprazzi di malinconia o una leggera fissazione per un certo luogo o uno stimolo inusuale. La corruzione divora la mente e lo spirito della vittima con la promessa di un dono oscuro pagato a caro prezzo. Chi l'ha contratta potrebbe venire consumato dallo sforzo di resistere, o trascorrere tutta la vita a un passo dal cedere. Alcuni credono di poterla controllare, e le permettono di farsi strada per ottenere i poteri che conferisce. Tali individui finiscono col divenire completamente assoggettati quando la corruzione si insinua permanentemente nei loro cuori.
+__TOC__
+==Contrarre una Corruzione==
+Un personaggio può contrarre una corruzione in molti modi, per esempio con un'antica maledizione o un virus tecnomagico. L'origine di una corruzione è spesso soprannaturale, e per contrarla occorre fallire un [[TS|Tiro Salvezza]] contro la sua causa scatenante. Quando la corruzione si insinua per la prima volta, comincia dallo stadio 1 ed è dormiente. Per qualche tempo la vittima potrebbe ignorarne la natura. Durante questa fase potrebbe avere desideri oscuri e sognare cose orribili, ma nulla di più.
+==Progresso della Corruzione==
+Quando sei affetto da una corruzione, devi effettuare un [[TS|Tiro Salvezza]] contro il suo progresso alla fine di ogni giorno, prima delle 8 ore di sonno ininterrotto necessarie a recuperare [[Punti Stamina]] e capacità giornaliere. Se la corruzione è mentale, si tratta di un [[TS|Tiro Salvezza]] su [[Volontà]]. Una corruzione fisica richiede di effettuare un [[TS]] su [[Tempra]]. La [[CD]] è pari a 10 + metà del tuo livello + il numero di [[#Manifestazioni|Manifestazioni]] che hai. Se fallisci la prova, puoi spendere [[Punti Risolutezza]] pari a 1 + il numero delle manifestazioni che hai. Se non spendi i [[Punti Risolutezza]] richiesti, o non ne hai abbastanza, la corruzione avanza di uno stadio. Ogni volta che raggiunge uno stadio dal numero pari, come da stadio 1 (dormiente) a stadio 2, ottieni una manifestazione.
+==Manifestazioni==
+{{Rightbox
+| larghezza = 28em
+| titolo            = <big>Manifestazioni Misteriose</big>
+| contenuto         = Per rendere ancora più misterioso il funzionamento delle corruzioni, il [[GM]] può controllare il numero delle manifestazioni accessibili ai [[PG]]. Puoi offrire una scelta tra due o tre manifestazioni ai giocatori dei personaggi che hanno fallito il [[TS|Tiro Salvezza]] e descrivere i doni con particolari invitanti, senza dire troppo delle macchie. Oppure puoi ignorare le regole, e modificare la frequenza con la quale si accede alle manifestazioni. Ad esempio potresti decidere che un [[PG]] non può ottenere più di una manifestazione per livello, e rallentare il progresso della corruzione e dei poteri che conferisce.
+}}
+La corruzione si mostra attraverso delle manifestazioni che modificano la mente e il corpo in modo insolito. Una manifestazione conferisce un potere chiamato dono e impone un difetto chiamato macchia. Quando ottieni una manifestazione, scegli quale vuoi ricevere, sebbene alcune abbiano prerequisiti che devi soddisfare prima di poterle selezionare.
+*'''Tiri salvezza''': salvo indicazione contraria, i doni che richiedono un [[TS|Tiro Salvezza]] hanno [[CD]] pari a 10 + metà il tuo livello + il tuo modificatore di caratteristica chiave.
+*'''Rifiutare un dono''': quando scegli una manifestazione, puoi rifiutare il dono e accettare solo la macchia. Se lo fai, ottieni un ulteriore bonus +1 ai tiri salvezza contro quella corruzione. I bonus dovuti a più doni rifiutati sono cumulabili. Puoi cambiare idea e accettare un dono in qualsiasi momento ma, se lo fai, perdi il relativo bonus ai [[Tiri Salvezza]] contro la corruzione e metti a repentaglio la tua anima.
+*'''Alterazioni''': il numero di manifestazioni che hai influenza la tua personalità e il tuo aspetto, come indicato nelle descrizioni delle corruzioni. Se accetti cinque doni o hai nove manifestazioni, soccombi alla corruzione e diventi un [[PNG]] manovrato dal [[GM]]. Le tue statistiche potrebbero cambiare, a seconda della corruzione che ti affligge.
+*'''Corruzioni multiple''': nella rara eventualità che tu abbia più di una corruzione, devi effettuare [[Tiri Salvezza]] contro ognuna di esse e ottieni le manifestazioni di ogni corruzione di cui hai fallito il [[TS|Tiro Salvezza]], nel rispettivo ordine. Soccombi alla corruzione quando hai cinque doni o nove manifestazioni, a prescindere da quale sia la loro origine. Pertanto, avere più di una corruzione non fa altro che accelerare la tua fine. Quando l'effetto di una corruzione dipende dal numero di manifestazioni che possiedi, conta solo le manifestazioni conferite da quella corruzione.
+==Rimuovere una Corruzione==
+Le corruzioni sono difficili da rimuovere. Per riuscirci, devi compiere azioni specifiche o soddisfare determinate condizioni indicate nelle rispettive descrizioni. ''[[Rimuovi Afflizione]]'' sopprime i doni e le macchie delle corruzioni del bersaglio per 10 minuti per [[Magia#Livello dell'Incantatore|Livello dell'Incantatore]]. Inoltre, si può rimuovere una singola manifestazione per ogni lancio di ''[[Spezzare Incantamento]]'' o ''[[Rimuovi Afflizione]]'', se la vittima soddisfa le condizioni descritte alla voce cura della corruzione, o se ha rifiutato il dono associato alla manifestazione. La [[CD]] degli incantesimi è pari a 15 + tre volte il numero delle manifestazioni possedute dal bersaglio. Rimuovere una manifestazione in questo modo non cura dalla corruzione.
+----
+Fonte: https://www.aonsrd.com/Rules.aspx?ID=377

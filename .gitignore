@@ -1,0 +1,12 @@
+# Stato locale di Obsidian (layout, tab aperte, percorsi macchina-specifici) — non è contenuto
+.obsidian/
+
+# macOS
+.DS_Store
+
+# Cache Python
+__pycache__/
+*.pyc
+
+# Impostazioni locali di Claude Code (permessi specifici della macchina)
+.claude/settings.local.json

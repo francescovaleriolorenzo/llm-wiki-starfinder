@@ -1,0 +1,46 @@
+# Sensi
+
+Fonte: https://starfinder.altervista.org/wiki/Sensi
+
+---
+
+<noinclude>{{:Menù Regole}}</noinclude>
+=Sensi=
+Come le azioni determinano cosa si può fare in combattimento e il movimento determina come ci si arriva per farlo, i sensi determinano cosa si percepisce e come. Diverse razze aliene possono avere sensi differenti, ma sostanzialmente i sensi sono divisi in precisi e imprecisi. I sensi di una creatura sono di solito ulteriormente affinati in [[Capacità Speciali]] che indicano precisamente la modalità di percezione. Tali abilità includono [[Vista Cieca]], [[Percezione Cieca]], [[Percepire Oltre gli Ostacoli]], [[Scurovisione]] e [[Visione Crepuscolare]]. Di seguito sono definiti a grandi linee i tipi di sensi delle creature, con una spiegazione del loro funzionamento.
+__TOC__
+==Sensi Precisi==
+I sensi precisi consentono a una creatura di percepire il mondo in dettagli definiti. Per molte creature l'unico senso preciso è la vista. Gli altri sensi precisi sono perlopiù indicati collettivamente come “[[Vista Cieca]]”, a indicare che sono precisi come la vista ma si possono usare senza bisogno di vedere.
+==Sensi Imprecisi==
+Consentono a una creatura di percepire dettagli e informazioni sui dintorni; questi variano a seconda del senso, ma non conferiscono una precisione pari a quella della vista umana. I sensi non visivi di molte creature sono imprecisi. Alcune creature possiedono sensi imprecisi acuti che, sebbene insufficienti a fornire dettagli come un senso preciso, possono aiutarle a captare stimoli in assenza di sensi precisi; tali sensi sono definiti “[[Percezione Cieca]]”.
+==Specifici Tipi di Sensi==
+Di solito le creature con [[Percezione Cieca]] o [[Vista Cieca]] percepiscono la realtà tramite un senso che risponde a uno stimolo specifico, indicato fra parentesi dopo [[Percezione Cieca]] o [[Vista Cieca]] nelle statistiche della creatura. Se questo stimolo diviene inattingibile, la creatura perde l'accesso a [[Percezione Cieca]] o [[Vista Cieca]]. Gli stimoli che di solito una creatura può percepire sono emozione, vita, odore, suono, pensiero e vibrazione. Le voci specifiche di [[Percezione Cieca]], [[Vista Cieca]] e altri sensi si trovano in [[Capacità Speciali]].
+==I Quattro Stati di Consapevolezza==
+In gioco esistono quattro stati di consapevolezza che si hanno in relazione a un'altra creatura; essi determinano se si viene colti di sorpresa in combattimento o si può essere presi di mira con un attacco. Gli stati di consapevolezza sono descritti di seguito.
+===Inconsapevole===
+Quando si è inconsapevoli di un'altra creatura, non si sa che è presente. Ciò accade in genere perché la creatura è nascosta, è stata fallita la prova di Percezione per notarla ed essa non ha ancora compiuto azioni che la rivelerebbero. Non si può attaccare direttamente una creatura di cui si è inconsapevoli, ma essa è comunque soggetta agli effetti ad area.
+===Consapevole della Presenza===
+Quando si è consapevoli della presenza di un'altra creatura, non se ne conosce necessariamente l'ubicazione. Ciò accade di solito quando la creatura nascosta ha effettuato azioni che hanno rivelato la sua presenza nell'area, ma ha in seguito usato [[Furtività]] per nascondere la sua posizione esatta. Con una prova di [[Percezione]] superata per notare una creatura con un senso impreciso diverso da percezione cieca, si è consapevoli della sua presenza (con percezione cieca una prova di [[Percezione]] superata rende consapevoli dell'ubicazione della creatura; vedi sotto). Non si può attaccare direttamente una creatura se si è solo consapevoli della sua presenza; essa è comunque soggetta agli effetti ad area.
+
+Per attaccare direttamente una tale creatura è necessario individuare la sua ubicazione esatta con un'altra prova di [[Percezione]] per [[Percezione#Cercare|Cercare]]. Se questa ha successo e si sta usando un senso impreciso, si individua l'ubicazione della creatura (vedi Consapevole dell'ubicazione, sotto). Se la prova ha successo e si sta usando un senso preciso, si sta osservando la creatura (vedi Osservare, sotto).
+===Consapevole dell'Ubicazione===
+Quando si è consapevoli dell'ubicazione di una creatura, si sa esattamente dov'è, ma non si riesce comunque a osservarla con un senso preciso come la vista. Ciò avviene in genere quando si usa percezione cieca, o quando la creatura è nascosta ma è stata superata una prova di [[Percezione]] per cercarla con un senso impreciso. Per attaccare una creatura è necessario essere almeno consapevoli della sua ubicazione; essa è considerata avere [[Occultamento#Occultamento Totale|Occultamento Totale]], ma è comunque soggetta agli effetti ad area.
+===Osservare===
+Quando si osserva una creatura la si può percepire direttamente con un senso preciso. In genere ciò accade quando una creatura è visibile, quando la situazione le rende impossibile nascondersi con [[Furtività]] o superando una prova di [[Percezione]] per cercarla tramite un senso preciso come [[Vista Cieca]]. È necessario osservare una creatura per usare un effetto a distanza che la prenda di mira senza bisogno di un [[Tiro per Colpire]] (come un ''[[Dardo Incantato]]''). Se si osserva una creatura è anche possibile effettuare attacchi normali, come quelli che utilizzano capacità a distanza. Essa è comunque soggetta a effetti ad area che coinvolgano la sua ubicazione.
+
+Una creatura che viene osservata non può tentare una prova di [[Furtività]] se non si smette di osservarla. Per fare ciò, essa deve per prima cosa celarsi ai sensi precisi (tramite oscurità, nebbia, invisibilità o simili, ma non con effetti come distorsione, che lasciano comunque un chiaro indizio visivo dell'ubicazione), spostarsi in un punto dove non è osservata (ad esempio in [[Copertura]]), o usare [[Raggirare]] per creare un diversivo e interrompere momentaneamente l'osservazione.
+==Affrontare Creature Non Viste==
+Se si è inconsapevoli di una creatura, oppure consapevoli della sua presenza o della sua ubicazione, essa è considerata “non vista”. Una creatura non vista stazionaria ha bonus +40 alle prove di [[Furtività]], che si riduce a +20 se la creatura non vista si muove (questi bonus non valgono contro i potenziali osservatori con [[Percezione Cieca]]). Una creatura non vista beneficia di [[Occultamento|Occultamento Totale]] contro gli attacchi (50% probabilità di essere mancata). Si è inoltre considerati [[Impreparato|Impreparati]] contro gli attacchi di una creatura non vista.
+
+Se si è inconsapevoli di una creatura o consapevoli soltanto della sua presenza, non la si può attaccare direttamente. È necessario superare prima una prova di [[Percezione]] per cercarla, cosa che rende consapevoli della sua ubicazione (con un senso impreciso) o permette di osservarla (con un senso preciso). Se una creatura non vista attacca in mischia da uno spazio adiacente al bersaglio, questo ne determina automaticamente l'ubicazione, ma ciò non impedisce alla creatura di muoversi dopo l'attacco.
+==Vista e Luce==
+Poiché la maggior parte delle creature usa la vista come unico senso preciso, è importante definirne i limiti.
+===Luce Intensa===
+Tutti i personaggi con la vista vedono chiaramente nella luce intensa. Fonti di luce intensa includono la luce diretta del sole all'aperto, una stella vicina che splende attraverso l'oblò di un'astronave, potenti illuminazioni industriali o qualsiasi fonte di luce forte almeno quanto la normale luce del sole.
+===Luce Normale===
+La luce normale funziona come quella intensa, ma è meno forte. Essa include le condizioni di luce sotto le fronde di una foresta durante il giorno, la tipica illuminazione dentro un edificio o un'astronave e quella emanata dalla [[Mistico/Connessioni#Forma di Luce Stellare (Sop) 3° Livello|Forma di Luce Stellare]] di uno [[Mistico/Connessioni#Sciamano delle Stelle|Sciamano delle Stelle]].
+===Luce Fioca===
+Nella luce fioca si possono distinguere in qualche modo i contorni, ma non si i dettagli precisi. La luce fioca include la luce della luna all'aperto di notte, un cielo stellato e le luci di emergenza di un'astronave. Un'area appena fuori dalla portata di una fonte di luce ha luce fioca. In un'area di luce fioca si ha [[Occultamento]] (20% probabilità di essere mancati) nei confronti delle creature senza [[Scurovisione]] o la capacità di vedere al buio. Poiché la luce fioca non è ideale per osservare, in un'area del genere si può tentare una prova di [[Furtività]] per nascondersi dalle creature senza [[Visione Crepuscolare]], [[Scurovisione]] o [[Vista Cieca]]. La luce fioca non influenza le creature con [[Visione Crepuscolare]], che vedono in essa come se fosse luce normale.
+===Buio===
+Al buio e senza [[Scurovisione]], si è effettivamente [[Accecato|Accecati]]. Le aree di buio includono una camera non illuminata all'interno di una struttura, gran parte delle caverne, una notte all'aperto senza luna o la superficie di pianeti nel cui cielo le stelle sono distanti o del tutto assenti. A differenza della [[Visione Crepuscolare]] in aree di luce fioca, la [[Scurovisione]] non funziona esattamente come la visione normali in aree buie, ma agisce solo fino a una certa distanza ed è in bianco e nero.
+----
+Fonte: https://www.aonsrd.com/Rules.aspx?Name=Senses&Category=Tactical%20Rules

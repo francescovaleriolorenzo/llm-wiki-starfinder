@@ -1,0 +1,26 @@
+# Equipaggiamento/Siero del Potenziamento, Commando
+
+Fonte: https://starfinder.altervista.org/wiki/Equipaggiamento/Siero_del_Potenziamento%2C_Commando
+
+---
+
+{{:Menù Equipaggiamento}}__NOTOC__
+{|style="width:25%; margin: 0 0 0 0; padding: 0 0 0 0; border-spacing: 0; background-color: #A1E2FF; border: solid 1px #030; display: -moz-inline-block; display: inline-block; display: table; border-collapse: separate; -moz-border-radius-topleft: 20px; border-top-left-radius: 20px; float:left; margin: 0 1em 0 0;" 
+|- 
+! style="-moz-border-radius-topleft: 20px; border-top-left-radius: 20px; background-color: #FF3333; color: #fff" | <big><big>'''Sieri'''</big></big>
+|-  
+| style="padding-left: 5px !important; padding-right: 5px !important;" |
+{{:Equipaggiamento/Sieri}}
+|}
+<div style="margin-left:26%">
+=Siero del Potenziamento, Commando=
+'''Livello:''' 5<br>
+'''Prezzo:''' 475<br>
+'''Volume:''' L<br>
+'''Fonte:''' Manuale di Gioco
+==Descrizione==
+Bevendo il contenuto di questa fiala la creatura guadagna [[Bonus Cognitivo]] +2 alle prove di [[Acrobazia]] e [[Atletica]], e guadagna [[Ferite e Morte#Punti Ferita Temporanei|Punti Ferita Temporanei]] pari a metà del suo livello. Una volta perduti, tali [[Ferite e Morte#Punti Ferita Temporanei|Punti Ferita Temporanei]] non si possono recuperare, e non si cumulano con alcun'altra fonte di [[Ferite e Morte#Punti Ferita Temporanei|Punti Ferita Temporanei]].
+
+Gli effetti del siero durano 1 ora.
+----
+Fonte: [https://www.aonsrd.com/MagicItems.aspx?ItemName=Commando&Family=Serum%20of%20Enhancement Serum of Enhancement, Commando]

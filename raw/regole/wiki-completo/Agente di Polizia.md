@@ -1,0 +1,20 @@
+# Agente di Polizia
+
+Fonte: https://starfinder.altervista.org/wiki/Agente_di_Polizia
+
+---
+
+{{:Menù Per Iniziare}}
+__NOTOC__
+==Agente di Polizia==
+Sei un tutore della legge in una galassia in cui dilagano caos e corruzione. il tuo compito è garantire la pace, e sei consapevole dell'importanza del ruolo che ricopri nella società. I tuoi sensi sono sempre all'erta quando sei in servizio, ma sei anche capace di destreggiarti fra le scartoffie e i documenti burocratici, in qualità di rappresentante delle autorità, previeni il crimine e aiuti la tua comunità, e sei visto dal pubblico come fonte di aiuto e protezione.
+===Conoscenza Specialistica (1°)===
+Il tuo addestramento e la tua esperienza lavorativa ti permettono di gestire con pari efficacia sia comuni cittadini che pericolosi criminali. Grazie all'unione di intuizione e sensi acuti, hai imparato a determinare con prontezza se le persone con cui interagisci si stanno comportando in maniera sospetta, nascondono o alterano la verità o tentano di far passare un messaggio in codice. Riduci di 5 la [[CD]] delle prove di [[Intuizione]] per [[Intuizione#Svelare Inganno|Svelare Inganni]] o [[Intuizione#Scoprire Messaggio Segreto|Scoprire Messaggi Segreti]]. Applica la stessa riduzione alla [[CD]] di ogni prova che effettui per ricordare conoscenze su criminali, agenti, leggi e attività legate alle forze di polizia. Per te [[Intuizione]] è un'abilità di classe, ma se è già un'abilità di classe della classe che hai preso al 1° livello ottieni invece bonus +1 alle prove di [[Intuizione]]. Inoltre, alla creazione del personaggio hai modificatore alla caratteristica di [[Saggezza]] +1.
+===Esperienza Investigativa (6°)===
+Sai cavartela con la burocrazia e come usare i database per analizzare indizi, trovare potenziali sospetti e fare ricerche che riguardano le attività di polizia. Quando consulti questo tipo di dati, riesci a portare a termine un compito in un tempo molto più breve di gran parte delle altre persone. Se hai accesso a un'infosfera, a un database scaricato appropriato o se le forze di polizia locali collaborano con te, ti bastano solo 10 minuti per effettuare una prova di [[Diplomazia]] per [[Diplomazia#Raccogliere Informazioni|Raccogliere Informazioni]]. Una volta al giorno, inoltre, se hai accesso a tali vantaggi, puoi ripetere una prova di [[Cultura]] fallita per identificare un criminale, un agente delle forze dell'ordine, un'organizzazione, una pratica legale o una legge.
+===Gestione della Folla (12°)===
+Ti trovi a tuo agio fra coloro che servi e proteggi. Sai come comunicare con un grande gruppo di persone, gestire una folla e farti largo in essa per avere più libertà di movimento. Puoi attraversare gli spazi occupati da creature che non sono ostili nei tuoi confronti. Se la folla crea un [[Terreno Difficile]] che riduce la tua velocità o ti costringe a stringerti, puoi comunque muoverti alla tua velocità normale. Inoltre, quando provi a usare [[Diplomazia]] per cambiare l'atteggiamento di un gruppo di creature che non sia già ostile nei tuoi confronti, riduci la [[CD]] di 5.
+===Servitore Pubblico (18°)===
+Coloro che rispettano la legge e le forze dell'ordine provano un senso di calma e sicurezza quando sei nei dintorni. Tu, in cambio, percepisci la fiducia che le persone ripongono in te e la cosa ti rinvigorisce. Il semplice fatto di ricevere la fiducia da parte di coloro che hai giurato di proteggere ti dà la forza per continuare di fronte a qualsiasi ingiustizia. Due volte al giorno, puoi trascorrere almeno 10 minuti a interagire con le persone che servi ottenendone la fiducia e sviluppando un rapporto con i membri della comunità. Se lo fai, ottieni 1 [[Punto Risolutezza]]. Ciò non conta come riposare per recuperare [[Punti Stamina]]. Puoi inoltre spendere altri 10 minuti al termine di tale interazione per [[Diplomazia#Raccogliere Informazioni|Raccogliere Informazioni]] dai cittadini nei dintorni. Se lo fai, puoi effettuare una prova di [[Diplomazia]] per tale compito con un [[Bonus di Circostanza]] +2.
+----
+Fonte: [https://www.aonsrd.com/Themes.aspx?ItemName=Law%20Officer Law Officer]

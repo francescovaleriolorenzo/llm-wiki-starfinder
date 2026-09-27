@@ -1,0 +1,35 @@
+# Equipaggiamento/Coltello Urlante Ultrasonico
+
+Fonte: https://starfinder.altervista.org/wiki/Equipaggiamento/Coltello_Urlante_Ultrasonico
+
+---
+
+{{:Menù Equipaggiamento}}__NOTOC__
+{|style="width:33%; margin: 0 0 0 0; padding: 0 0 0 0; border-spacing: 0; background-color: #A1E2FF; border: solid 1px #030; display: -moz-inline-block; display: inline-block; display: table; border-collapse: separate; -moz-border-radius-topleft: 20px; border-top-left-radius: 20px; float:left; margin: 0 1em 0 0;" 
+|- 
+! style="-moz-border-radius-topleft: 20px; border-top-left-radius: 20px; background-color: #FF3333; color: #fff" | &nbsp;
+|-  
+| style="padding-left: 5px !important; padding-right: 5px !important;" |
+{{:Equipaggiamento/Mischia Avanzata}}
+{{:Equipaggiamento/Soniche}}
+{{:Proprietà/Operativo}}
+{{:Proprietà/Potenziato}}
+|}
+=Coltello Urlante Ultrasonico=
+'''Tipologia:''' [[Equipaggiamento/Mischia Avanzata|Mischia Avanzata]] a Una Mano<br>
+'''Categoria:''' [[Equipaggiamento/Soniche|Soniche]]<br>
+'''Livello:''' 17<br>
+'''Prezzo:''' 259.000<br>
+'''Danni:''' 7d4<br>
+'''Tipo:''' So<br>
+'''Gittata:''' —<br>
+'''Critico:''' —<br>
+'''Capacità:''' —<br>
+'''Uso:''' —<br>
+'''Volume:''' L<br>
+'''Speciale:''' [[Proprietà/Operativo|Operativo]], [[Proprietà/Potenziato|Potenziato]] (capacità 20, uso 4)<br>
+'''Fonte:''' Armeria
+==Descrizione==
+Il coltello urlante rimane silenzioso finché non colpisce un bersaglio: a quel punto emette una scarica stridula di frequenze letali. Il modello armonico utilizza sistemi di suono concentrati con emissioni simili, mentre quello a interferenza combina i suoni per aumentare l'effetto. I modelli infrasonico e ultrasonico funzionano come quello a interferenza, ma usano anche onde sonore al di fuori del normale spettro uditivo.
+----
+Fonte: https://www.aonsrd.com/WeaponDisplay.aspx?ItemName=Ultrasonic&Family=Shrieking%20Knife

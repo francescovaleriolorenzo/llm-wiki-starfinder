@@ -1,0 +1,27 @@
+# Aiudara
+
+Fonte: https://starfinder.altervista.org/wiki/Aiudara
+
+---
+
+=Aiudara=
+Gli aiudara sono una rete di antichi portali magici elfici che teletrasportano i viaggiatori da un punto all'altro. Si trovano in tutto il pianeta [[Castrovel]], nel sistema dei [[Mondi del Patto]], dove collegano molti dei principali insediamenti e sono ancora frequentemente utilizzati. Rimangono oggetto di intense ricerche e speculazioni, poiché il segreto della loro costruzione è andato perduto da tempo. Alcuni portali aiudara non sono più funzionanti, mentre altri conducono fuori dal mondo o in località sconosciute. Gli aiudara vengono talvolta definiti portali elfici, sebbene gli [[Elfo|Elfi]] considerino questo termine offensivo.
+__TOC__
+==Storia e Utilizzo==
+Gli aiudara sono portali magici presenti su [[Castrovel]] costruiti svariati millenni prima dell'[[Intervallo]] da popoli sconosciuti. Nel corso del tempo, gli [[Elfo|Elfi]] scoprirono come attivare questi portali, ma fu l'[[Elfo]] Candlaron lo Scultore a scoprire come utilizzare i portali che conducevano ad altri pianeti. Utilizzò questa comprensione per costruire i propri aiudara, creandoli con l'aiuto dei suoi colleghi. Questi primi artefici crearono due tipi di portali: i primi erano portali vincolati che collegavano un portale a un solo altro, mentre i fulcri collegavano un singolo portale a molteplici altri aiudara.
+
+Ad alcuni aiudara si poteva accedere solo tramite una chiave, al fine di salvaguardare il portale. Questa chiave poteva essere quasi qualsiasi cosa, inclusi un oggetto fisico, un rituale o qualcosa di esoterico o metafisico. Da allora molte chiavi sono andate perdute nel tempo, rendendo i portali inutilizzabili. Candlaron creò questi portali per collegare le varie città degli [[Elfo|Elfi]] su [[Sovyrian]], il continente patrio elfico, ma forgiò anche l'artefatto noto come Pietra di Sovyrian per collegare permanentemente [[Castrovel]] a [[Golarion]].
+
+Gli elfi usarono la Pietra di Sovyrian per colonizzare [[Golarion]], che aveva una gravità e un'atmosfera simili a quelle di [[Castrovel]], e vi crearono una patria persino più grande di quella presente su [[Castrovel]]. La ricchezza generata da questo commercio interplanetario fece sì che [[Sovyrian#El|El]], la città castroveliana che ospitava la Pietra di Sovyrian, si espandesse rapidamente e diventasse la capitale degli [[Elfo|Elfi]]. Ulteriori aiudara vennero costruiti in tutta [[Golarion]] e [[Sovyrian]], consentendo anche agli avamposti più remoti di essere riforniti istantaneamente o rinforzati con truppe, inaugurando quella che molti considerano l'età dell'oro degli [[Elfo|Elfi]]. Sebbene [[Golarion]] ospitasse il più grande insediamento elfico al di fuori di [[Sovyrian]], non fu l'unico pianeta del sistema dei [[Mondi del Patto]] a essere colonizzato tramite gli aiudara, poiché gli [[Elfo|Elfi]] crearono insediamenti minori anche su [[Triaxus]] e [[Akiton]].
+===Il Cataclisma e la Contrazione===
+La tragedia colpì quando una massiccia pioggia meteorica nota come il Cataclisma costrinse gli [[Elfo|Elfi]] ad abbandonare [[Golarion]] e a fuggire attraverso la Pietra di Sovyrian per fare ritorno su [[Castrovel]]. Questa migrazione mise a dura prova [[Sovyrian]], poiché la maggior parte degli [[Elfo|Elfi]] preferiva rimanere nella propria patria e non era disposta a trasferirsi nuovamente in colonie più lontane. Poco tempo dopo, le conquiste da parte dei draghi di [[Triaxus]] costrinsero gli [[Elfo|Elfi]] a fuggire da quel pianeta, mentre i coloni di [[Akiton]] scomparvero senza lasciare traccia. Quando vennero inviate squadre di soccorso su [[Akiton]] alla ricerca dei confratelli scomparsi, non trovarono risposte, e molti degli aiudara che collegavano a quel pianeta vennero distrutti per proteggere la patria di [[Sovyrian]] da quella minaccia sconosciuta. A quel tempo erano già passati migliaia di anni dalla creazione dei portali, e la conoscenza della loro costruzione era stata dimenticata.
+===Ricolonizzazione===
+Col tempo, gli [[Elfo|Elfi]] di [[Sovyrian]] si resero conto che [[Golarion]] non era stato completamente distrutta dal Cataclisma e iniziarono cautamente a ricolonizzare il mondo migliaia di anni dopo averlo abbandonato. In tal modo, scoprirono che molti dei loro precedenti insediamenti erano stati occupati da altri popoli (inclusi gli [[Umano|Umani]], in rapido sviluppo), mentre per altre colonie avevano perso le chiavi degli aiudara. Alla fine questo costrinse gli [[Elfo|Elfi]] a cedere definitivamente i loro vecchi insediamenti ad altri. Nonostante ciò, tuttavia, gli [[Elfo|Elfi]] si diffusero nuovamente in quasi ogni angolo di [[Golarion]], ma si accontentarono di vivere in comunità più piccole e isolate.
+==Posizioni dei Portali Funzionanti==
+Nonostante la perdita di molti portali, la rete degli aiudara su [[Castrovel]] rimane attiva, collegando molte parti del pianeta.
+*'''Cancello Verde''': Collega la città castroveliana di [[Nerundel]] al [[Grande Oltre#Primo Mondo|Primo Mondo]].
+*'''Jabask''': La città castroveliana di [[Jabask]] è accessibile più facilmente proprio tramite aiudara.
+*'''Qabarat''': La città castroveliana di [[Qabarat]] possiede diversi portali a uso pubblico.
+*'''Telasia, il Boschetto dei Portali''': [[Telasia]] è un fulcro di aiudara che un tempo collegava l'intera [[Castrovel]]. Sebbene sia ancora funzionante, oggi viene utilizzato raramente a causa del rigido controllo esercitato dal drago Urvosk.
+----
+Fonte: https://starfinderwiki.com/wiki/Aiudara

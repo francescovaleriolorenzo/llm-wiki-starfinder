@@ -1,0 +1,20 @@
+# Truffatore
+
+Fonte: https://starfinder.altervista.org/wiki/Truffatore
+
+---
+
+{{:Menù Per Iniziare}}
+__NOTOC__
+==Truffatore==
+Anche se ti senti a tuo agio in mezzo a ogni sorta di farabutti, fai affidamento soprattutto sul tuo intelletto per truffare gli altri, Che tu lavori per conto tuo, in un piccolo gruppo o come capo di una grande organizzazione, analizzi le opportunità e sfrutti il sistema senza rimorsi per raggiungere i tuoi fini. Sei esperto in uno o due campi, ma hai anche le conoscenze e la sicurezza per farti passare come un'autorità in quasi ogni professione.
+===Conoscenza Specialistica (1°)===
+Bazzichi molte professioni e hai i contatti e una conoscenza approfondita del funzionamento di ciascun mestiere, cosa che ti permette di sfruttare sia i colleghi che i clienti. Riduci di 5 la [[CD]] delle prove di [[Professione]] per [[Ricordare Conoscenze]] circa organizzazioni commerciali o aziende. Alla creazione del personaggio ottieni bonus +1 a un'abilità di [[Professione]] di tua scelta, e puoi effettuare prove di abilità di qualsiasi professione senza addestramento. Inoltre, alla creazione del personaggio hai modificatore alla caratteristica di [[Intelligenza]] +1.
+===Sfruttamento Calcolato (6°)===
+Ti guadagni da vivere truffando e frodando gli altri. Nonostante le tue macchinazioni abbiano spesso successo, i tuoi piani non riescono sempre come ti aspetti, e i fallimenti del passato ti hanno fatto capire come migliorare le tue tecniche. Ogni volta che effettui una prova di [[Professione]] per [[Professione#Guadagnarsi da Vivere|Guadagnarti da Vivere]] puoi tirare due volte e tenere il risultato più alto. Una volta al giorno puoi inoltre spendere 10 minuti per capire come ottenere l'affare migliore nell'acquistare o vendere equipaggiamento. Subito dopo questo periodo di pianificazione, tu o un alleato potete effettuare una [[Abilità#Prove di Abilità|Prova di Abilità]] appropriata, a discrezione del [[GM]], per influenzare un commerciante e ottenere uno sconto del 10% sull'acquisto di un singolo oggetto con [[Equipaggiamento#Livello degli Oggetti|Livello dell'Oggetto]] non superiore al tuo [[Glossario#Livello del Personaggio|Livello del Personaggio]] -2.
+===Negoziati Strategici (12°)===
+Esamini ogni scambio sociale e di affari alla ricerca di falle, opportunità di sfruttamento e possibilità di maggiori profitti. I tuoi piani studiati alla perfezione e la tua mente analitica ti permettono di avere il controllo sulle situazioni piuttosto che sugli individui. Una volta al giorno, quando effettui una prova di [[Raggirare]] per [[Raggirare#Mentire|Mentire]] o di [[Diplomazia]] per [[Diplomazia#Cambiare Atteggiamento|Cambiare l'Atteggiamento]] di qualcuno, puoi invece effettuare una prova di [[Cultura]] o [[Professione]], usando le tue competenze e il tuo intelletto per conquistare la fiducia del bersaglio. Inoltre, se spendi almeno 10 minuti a pianificare e provare tale interazione, puoi ignorare il modificatore alla [[CD]] della tua prova di [[Raggirare]] per mentire quando il bersaglio è [[Diplomazia#Ostile|Ostile]] o [[Diplomazia#Maldisposto|Maldisposto]]; se invece stai tentando di usare [[Diplomazia]] per [[Diplomazia#Cambiare Atteggiamento|Cambiare l'Atteggiamento]] di un bersaglio e fallisci di 5 o più, l'atteggiamento del bersaglio non peggiora.
+===Conclusione (18°)===
+Sei un pianificatore che non lascia nulla al caso e raccogli i frutti della tua pazienza e della tua cura per i dettagli. Nulla può competere con la soddisfazione che provi quando i pezzi che hai posizionato con esperienza scivolano al posto giusto e le tue macchinazioni vanno a buon fine. Una volta al giorno, dopo che hai trascorso almeno 1 minuto a pianificare un raggiro, un colpo, una frode o un altro crimine che truffa un individuo o un'organizzazione e superi una prova di [[Cultura]] o dell'abilità di [[Professione]] che hai scelto per il beneficio conoscenza specialistica con [[CD]] 30, recuperi 1 [[Punto Risolutezza]].
+----
+Fonte: https://www.aonsrd.com/Themes.aspx?ItemName=Grifter

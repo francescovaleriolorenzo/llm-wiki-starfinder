@@ -1,0 +1,15 @@
+# Mech della Legione del Fuoco Celeste
+
+Fonte: https://starfinder.altervista.org/wiki/Mech_della_Legione_del_Fuoco_Celeste
+
+---
+
+<noinclude>{{:Menù Mech}}</noinclude>
+=Mech della Legione del Fuoco Celeste=
+Prendendo spunto dalle loro tradizionali unioni, la maggior parte dei mech della [[Legione del Fuoco Celeste]] è stata progettata per avere spazio sufficiente per un [[Razze/Ryphorian|Ryphorian]] e un alleato [[Razze/Draconico|Draconico]]. Questi mech emulano generalmente i draghi sia nel loro aspetto che nella funzionalità, il che non sorprende considerando che il gruppo mercenario un tempo prendeva il nome dai draghi che combatteva. La [[Legione del Fuoco Celeste]] predilige mech quadrupedi simili a centauri, dotati di una combinazione di armi distruttive a corto raggio e armi ad area elementali, come [[Armi dei Mech#Guanto del Tuono|Guanti del Tuono]], [[Armi dei Mech#Lanciafiamme|Lanciafiamme]], [[Armi dei Mech#Lancia del Gelo|Lance del Gelo]] e [[Armi dei Mech#Spada Plasma|Spade Plasma]]. Apprezzano i mech con spazio sufficiente nella cabina di pilotaggio o nella stiva di carico che consenta loro di schierare facilmente i loro alleati [[Razze/Draconico|Draconici]] più grandi per il combattimento, quando necessario.
+
+Il più comune dei mech della [[Legione del Fuoco Celeste|Legione]] è l'[[Ala Rapida del Fuoco Celeste]], una macchina da combattimento mobile e versatile capace di volare. Dotati di piastre di corazza rinforzate e schermatura leggera, le [[Ala Rapida del Fuoco Celeste|Ali Rapide]] vengono tipicamente schierate in squadriglie da quattro a sei unità per ricognizioni a corto raggio e schermaglie. Alcuni piloti equipaggiano le loro [[Ala Rapida del Fuoco Celeste|Ali Rapide]] con [[Nucleo Energetico|Nuclei Energetici]] più potenti e armamenti più leggeri, utilizzandoli come unità da perlustrazione a medio raggio che compensano ciò che manca loro in furtività con il volo e la ferocia.
+
+La [[Legione del Fuoco Celeste]] non si limita ai soli schermitori a corto raggio. Il [[Wyrm del Fuoco Celeste]] è un potente colosso da combattimento progettato per assomigliare a un vero drago, dotato di un possente telaio quadrupede provvisto di volo e artigli distruttivi progettati per tagliare le piastre corazzate; possiede armamenti potenti integrati nel telaio principale — tipicamente [[Armi dei Mech#Batteria di Missili|Batterie di Missili]], [[Armi dei Mech#Lanziarazzi|Lanziarazzi]] o [[Armi dei Mech#Fucile a Pompa Sonico|Fucili a Pompa Sonici]]. "Rilasciare i cuccioli" è un gergo comune della [[Legione del Fuoco Celeste|Legione]] per indicare l'apertura del portello di un [[Wyrm del Fuoco Celeste|Wyrm]] per rilasciare coppie di [[Razze/Draconico|Draconici]] e [[Razze/Ryphorian|Ryphorian]] che possono fornire supporto tattico mentre il [[Wyrm del Fuoco Celeste|Wyrm]] gestisce i combattenti in volo.<noinclude>
+----
+Fonte: [https://www.aonsrd.com/Mech_Examples.aspx?ItemName=Skyfire%20Quickwing&Family=Skyfire%20Legion%20Mechs Skyfire Legion Mechs]

@@ -1,0 +1,13 @@
+# Navi del Veskarium
+
+Fonte: https://starfinder.altervista.org/wiki/Navi_del_Veskarium
+
+---
+
+<noinclude>{{:Menù Astronavi}}</noinclude>
+=Navi del Veskarium=
+Come gli stessi [[Vesk]], le navi del [[Veskarium]] tendono a essere brutali e pugnaci. Brulicanti di armi e pesantemente blindate senza alcun riguardo per l'estetica, le loro linee in origine furono ispirate ai rettili predatori simili a squali che popolano i mari di [[Vesk-2]].
+
+Sebbene il [[Veskarium]] sia una struttura monolitica di tipo militare e industriale, il suo governo si dimostra stranamente permissivo nel concedere ai costruttori di vendere navi ai rivali dell'impero. Qualcuno ritiene che ciò sia dovuto all'innato senso dell'onore dei [[Vesk]], dal momento che non c'è gioia nel battere un nemico armato in maniera inadeguata, mentre altri temono che il governo abbia dato ordine di inserire delle backdoor nelle IA delle astronavi, o semplicemente fanno rientrare questo orientamento nelle logiche di potere del capitalismo clientelare. Comunque sia, le navi del [[Veskarium]] riscuotono un estremo successo tra le cerchie più turbolente e problematiche dei [[Mondi del Patto]]: corporazioni, criminali e mercenari che hanno bisogno di una considerevole potenza di fuoco senza dover rispondere a una considerevole quantità di domande. La maggior parte delle organizzazioni militari abbastanza datate da ricordare la guerra con il [[Veskarium]], come gli [[Amministratori]] e i [[Cavalieri di Golarion]], rispettano queste navi ma non le includono nelle proprie flotte. Nello spazio dei [[Mondi del Patto]] si incontrano più di frequente le navi del [[Consorzio Norikama]], che ha sede sull'omonimo mondo colonia neutrale ed è specializzato nel copiare i progetti di altri costruttori. Numerosi altri modelli prodotti da compagnie del Veskarium come le [[Industrie Dashadz]], la [[Vindicas]] e i [[Clan del Monte di Sangue]], tuttavia, entrano regolarmente in circolazione in quanto bottino di guerra, sui mercati paralleli o attraverso vendite legittime. Forse la nave più comune e riconoscibile fra queste è il [[Demolitore CMS|Demolitore CMS]]. Con il suo caratteristico profilo a Y creato dai supporti alari che convergono verso l'abitacolo centrale a forma di bulbo, esso risulta sorprendentemente maneggevole e ai tempi fu l'incubo degli squadroni di difensori dei [[Mondi del Patto]]. Ancora oggi il [[Demolitore CMS|Demolitore]] rimane il caccia di riferimento sulla maggior parte delle portastronavi [[Vesk]] e l'arma prediletta dai piloti [[Vesk]] impegnati nei duelli d'onore.<noinclude>
+----
+Fonte: [https://www.aonsrd.com/Starship_Examples.aspx?ItemName=BMC%20Mauler&Family=Veskarium%20Ship%20Styles Veskarium Ship Styles]
