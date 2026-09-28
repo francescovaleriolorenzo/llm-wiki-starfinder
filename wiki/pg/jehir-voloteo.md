@@ -163,7 +163,6 @@ Formale, quasi cerimonioso, con un codice personale di condotta che segue più r
 
 - **Tic**: si copre la bocca in pubblico davanti a chi non considera un intimo — un gesto quasi automatico, non calcolato.
 - **Sotto pressione**: trova chiarezza quasi meditativa — più calmo, non più agitato, specialmente in combattimento.
-- **Con il party**: rispetto quasi da pari con [[kesh-vantor|Kesh Vantor]] — la loro è una rivalità amichevole fondata sul valore dimostrato in battaglia.
 
 ## Note per il GM
 

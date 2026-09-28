@@ -159,7 +159,6 @@ Parla velocissimo, salta da un argomento all'altro, e usa l'umorismo come prima 
 
 - **Tic**: parla a raffica quando è nervosa o eccitata, spesso interrompendo se stessa per cambiare argomento.
 - **Sotto pressione**: accelera il ritmo delle battute invece di ammutolirsi — l'umorismo cresce con la tensione, non diminuisce.
-- **Con il party**: adora stuzzicare [[kesh-vantor|Kesh Vantor]], che la sopporta con pazienza quasi paterna.
 
 ## Note per il GM
 

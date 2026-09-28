@@ -176,7 +176,6 @@ Calma quasi fino all'esasperazione altrui, parla poco e ascolta molto — non pe
 
 - **Tic**: fa una pausa prima di rispondere, come se stesse "leggendo" l'umore di chi ha davanti prima di scegliere le parole.
 - **Sotto pressione**: diventa ancora più calma — è quando è più efficace, mai il contrario.
-- **Con il party**: protettiva in modo particolare verso [[whix-chitterclaw|Whix Chitterclaw]], la più esposta e temeraria del gruppo.
 
 ## Note per il GM
 

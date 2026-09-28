@@ -154,7 +154,6 @@ Cordiale quasi di default, con un sorriso che mette a proprio agio anche chi ha 
 
 - **Tic**: sorride prima di parlare, anche quando la situazione non lo richiederebbe affatto.
 - **Sotto pressione**: cerca la battuta o la leva diplomatica anche quando servirebbe azione diretta — è il suo riflesso, non sempre la scelta giusta.
-- **Con il party**: scontro bonario con [[kesh-vantor|Kesh Vantor]] sull'approccio (parole contro violenza) — ma i due si rispettano profondamente.
 
 ## Note per il GM
 

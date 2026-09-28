@@ -157,7 +157,6 @@ Formale e diretto, valuta gli altri in base al valore dimostrato in combattiment
 
 - **Tic**: giudica ad alta voce chi ha davanti in base all'onore dimostrato, spesso senza filtri sociali.
 - **Sotto pressione**: si calma, non si agita — il combattimento è il suo elemento naturale.
-- **Con il party**: attrito bonario con [[callan-reyes|Callan Reyes]] — trova le sue tattiche "troppo furbe", ma ammette (a denti stretti) che funzionano.
 
 ## Note per il GM
 

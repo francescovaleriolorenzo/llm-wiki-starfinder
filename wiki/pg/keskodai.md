@@ -167,7 +167,6 @@ Analitica fino all'ironia, tratta quasi ogni situazione come un problema da hack
 
 - **Tic**: preferisce comunicare per via telepatica anche quando parlare a voce sarebbe più semplice, specie con chi conosce bene.
 - **Sotto pressione**: diventa più fredda e clinica nell'analisi — un contrasto netto col suo umorismo abituale.
-- **Con il party**: scambia spesso osservazioni tecniche/mistiche con [[naeva-thess|Naeva Thess]], per cui nutre una genuina curiosità intellettuale.
 
 ## Note per il GM
 

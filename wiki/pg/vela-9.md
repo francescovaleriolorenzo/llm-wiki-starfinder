@@ -195,7 +195,6 @@ Razionale fino all'osso, pianifica sempre una via di fuga prima ancora di seders
 
 - **Tic**: descrive spesso le persone in termini tecnici, quasi diagnostici ("il suo battito cardiaco è irregolare", "sta compensando").
 - **Sotto pressione**: si zittisce e si concentra sulla soluzione pratica immediata — niente sfoghi, niente esitazioni visibili.
-- **Con il party**: rispetto silenzioso reciproco con [[kesh-vantor|Kesh Vantor]] — due "pratici" che si capiscono senza tante parole.
 
 ## Note per il GM
 

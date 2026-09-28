@@ -217,3 +217,7 @@ Su richiesta dell'utente, promossa da semplice sottosezione di [[luoghi/avampost
 ## [2026-09-28] aggiornamento | Template note-sessione aggiornato al sistema multi-party
 
 Su richiesta dell'utente, aggiunto a `raw/sessioni/template-note-sessione.md` il campo "Party/storyline" nelle Info rapide, con una nota nel commento in testa che chiarisce che il numero di sessione resta un contatore cronologico globale condiviso da tutti i party (non riparte da 1 per ogni storyline) — coerente con lo schema `wiki/sessioni/*.md` e la sezione "Più party/storyline" già presenti in `CLAUDE.md`. Aggiunto anche un riferimento alla rigenerazione del grafo temporale tra i passi di aggiornamento elencati nel commento.
+
+## [2026-09-28] aggiornamento | Rimosse le relazioni PG-PG predefinite dagli "Spunti per l'interprete"
+
+L'utente ha segnalato un errore di principio nella sezione "Spunti rapidi per l'interprete" aggiunta ai 7 PG principali: il punto "Con chi" predefiniva una relazione specifica con un altro PG nominato (es. "adora stuzzicare Kesh Vantor..."). Le relazioni tra personaggi giocanti spettano ai giocatori che li interpretano al tavolo, non vanno anticipate nel wiki. Rimosso il punto "Con chi" da tutti e 7 i PG, lasciando solo Tic e Sotto pressione. Aggiornata la convenzione in `CLAUDE.md`: il terzo punto ("Con chi") resta valido solo per i PNG, dove è normale contenuto d'ambientazione gestito dal GM — mai riferito a un PG specifico nominato. Verificato: nessun wikilink rotto, nessuna pagina orfana. Rigenerate le schede PDF di tutti i PG.
