@@ -15,7 +15,7 @@ tags: [png, mandante, side-story]
 
 ![Ritratto di Doss Kellum](../../raw/assets/doss-kellum-ritratto.png)
 
-Umano sulla cinquantina, gestisce [[../luoghi/avamposto-tregua#Il Retro del Motore|Il Retro del Motore]] da quindici anni. Bonario in apparenza, tratta ogni cliente abituale come un vecchio amico — ma dietro il bancone tiene i conti di mezza stazione, e non solo quelli del bar.
+Umano sulla cinquantina, gestisce [[../luoghi/il-retro-del-motore|Il Retro del Motore]] da quindici anni. Bonario in apparenza, tratta ogni cliente abituale come un vecchio amico — ma dietro il bancone tiene i conti di mezza stazione, e non solo quelli del bar.
 
 ## Cosa vuole
 

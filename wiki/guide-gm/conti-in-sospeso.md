@@ -28,7 +28,8 @@ Pensata per essere sconfitta senza rischi seri per un PG di 1° livello solitari
 
 ## Luoghi
 
-- [[../luoghi/avamposto-tregua|Avamposto Tregua]] — stazione neutrale, con Il Retro del Motore (bar/scena del furto) e i Corridoi di Manutenzione (inseguimento).
+- [[../luoghi/avamposto-tregua|Avamposto Tregua]] — stazione neutrale, con i Corridoi di Manutenzione (inseguimento).
+- [[../luoghi/il-retro-del-motore|Il Retro del Motore]] — bar/scena del furto, dove si svolgono le Scene 1 e 2.
 
 ## Oggetti chiave
 

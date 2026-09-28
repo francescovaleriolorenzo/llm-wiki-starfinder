@@ -63,6 +63,7 @@ _Nessuna pagina ancora._
 - [[luoghi/stazione-elice-7|Stazione Elice-7]] — Stazione di ricerca di Solmark Ricerche, location principale della quest.
 - [[luoghi/stazione-varrow|Stazione Varrow]] — Avamposto franco, base operativa ricorrente del party tra una quest e l'altra.
 - [[luoghi/avamposto-tregua|Avamposto Tregua]] — Stazione di scambio neutrale, sede di [[quest/conti-in-sospeso|Conti in Sospeso]] — scollegata dal resto della campagna per ora.
+- [[luoghi/il-retro-del-motore|Il Retro del Motore]] — Bar/cantina di Avamposto Tregua, gestito da Doss Kellum. Scena centrale di [[quest/conti-in-sospeso|Conti in Sospeso]].
 
 ## Fazioni
 - [[fazioni/solmark-ricerche|Solmark Ricerche]] — Corporazione di ricerca, alleata/datrice di lavoro.

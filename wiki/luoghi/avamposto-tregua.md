@@ -15,12 +15,9 @@ Piccola stazione di scambio neutrale in un tratto di spazio poco sorvegliato, pu
 
 Non ha alcun legame noto con il [[../luoghi/sistema-di-ordessa|Sistema di Ordessa]] o con gli eventi di [[../quest/il-filo-spezzato|Il Filo Spezzato]] — è la sede di una vicenda a sé, [[../quest/conti-in-sospeso|Conti in Sospeso]], che segue [[../pg/vey-ashkora|Vey Ashkora]].
 
-## Il Retro del Motore
+## Luoghi interni
 
-Il bar/cantina della stazione, gestito da [[../png/doss-kellum|Doss Kellum]]. Ricavato letteralmente nel vano di un vecchio motore a fusione dismesso, con tavoli sistemati tra le paratie originali ancora visibili. È il fulcro sociale della stazione: se succede qualcosa, prima o poi se ne parla qui.
-
-- **Sala principale**: bancone, una dozzina di tavoli, luce bassa. È qui che [[../png/nix-calder|Nix Calder]] passa le sue serate.
-- **Retrobottega**: ufficio di Doss, con una piccola cassaforte a combinazione meccanica (non elettronica — Doss diffida della tecnologia per le cose davvero importanti).
+- [[il-retro-del-motore|Il Retro del Motore]] — il bar/cantina della stazione, gestito da [[../png/doss-kellum|Doss Kellum]]. Fulcro sociale di Avamposto Tregua e scena principale di [[../quest/conti-in-sospeso|Conti in Sospeso]].
 
 ## Corridoi di Manutenzione
 

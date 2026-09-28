@@ -15,7 +15,7 @@ tags: [quest, side-story, investigativo]
 
 ## Premessa
 
-A [[../luoghi/avamposto-tregua|Avamposto Tregua]], qualcuno ha svaligiato la cassaforte del retrobottega de [[../luoghi/avamposto-tregua#Il Retro del Motore|Il Retro del Motore]]. Il proprietario, [[../png/doss-kellum|Doss Kellum]], assume Vey Ashkora per recuperare l'oggetto rubato — una [[../oggetti/chiave-di-memoria|Chiave di Memoria]] — prima che "finisca nelle mani sbagliate".
+A [[../luoghi/avamposto-tregua|Avamposto Tregua]], qualcuno ha svaligiato la cassaforte del retrobottega de [[../luoghi/il-retro-del-motore|Il Retro del Motore]]. Il proprietario, [[../png/doss-kellum|Doss Kellum]], assume Vey Ashkora per recuperare l'oggetto rubato — una [[../oggetti/chiave-di-memoria|Chiave di Memoria]] — prima che "finisca nelle mani sbagliate".
 
 ## Struttura della sessione
 

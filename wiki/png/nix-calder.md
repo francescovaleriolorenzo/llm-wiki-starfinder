@@ -15,7 +15,7 @@ tags: [png, testimone, side-story]
 
 ![Ritratto di Nix Calder](../../raw/assets/nix-calder-ritratto.png)
 
-Meccanico freelance, passa più serate a [[../luoghi/avamposto-tregua#Il Retro del Motore|Il Retro del Motore]] che nel proprio alloggio. Era presente la notte del furto, seduto vicino al retrobottega, e non gli è sfuggito granché — ma non ha nessuna intenzione di farsi coinvolgere in guai che non lo riguardano.
+Meccanico freelance, passa più serate a [[../luoghi/il-retro-del-motore|Il Retro del Motore]] che nel proprio alloggio. Era presente la notte del furto, seduto vicino al retrobottega, e non gli è sfuggito granché — ma non ha nessuna intenzione di farsi coinvolgere in guai che non lo riguardano.
 
 ## Cosa sa
 

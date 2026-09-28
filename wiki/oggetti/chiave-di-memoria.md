@@ -17,7 +17,7 @@ Registri dettagliati di prestiti informali imposti da [[../png/doss-kellum|Doss 
 
 ## Dove si trova
 
-Rubata da [[../nemici/ressa-doon|Ressa Doon]] dalla cassaforte del retrobottega de Il Retro del Motore; recuperabile su di lei una volta rintracciata (vedi [[../quest/conti-in-sospeso|Conti in Sospeso]]).
+Rubata da [[../nemici/ressa-doon|Ressa Doon]] dalla cassaforte del retrobottega de [[../luoghi/il-retro-del-motore|Il Retro del Motore]]; recuperabile su di lei una volta rintracciata (vedi [[../quest/conti-in-sospeso|Conti in Sospeso]]).
 
 ## Note per il GM
 
