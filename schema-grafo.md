@@ -76,6 +76,8 @@ CREATE CONSTRAINT fazione_slug IF NOT EXISTS FOR (n:Fazione) REQUIRE n.slug IS U
 CREATE CONSTRAINT party_slug IF NOT EXISTS FOR (n:Party) REQUIRE n.slug IS UNIQUE;
 ```
 
+**Attenzione — `slug` è unico solo per etichetta, non globalmente**: nulla impedisce che un `:Quest` e un `:Party` abbiano lo stesso valore di `slug` (è già successo: la quest "Conti in Sospeso" e il party dello stesso nome condividono `slug: "conti-in-sospeso"`). Per questo ogni `MATCH`/`MERGE` per slug in `tools/estrai_grafo.py` deve **sempre specificare l'etichetta** (es. `MATCH (n:PNG {slug: $slug})`, mai `MATCH (n {slug: $slug})`) — un pattern senza etichetta può far corrispondere più nodi di tipo diverso con lo stesso slug e produrre relazioni spurie (bug reale trovato e corretto durante la migrazione della prima side-story).
+
 ## 5. Esempi `CREATE` (dati reali della campagna)
 
 Nodi:

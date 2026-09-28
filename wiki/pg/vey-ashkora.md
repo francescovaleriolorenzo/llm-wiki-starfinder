@@ -2,24 +2,22 @@
 tipo: pg
 nome: Vey Ashkora
 giocatore: (da assegnare)
-razza: "[[../raw/regole/wiki-completo/Razze/Verthani|Verthani]]"
-classe: "[[../raw/regole/wiki-completo/Operativo|Operativo]]"
+razza: "[[Verthani]]"
+classe: "[[Operativo]]"
 livello: 1
 stato: attivo
-luogo_attuale: "[[luogo-avamposto-tregua|Avamposto Tregua]]"
+luogo_attuale: "[[avamposto-tregua|Avamposto Tregua]]"
 fazioni: []
-tags: [pg, quest-prova, verthani, operativo]
+tags: [pg, verthani, operativo, side-story]
 ---
 
 # Vey Ashkora
 
-*Personaggio di prova, 1° livello — non fa parte della campagna principale.*
-
-![Ritratto di Vey Ashkora](assets/vey-ashkora-ritratto.png)
+![Ritratto di Vey Ashkora](../../raw/assets/vey-ashkora-ritratto.png)
 
 | Classe/Livello | Razza | Tema |
 |---|---|---|
-| [[../raw/regole/wiki-completo/Operativo\|Operativo]] 1° (Specializzazione: Detective) | [[../raw/regole/wiki-completo/Razze/Verthani\|Verthani]] | [[../raw/regole/wiki-completo/Agente di Polizia\|Agente di Polizia]] |
+| [[Operativo]] 1° (Specializzazione: Detective) | [[Verthani]] | [[Agente di Polizia]] |
 
 | Taglia | Velocità | Genere | Mondo Natale |
 |---|---|---|---|
@@ -35,6 +33,8 @@ Ex agente di polizia su Verces, Vey ha lasciato il distintivo dopo che un caso d
 
 Tema: **Agente di Polizia** — l'addestramento da tutrice della legge resta la sua base: osservare, dedurre, distinguere chi mente da chi dice la verità.
 
+Personaggio di una storyline a sé stante, [[../quest/conti-in-sospeso|Conti in Sospeso]] ad [[../luoghi/avamposto-tregua|Avamposto Tregua]] — indipendente dalla campagna principale, ma non necessariamente per sempre.
+
 ## Punteggi di Caratteristica
 
 | | FOR | DES | COS | INT | SAG | CAR |
@@ -42,7 +42,7 @@ Tema: **Agente di Polizia** — l'addestramento da tutrice della legge resta la 
 | **Punteggio** | 8 | 16 | 13 | 14 | 12 | 10 |
 | **Modificatore** | –1 | +3 | +1 | +2 | +1 | +0 |
 
-Generazione: base 10 → [[../raw/regole/wiki-completo/Razze/Verthani|Verthani]] (Cos +2, Int +2, For –2) → tema Agente di Polizia (Sag +1) → 10 punti spesi (Des +6, Int +2, Cos +1, Sag +1) → valori finali sopra.
+Generazione: base 10 → [[Verthani]] (Cos +2, Int +2, For –2) → tema Agente di Polizia (Sag +1) → 10 punti spesi (Des +6, Int +2, Cos +1, Sag +1) → valori finali sopra.
 
 ## Iniziativa
 
@@ -55,7 +55,7 @@ Generazione: base 10 → [[../raw/regole/wiki-completo/Razze/Verthani|Verthani]]
 | | Punti Stamina | Punti Ferita | Punti Risolutezza |
 |---|---|---|---|
 | **Totale** | 7 | 11 | 4 |
-| *Calcolo* | (6+1)×1 | 4 [[../raw/regole/wiki-completo/Razze/Verthani\|Verthani]] + 6×1 [[../raw/regole/wiki-completo/Operativo\|Operativo]] + 1 (Robustezza) | 1 (metà liv., min. 1) + 3 mod. Des |
+| *Calcolo* | (6+1)×1 | 4 [[Verthani]] + 6×1 [[Operativo]] + 1 (Robustezza) | 1 (metà liv., min. 1) + 3 mod. Des |
 
 ## Classe Armatura
 
@@ -66,7 +66,7 @@ Generazione: base 10 → [[../raw/regole/wiki-completo/Razze/Verthani|Verthani]]
 
 CA vs. Manovre di Combattimento = 8 + CAC = **23**. RD: nessuna. Resistenze: nessuna.
 
-*Armatura: [[../raw/regole/wiki-completo/Equipaggiamento/Seconda Pelle|Seconda Pelle]] (leggera, Des Massimo +5, nessuna penalità — indossabile sotto abiti comuni, ideale per lavoro sotto copertura).*
+*Armatura: [[Equipaggiamento/Seconda Pelle|Seconda Pelle]] (leggera, Des Massimo +5, nessuna penalità — indossabile sotto abiti comuni, ideale per lavoro sotto copertura).*
 
 ## Tiri Salvezza
 
@@ -87,13 +87,13 @@ CA vs. Manovre di Combattimento = 8 + CAC = **23**. RD: nessuna. Resistenze: nes
 
 | Arma | Livello | Bonus Attacco | Danno | Critico | Gittata | Tipo | Munizioni | Speciale |
 |---|---|---|---|---|---|---|---|---|
-| [[../raw/regole/wiki-completo/Equipaggiamento/Pistola Laser Azimuth\|Pistola Laser Azimuth]] | 1 | +3 | 1d4 | Combustione 1d4 | 24 m | Fu | 20 cariche (1/colpo) | — |
+| [[Equipaggiamento/Pistola Laser Azimuth\|Pistola Laser Azimuth]] | 1 | +3 | 1d4 | Combustione 1d4 | 24 m | Fu | 20 cariche (1/colpo) | — |
 
 **Attacco Ingannevole (Str)**: come Azione Completa, può muoversi e poi attaccare con la Pistola Laser Azimuth (arma piccola). Prova di Furtività, Intimidire, Raggirare — o **Intuizione con bonus +4** grazie alla Specializzazione Detective — con CD 20 + GS del bersaglio: se superata, +1d4 danni e il bersaglio è Impreparato contro quell'attacco.
 
 ## Abilità
 
-Gradi di abilità per livello: 8 + mod. Int = 10 (più 1 grado gratuito in Cultura e 1 in Intuizione dalla Specializzazione Detective, che non consumano il pool). Abilità di classe ([[../raw/regole/wiki-completo/Operativo|Operativo]]): Acrobazia, Atletica, Camuffare, Computer, Cultura, Furtività, Ingegneria, Intimidire, Intuizione, Medicina, Percezione, Pilotare, Professione, Raggirare, Rapidità di Mano, Sopravvivenza. Tabella completa, tutte le 20 abilità.
+Gradi di abilità per livello: 8 + mod. Int = 10 (più 1 grado gratuito in Cultura e 1 in Intuizione dalla Specializzazione Detective, che non consumano il pool). Abilità di classe ([[Operativo]]): Acrobazia, Atletica, Camuffare, Computer, Cultura, Furtività, Ingegneria, Intimidire, Intuizione, Medicina, Percezione, Pilotare, Professione, Raggirare, Rapidità di Mano, Sopravvivenza. Tabella completa, tutte le 20 abilità.
 
 | Abilità | Gradi | Bonus Classe | Mod. | Varie | Totale |
 |---|---|---|---|---|---|
@@ -125,13 +125,13 @@ Gradi di abilità per livello: 8 + mod. Int = 10 (più 1 grado gratuito in Cultu
 **Competenze**: armature leggere; armi da mischia base, armi di precisione, armi piccole.
 
 **Talenti** (1°): Robustezza (+1 PF/livello, già incluso nel totale PF sopra).
-**Bonus di classe/razza**: [[../raw/regole/wiki-completo/Operativo/Specializzazioni|Abilità Focalizzata]] (Cultura, Intuizione — da Specializzazione Detective), Abilità Focalizzata (Percezione — da tratto razziale Verthani).
+**Bonus di classe/razza**: [[Operativo/Specializzazioni|Abilità Focalizzata]] (Cultura, Intuizione — da Specializzazione Detective), Abilità Focalizzata (Percezione — da tratto razziale Verthani).
 
 ## Privilegi di Classe — Operativo
 
-- **[[../raw/regole/wiki-completo/Operativo#Attacco Ingannevole (Str)|Attacco Ingannevole]]** +1d4 — vedi sezione Armi.
+- **[[Operativo#Attacco Ingannevole (Str)|Attacco Ingannevole]]** +1d4 — vedi sezione Armi.
 - **Specializzazione: Detective** — abilità associate Cultura e Intuizione (Abilità Focalizzata su entrambe + 1 grado gratuito per livello in ciascuna). Bonus +4 a Intuizione per un Attacco Ingannevole basato sull'interpretare le intenzioni del bersaglio.
-- **[[../raw/regole/wiki-completo/Operativo#Vantaggio dell'Operativo|Vantaggio dell'Operativo]]** +1 — bonus a Iniziativa e a tutte le prove di Abilità.
+- **[[Operativo#Vantaggio dell'Operativo|Vantaggio dell'Operativo]]** +1 — bonus a Iniziativa e a tutte le prove di Abilità.
 
 ## Privilegi di Tema — Agente di Polizia
 
@@ -141,8 +141,8 @@ Gradi di abilità per livello: 8 + mod. Int = 10 (più 1 grado gratuito in Cultu
 
 | Oggetto | Livello | Ingombro |
 |---|---|---|
-| [[../raw/regole/wiki-completo/Equipaggiamento/Seconda Pelle|Seconda Pelle]] | 1 | L |
-| [[../raw/regole/wiki-completo/Equipaggiamento/Pistola Laser Azimuth|Pistola Laser Azimuth]] (20 cariche) | 1 | L |
+| [[Equipaggiamento/Seconda Pelle\|Seconda Pelle]] | 1 | L |
+| [[Equipaggiamento/Pistola Laser Azimuth\|Pistola Laser Azimuth]] (20 cariche) | 1 | L |
 | Batteria di ricarica extra (20 cariche) | 1 | L |
 | Comlink personale | 1 | — |
 | Credstick | — | — |
@@ -157,7 +157,7 @@ Comune, Verthani.
 
 ## Tratti Razziali (Verthani)
 
-Vedi [[../raw/regole/wiki-completo/Razze/Verthani|Verthani]] per il testo completo. In sintesi: Umanoide di taglia Media, PF razziali 4, Abilità Focalizzata (Percezione) come talento bonus, Facilmente Aumentabile (impianti cibernetici), Pelle Mimetica (+10 Furtività se resta ferma 1 round, senza indumenti che coprano più di un quarto del corpo), Visione Crepuscolare.
+Vedi [[Verthani]] per il testo completo. In sintesi: Umanoide di taglia Media, PF razziali 4, Abilità Focalizzata (Percezione) come talento bonus, Facilmente Aumentabile (impianti cibernetici), Pelle Mimetica (+10 Furtività se resta ferma 1 round, senza indumenti che coprano più di un quarto del corpo), Visione Crepuscolare.
 
 ## Personalità e interpretazione
 
@@ -165,6 +165,6 @@ Diretta fino alla scortesia quando lavora, quasi calorosa quando si fida di qual
 
 ## Note per il GM
 
-- Scheda costruita con le regole di [[../raw/regole/wiki-completo/Operativo|Operativo]], [[../raw/regole/wiki-completo/Razze/Verthani|Verthani]] e [[../raw/regole/wiki-completo/Agente di Polizia|Agente di Polizia]] dal mirror locale del regolamento, formattata secondo lo standard descritto in `CLAUDE.md`.
-- Personaggio di prova per una sessione singola solitaria: vedi [[quest-conti-in-sospeso|Conti in Sospeso]].
+- Scheda costruita con le regole di [[Operativo]], [[Verthani]] e [[Agente di Polizia]] dal mirror locale del regolamento, formattata secondo lo standard descritto in `CLAUDE.md`.
+- Nata come personaggio di prova per testare il sistema di gioco, promossa a PG reale con la sua storyline: [[../quest/conti-in-sospeso|Conti in Sospeso]]. Deliberatamente scollegata dal party principale per ora, ma senza escludere futuri intrecci.
 - Al 1° livello l'Operativo non ha ancora Trucchi (si sbloccano dal 2° livello) — nessuna omissione, è corretto così.

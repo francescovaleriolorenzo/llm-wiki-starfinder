@@ -286,14 +286,14 @@ def crea_relazioni_entita(tx, slug, info, tutte_entita):
         if "stato" in primi_cambi:
             n_cambio, valore_iniziale = primi_cambi["stato"]
             tx.run(
-                "MATCH (n {slug: $slug}) MERGE (n)-[r:HA_STATO {valido_da_sessione: $vds}]->(n) "
+                f"MATCH (n:{label} {{slug: $slug}}) MERGE (n)-[r:HA_STATO {{valido_da_sessione: $vds}}]->(n) "
                 "SET r.valore = $valore, r.valido_a_sessione = $fine, "
                 "r.fonte = 'storico', r.pagina_origine = $pagina",
                 slug=slug, vds=sessione_iniziale, valore=valore_iniziale, fine=n_cambio, pagina=path,
             )
         else:
             tx.run(
-                "MATCH (n {slug: $slug}) MERGE (n)-[r:HA_STATO {valido_da_sessione: $vds}]->(n) "
+                f"MATCH (n:{label} {{slug: $slug}}) MERGE (n)-[r:HA_STATO {{valido_da_sessione: $vds}}]->(n) "
                 "SET r.valore = $valore, r.valido_a_sessione = null, "
                 "r.fonte = 'frontmatter:stato', r.pagina_origine = $pagina",
                 slug=slug, vds=sessione_iniziale, valore=fm.get("stato"), pagina=path,
@@ -402,12 +402,12 @@ def applica_storico(tx, slug, label, numero_sessione, testo, pagina, tutte_entit
 
     if campo == "stato":
         tx.run(
-            "MATCH (n {slug: $slug})-[r:HA_STATO]->(n) WHERE r.valido_a_sessione IS NULL "
+            f"MATCH (n:{label} {{slug: $slug}})-[r:HA_STATO]->(n) WHERE r.valido_a_sessione IS NULL "
             "SET r.valido_a_sessione = $n",
             slug=slug, n=numero_sessione,
         )
         tx.run(
-            "MATCH (n {slug: $slug}) "
+            f"MATCH (n:{label} {{slug: $slug}}) "
             "MERGE (n)-[r:HA_STATO {valido_da_sessione: $n}]->(n) "
             "SET r.valore = $valore, r.valido_a_sessione = null, "
             "r.fonte = 'storico', r.pagina_origine = $pagina",
@@ -424,7 +424,7 @@ def applica_storico(tx, slug, label, numero_sessione, testo, pagina, tutte_entit
         tipo_nuovo = tipo_nuovo or "CONNESSO_A"
         for tipo in TIPI_RELAZIONE_PARTY:
             tx.run(
-                f"MATCH (n {{slug: $slug}})-[r:{tipo}]->(:Party {{slug: $party_slug}}) "
+                f"MATCH (n:{label} {{slug: $slug}})-[r:{tipo}]->(:Party {{slug: $party_slug}}) "
                 f"WHERE r.valido_a_sessione IS NULL SET r.valido_a_sessione = $n",
                 slug=slug, party_slug=party_slug, n=numero_sessione,
             )
@@ -440,7 +440,7 @@ def applica_storico(tx, slug, label, numero_sessione, testo, pagina, tutte_entit
               f"{valore_nuovo!r} (sessione {numero_sessione})")
         return
     tx.run(
-        f"MATCH (n {{slug: $slug}})-[r:{tipo}]->() WHERE r.valido_a_sessione IS NULL "
+        f"MATCH (n:{label} {{slug: $slug}})-[r:{tipo}]->() WHERE r.valido_a_sessione IS NULL "
         f"SET r.valido_a_sessione = $n",
         slug=slug, n=numero_sessione,
     )

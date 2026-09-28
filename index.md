@@ -19,22 +19,27 @@ Catalogo di tutte le pagine del wiki. Vedi [CLAUDE.md](CLAUDE.md) per le convenz
 - [[pg/callan-reyes|Callan Reyes]] — Umano, Emissario livello 8. Attivo. Volto sociale del party. [PDF](export/schede-pg/callan-reyes-scheda.pdf)
 - [[pg/keskodai|Keskodai]] — Shirren, Tecnomante livello 8. Attiva. Danno magico offensivo/controllo. [PDF](export/schede-pg/keskodai-scheda.pdf)
 - [[pg/jehir-voloteo|Jehir Voloteo]] — Kasatha, Solarian livello 8. Attivo. Duellante in mischia con lama di energia stellare. [PDF](export/schede-pg/jehir-voloteo-scheda.pdf)
+- [[pg/vey-ashkora|Vey Ashkora]] — Verthani, Operativo (Detective) livello 1. Attiva. Protagonista solitaria della side-story [[quest/conti-in-sospeso|Conti in Sospeso]], scollegata dal party principale. [PDF](export/schede-pg/vey-ashkora-scheda.pdf)
 
 ## Personaggi Non Giocanti (PNG)
 - [[png/imara-voss|Imara Voss]] — Liaison operativa, Solmark Ricerche. Mandante di [[quest/il-filo-spezzato|Il Filo Spezzato]].
 - [[png/renn-kade|Renn Kade]] — Xenoarcheologa, scopritrice del Telaio. Superstite, nascosta nella [[luoghi/stazione-elice-7|Stazione Elice-7]].
 - [[png/toby-ferra|Toby Ferra]] — Capo ingegnere della Stazione Elice-7. Superstite, primo contatto e guida.
 - [[png/ilsa-draak|Ilsa Draak]] — Capitana mercenaria, Kestrel Recovery. Rivale, ostile o negoziabile.
+- [[png/doss-kellum|Doss Kellum]] — Gestore de Il Retro del Motore ad [[luoghi/avamposto-tregua|Avamposto Tregua]]. Mandante di [[quest/conti-in-sospeso|Conti in Sospeso]], non del tutto onesto.
+- [[png/nix-calder|Nix Calder]] — Meccanico freelance, testimone riluttante in [[quest/conti-in-sospeso|Conti in Sospeso]].
 
 ## Nemici
 - [[nemici/tessuto-corrotto|Tessuto Corrotto]] — GS 5, gruppo. Battaglia 1 di [[quest/il-filo-spezzato|Il Filo Spezzato]].
 - [[nemici/mercenari-kestrel|Mercenario Kestrel]] — GS 5 (+ Ilsa Draak GS 8 come leader). Battaglia 2.
 - [[nemici/ordito|L'Ordito]] — GS 9, boss. Battaglia finale.
+- [[nemici/ressa-doon|Ressa Doon]] — GS 1, ladra non violenta. Antagonista di [[quest/conti-in-sospeso|Conti in Sospeso]].
 
 ## Oggetti
 - [[oggetti/campione-di-filo-corrotto|Campione di Filo Corrotto]] — Artefatto raro. Bottino di [[nemici/tessuto-corrotto|Tessuti Corrotti]]/Braccio A, rivela la vulnerabilità sonora dell'Ordito in anticipo.
 - [[oggetti/datapad-criptato-kestrel|Datapad Criptato Kestrel]] — Tecnologia non comune. Bottino dei mercenari, indizio parziale sul committente di Ilsa Draak.
 - [[oggetti/frammento-del-telaio|Frammento del Telaio]] — Artefatto unico. Trovato nella Camera del Telaio dopo la Battaglia Boss, materiale di ricerca e gancio per la trama principale.
+- [[oggetti/chiave-di-memoria|Chiave di Memoria]] — Tecnologia comune. MacGuffin di [[quest/conti-in-sospeso|Conti in Sospeso]], rubata a Doss Kellum da Ressa Doon.
 
 ## Loot
 _Nessuna pagina ancora._
@@ -48,7 +53,7 @@ _Nessuna pagina ancora._
 - [[quest/il-filo-spezzato|Il Filo Spezzato]] — Attiva. Investigativa/esplorativa, 5-6 PG livello 8, ~5 ore. Stazione Elice-7, Sistema di Ordessa.
 
 ### Secondarie
-_Nessuna pagina ancora._
+- [[quest/conti-in-sospeso|Conti in Sospeso]] — Attiva. Side-story investigativa/roleplay per 1 PG livello 1, ~2 ore. Avamposto Tregua — scollegata dalla trama principale per ora.
 
 ## Incontri
 _Nessuna pagina ancora._
@@ -57,6 +62,7 @@ _Nessuna pagina ancora._
 - [[luoghi/sistema-di-ordessa|Sistema di Ordessa]] — Sistema binario, sede della quest [[quest/il-filo-spezzato|Il Filo Spezzato]].
 - [[luoghi/stazione-elice-7|Stazione Elice-7]] — Stazione di ricerca di Solmark Ricerche, location principale della quest.
 - [[luoghi/stazione-varrow|Stazione Varrow]] — Avamposto franco, base operativa ricorrente del party tra una quest e l'altra.
+- [[luoghi/avamposto-tregua|Avamposto Tregua]] — Stazione di scambio neutrale, sede di [[quest/conti-in-sospeso|Conti in Sospeso]] — scollegata dal resto della campagna per ora.
 
 ## Fazioni
 - [[fazioni/solmark-ricerche|Solmark Ricerche]] — Corporazione di ricerca, alleata/datrice di lavoro.

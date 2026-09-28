@@ -34,6 +34,7 @@ CHARACTERS = [
     "callan-reyes",
     "keskodai",
     "jehir-voloteo",
+    "vey-ashkora",
 ]
 
 LEGEND_HTML = """
