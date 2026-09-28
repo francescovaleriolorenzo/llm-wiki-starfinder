@@ -1,10 +1,11 @@
 ---
 tipo: nemico
 nome: Tessuto Corrotto
-categoria: minaccia minore (gruppo)
+categoria: minaccia minore
 cr: 5
 luogo_associato: "[[stazione-elice-7|Stazione Elice-7]]"
 stato: attivo
+stato_da: creazione
 tags: [nemico, battaglia-1, ordito]
 ---
 

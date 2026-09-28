@@ -3,6 +3,7 @@ tipo: quest
 nome: Il Filo Spezzato
 categoria: principale
 stato: attiva
+stato_da: creazione
 pg_coinvolti: ["[[pg/vela-9|Vela-9]]", "[[pg/kesh-vantor|Kesh Vantor]]", "[[pg/naeva-thess|Naeva Thess]]", "[[pg/whix-chitterclaw|Whix Chitterclaw]]", "[[pg/callan-reyes|Callan Reyes]]", "[[pg/keskodai|Keskodai]]", "[[pg/jehir-voloteo|Jehir Voloteo]]"]
 ricompense: Pagamento da Solmark Ricerche (base + bonus discrezione), uso prolungato della nave [[navi/filo-di-arianna|Filo di Arianna]], materiale di ricerca sul Telaio, gancio aperto per la trama principale della campagna
 tags: [quest, principale, investigativo]

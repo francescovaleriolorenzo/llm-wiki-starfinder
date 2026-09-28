@@ -2,6 +2,7 @@
 tipo: storia
 nome: La Rete dei Telai
 stato: in corso
+stato_da: creazione
 tags: [storia, ordito, telaio]
 ---
 

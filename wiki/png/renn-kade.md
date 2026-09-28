@@ -6,6 +6,7 @@ fazione: "[[../fazioni/solmark-ricerche|Solmark Ricerche]]"
 luogo: "[[stazione-elice-7|Stazione Elice-7]]"
 relazione_con_party: fonte chiave, da trovare e proteggere
 stato: vivo
+stato_da: creazione
 tags: [png, superstite]
 ---
 

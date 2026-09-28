@@ -6,6 +6,7 @@ razza: "[[Umano]]"
 classe: "[[Emissario]]"
 livello: 8
 stato: attivo
+stato_da: creazione
 luogo_attuale: "Stazione Varrow (avamposto franco, prima dell'incarico di Imara Voss)"
 fazioni: []
 tags: [pg, umano, emissario]

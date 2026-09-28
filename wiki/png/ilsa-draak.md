@@ -6,6 +6,7 @@ fazione: "[[../fazioni/kestrel-recovery|Kestrel Recovery]]"
 luogo: "[[stazione-elice-7|Stazione Elice-7]]"
 relazione_con_party: rivale — ostile o negoziabile a seconda delle scelte del party
 stato: vivo
+stato_da: creazione
 tags: [png, rivale, mercenario]
 ---
 

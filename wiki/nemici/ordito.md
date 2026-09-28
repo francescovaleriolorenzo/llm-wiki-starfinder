@@ -5,6 +5,7 @@ categoria: boss
 cr: 9
 luogo_associato: "[[stazione-elice-7|Stazione Elice-7]]"
 stato: attivo
+stato_da: creazione
 tags: [nemico, boss, battaglia-finale]
 ---
 

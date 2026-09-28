@@ -5,6 +5,7 @@ classe: Esploratore leggero (scafo da trasporto modificato)
 proprietario: "[[../fazioni/solmark-ricerche|Solmark Ricerche]] (assegnata al party in prestito d'uso)"
 equipaggio: []
 stato: operativa
+stato_da: creazione
 tags: [nave, party]
 ---
 

@@ -10,3 +10,6 @@ __pycache__/
 
 # Impostazioni locali di Claude Code (permessi specifici della macchina)
 .claude/settings.local.json
+
+# Credenziali locali (es. connessione Neo4j) — mai committare
+.env

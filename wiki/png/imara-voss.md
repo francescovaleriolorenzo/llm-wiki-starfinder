@@ -6,6 +6,7 @@ fazione: "[[../fazioni/solmark-ricerche|Solmark Ricerche]]"
 luogo: ""
 relazione_con_party: mandante (datrice di lavoro)
 stato: vivo
+stato_da: creazione
 tags: [png, mandante]
 ---
 

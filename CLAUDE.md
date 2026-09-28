@@ -57,15 +57,16 @@ Se durante la campagna emerge la necessità di una categoria non prevista qui (e
 - **Wikilink**: usa sempre `[[Nome Pagina]]` (sintassi Obsidian) per collegare entità menzionate — PNG, luoghi, oggetti, quest, navi, fazioni — ogni volta che compaiono in una pagina, così il grafo di Obsidian resta connesso. Non creare link rotti: se un'entità menzionata non ha ancora una pagina, crea uno stub minimo invece di lasciare un link vuoto.
 - **Frontmatter YAML**: ogni pagina in `wiki/` inizia con un blocco frontmatter (vedi schemi sotto) per abilitare query Dataview.
 - **raw/ è immutabile**: non modificare mai i file in `raw/`. Se l'utente ti manda un riassunto o una trascrizione, salvala così com'è in `raw/sessioni/` (o cartella pertinente) e poi lavora sulle pagine in `wiki/` a partire da quella.
-- **Stato**: ogni entità con un ciclo di vita (PG, PNG, nemici, quest, navi) ha un campo `stato` nel frontmatter, aggiornato ad ogni sessione rilevante (es. un PNG che muore, una quest che si completa). Accanto al campo `stato`, aggiungi un campo `stato_da` che indica da quale sessione (o momento, se fuori sessione) quello stato vale — es. `stato_da: sessione-09`. Non sovrascrivere soltanto il valore: se il cambiamento è narrativamente rilevante, aggiungi anche una riga alla sezione `## Storico` della pagina (vedi sotto), così il vecchio stato non va perso.
-- **Sezione `## Storico`**: ogni pagina con un campo `stato` (o un campo relazionale che può cambiare nel tempo, es. `relazione_con_party`, `rapporto_col_party`) ha in fondo al corpo una sezione `## Storico`, un elenco puntato append-only con un punto per ogni cambiamento rilevante, nel formato `- Sessione N: <cosa è cambiato> (<fonte, se utile>)`. Serve sia a non perdere lo stato precedente quando il frontmatter viene aggiornato, sia a registrare la provenienza del fatto (giocato in sessione, deciso dal GM fuori sessione, dedotto dall'agente). Esempio:
-  ```markdown
-  ## Storico
-  - Sessione 3: alleato del gruppo, mercante di Absalom Station
-  - Sessione 7: scoperto essere agente della Corporate Court (rivelato da [[png-nix-calder]])
-  - Sessione 9: morto in un'imboscata
+- **Stato e provenienza**: ogni entità con un ciclo di vita (PG, PNG, nemici, quest, navi) ha un campo `stato` nel frontmatter, aggiornato ad ogni sessione rilevante (es. un PNG che muore, una quest che si completa), accompagnato da un campo `stato_da` che indica **quando** quello stato è diventato vero: un wikilink alla pagina di sessione che l'ha causato (es. `stato_da: "[[sessioni/sessione-05|Sessione 5]]"`), oppure il valore `creazione` se lo stato non è ancora stato toccato da nessuna sessione. Serve a ricostruire la timeline della campagna senza dover rileggere ogni sessione per intero.
+- **Storico**: ogni pagina con un campo `stato`, e più in generale ogni pagina i cui campi relazionali (`fazione`, `luogo`, `relazione_con_party`, `rapporto_col_party`, `proprietario`, ecc.) possono cambiare nel tempo, mantiene una sezione `## Storico` in fondo al corpo, con una riga per ogni cambiamento rilevante nel formato:
   ```
-- **Vocabolario controllato**: i campi frontmatter che indicano una categoria/tipo (es. `categoria` per nemici/oggetti/luoghi/fazioni, `ruolo` per PNG) usano un elenco chiuso di valori (annotato come commento `# valore1 | valore2 | ...` accanto al campo), non testo libero. Se ti serve un valore non previsto dall'elenco, aggiungilo allo schema qui in `CLAUDE.md` invece di scriverlo libero nella pagina — così l'elenco resta la fonte di verità e i valori restano confrontabili tra pagine.
+  ## Storico
+  - Sessione 5: stato cambiato da "vivo" a "morto" — ucciso durante l'agguato al Braccio C.
+  - Sessione 6: relazione_con_party cambiata da "rivale" a "ostile" — ha tradito il party dopo la negoziazione fallita.
+  ```
+  Ogni riga inizia sempre con `- Sessione N: ` e nomina il campo cambiato con vecchio/nuovo valore, per restare grep-abile ed estraibile in modo deterministico (necessario per l'estrazione automatica verso il grafo temporale — vedi `schema-grafo.md`). `## Storico` è append-only quanto `log.md`, solo a livello di singola pagina invece che dell'intera campagna: non riscrivere le righe passate. Se una pagina non ha ancora subito cambiamenti, la sezione va omessa (non creare una `## Storico` vuota).
+- **Vocabolari controllati**: i campi `categoria` di `wiki/nemici/`, `wiki/oggetti/`, `wiki/incontri/`, `wiki/luoghi/` e `wiki/fazioni/` usano il set chiuso di valori indicato nel commento del rispettivo schema frontmatter (sotto) — non inventare nuove categorie senza aggiornare prima lo schema qui in CLAUDE.md. Il campo `ruolo` di `wiki/png/` resta invece testo libero descrittivo (es. "Liaison Operativa, Solmark Ricerche"): serve alla lettura umana, non a classificare il nodo — la relazione con fazione/luogo passa dai campi `fazione`/`luogo`, già wikilink, e la relazione col party dal campo `relazione_con_party`. *(Nota di riconciliazione: una sessione precedente aveva invece proposto di chiudere anche `ruolo` a un vocabolario fisso — scelta scartata qui perché nessuna delle 4 pagine PNG esistenti vi si conformava senza perdita di informazione; correggimi se preferisci l'altra strada.)*
+- **Controllo duplicati**: prima di creare una nuova pagina in `wiki/`, cerca nel wiki (per nome e varianti plausibili — abbreviazioni, alias, refusi, es. "Kestrel Recovery" vs "Compagnia Kestrel") se l'entità esiste già, anche come stub minimo generato da un wikilink non ancora risolto altrove. Se esiste, aggiorna quella pagina invece di crearne una nuova.
 - **Non essere pedante con le regole di Starfinder**: quando crei statblock per nemici/PNG/oggetti, punta alla plausibilità e alla giocabilità (CR/livello di sfida coerente col party, statistiche ragionevoli), ma non serve una validazione matematica rigorosa a meno che l'utente lo chieda esplicitamente. Se l'utente fornisce uno statblock preciso (da manuale o custom), usalo esattamente così com'è.
 
 ## Schemi frontmatter per tipo di pagina
@@ -80,7 +81,7 @@ razza:
 classe: 
 livello: 
 stato: attivo   # attivo | morto | ritirato | assente
-stato_da: 
+stato_da: creazione   # wikilink a wiki/sessioni/sessione-NN, o "creazione"
 luogo_attuale: "[[...]]"
 fazioni: []
 tags: [pg]
@@ -93,12 +94,12 @@ Formattazione del corpo pagina: segui lo stile della scheda personaggio ufficial
 ---
 tipo: png
 nome: 
-ruolo: # alleato | mandante | contatto | rivale | mercante | autorità | altro
+ruolo: 
 fazione: "[[...]]"
 luogo: "[[...]]"
 relazione_con_party: 
 stato: vivo   # vivo | morto | scomparso | sconosciuto
-stato_da: 
+stato_da: creazione   # wikilink a wiki/sessioni/sessione-NN, o "creazione"
 tags: [png]
 ---
 ```
@@ -108,11 +109,11 @@ tags: [png]
 ---
 tipo: nemico
 nome: 
-categoria: # minaccia minore | boss | mostro | gregario
+categoria: # minaccia minore | minaccia maggiore | boss | mostro | gregario
 cr: 
 luogo_associato: "[[...]]"
 stato: attivo   # attivo | sconfitto | fuggito
-stato_da: 
+stato_da: creazione   # wikilink a wiki/sessioni/sessione-NN, o "creazione"
 tags: [nemico]
 ---
 ```
@@ -150,7 +151,7 @@ classe:
 proprietario: "[[...]]"
 equipaggio: []
 stato: operativa   # operativa | danneggiata | distrutta | persa
-stato_da: 
+stato_da: creazione   # wikilink a wiki/sessioni/sessione-NN, o "creazione"
 tags: [nave]
 ---
 ```
@@ -162,7 +163,7 @@ tipo: quest
 nome: 
 categoria: principale   # principale | secondaria
 stato: attiva   # attiva | completata | fallita | in pausa
-stato_da: 
+stato_da: creazione   # wikilink a wiki/sessioni/sessione-NN, o "creazione"
 pg_coinvolti: []
 ricompense: 
 tags: [quest]
@@ -214,6 +215,7 @@ Pagine sintesi che raccontano l'arco narrativo principale in modo aggiornato —
 tipo: storia
 nome: 
 stato: in corso   # in corso | concluso
+stato_da: creazione   # wikilink a wiki/sessioni/sessione-NN, o "creazione"
 tags: [storia]
 ---
 ```
@@ -268,7 +270,7 @@ Processo in due fasi, appoggiato su `raw/sessioni/template-note-sessione.md`:
 2. Leggi il file per intero, comprese le "Domande per l'agente".
 3. Fai domande mirate per colmare le lacune o sciogliere le ambiguità — punta soprattutto a: esiti poco chiari di combattimenti/negoziazioni, PNG con stato incerto (vivo/morto/scomparso), decisioni con conseguenze non esplicitate, qualunque cosa l'utente abbia segnato come dubbio. Non serve chiedere tutto in una volta: procedi per punti se la lista è lunga.
 4. Solo dopo aver chiarito i punti necessari, crea `wiki/sessioni/sessione-NN.md` col recap strutturato.
-5. Aggiorna **tutte** le pagine toccate dalla sessione: PNG incontrati o morti, quest avanzate/completate, loot assegnato, incontri avvenuti, luoghi visitati, navi usate/danneggiate, e la/le pagine di `wiki/storia/` se la trama principale è avanzata. Una sessione tipica tocca facilmente 10+ pagine — non limitarti al solo recap. Per ogni entità nuova incontrata in sessione, controlla prima che non esista già (anche come stub) con un nome diverso, prima di crearne la pagina. Per ogni cambiamento di `stato` (o di un campo relazionale come `relazione_con_party`/`rapporto_col_party`), aggiorna anche `stato_da` e aggiungi una riga alla sezione `## Storico` della pagina.
+5. Aggiorna **tutte** le pagine toccate dalla sessione: PNG incontrati o morti, quest avanzate/completate, loot assegnato, incontri avvenuti, luoghi visitati, navi usate/danneggiate, e la/le pagine di `wiki/storia/` se la trama principale è avanzata. Una sessione tipica tocca facilmente 10+ pagine — non limitarti al solo recap. Per ogni entità nuova incontrata in sessione, applica prima il controllo duplicati. Ogni volta che cambi un campo `stato` (o un campo relazionale come `fazione`, `relazione_con_party`, `rapporto_col_party`, `proprietario`), aggiorna anche `stato_da` con un wikilink alla pagina di questa sessione e aggiungi la riga corrispondente in `## Storico` — vedi "Stato e provenienza"/"Storico" nelle Convenzioni generali.
 6. Aggiorna `index.md` con le nuove pagine o le voci cambiate di stato.
 7. Aggiungi una entry a `log.md`.
 
@@ -278,7 +280,7 @@ Se l'utente manda invece appunti sciolti in chat o una trascrizione (senza passa
 L'utente potrebbe modificare file direttamente (fuori da questa chat). Quando riprendi il lavoro, se hai dubbi sullo stato attuale di una pagina, rileggila invece di fidarti della cronologia della conversazione. Guarda anche le ultime righe di `log.md` per capire cosa è successo di recente.
 
 ### Creazione di una nuova entità su richiesta
-Quando l'utente chiede di creare un PNG, nemico, oggetto, nave, luogo, ecc. fuori da un recap di sessione: **prima di creare la pagina**, cerca nel wiki (per nome e varianti plausibili — abbreviazioni, alias, refusi) se l'entità esiste già, anche come stub minimo generato da un wikilink non ancora risolto altrove. Se esiste, aggiorna quella pagina invece di crearne una nuova. Solo se non esiste, crea la pagina con lo schema corretto, collega le entità correlate con wikilink, aggiorna `index.md` e aggiungi una entry a `log.md` (tipo `creazione`).
+Quando l'utente chiede di creare un PNG, nemico, oggetto, nave, luogo, ecc. fuori da un recap di sessione: **prima di creare la pagina**, applica il controllo duplicati (vedi Convenzioni generali). Se un'entità simile esiste già, anche come stub minimo generato da un wikilink non ancora risolto altrove, aggiorna quella pagina invece di crearne una nuova. Solo se non esiste, crea la pagina con lo schema corretto, collega le entità correlate con wikilink, aggiorna `index.md` e aggiungi una entry a `log.md` (tipo `creazione`).
 
 ### Query
 Quando l'utente fa una domanda sulla campagna (es. "cosa sappiamo di questa fazione", "riassumi la relazione tra questi due PNG", "quali quest sono ancora aperte"), leggi prima `index.md` per orientarti, poi le pagine pertinenti in `wiki/`, e rispondi con citazioni/link alle pagine. Se la risposta è sostanziosa (es. un riassunto della trama, un confronto), valuta se salvarla come pagina in `wiki/storia/` invece di lasciarla solo in chat.

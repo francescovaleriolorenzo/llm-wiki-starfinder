@@ -6,6 +6,7 @@ fazione: "[[../fazioni/solmark-ricerche|Solmark Ricerche]]"
 luogo: "[[stazione-elice-7|Stazione Elice-7]]"
 relazione_con_party: primo contatto, guida e alleato
 stato: vivo
+stato_da: creazione
 tags: [png, superstite, alleato]
 ---
 
