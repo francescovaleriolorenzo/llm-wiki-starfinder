@@ -176,10 +176,10 @@ def estrai_storico(corpo):
     return sorted(righe, key=lambda coppia: coppia[0])
 
 
-def scopri_entita():
+def scopri_entita(wiki_dir=WIKI):
     entita = {}
     for cartella, label in CATEGORIE.items():
-        for path in sorted((WIKI / cartella).glob("*.md")):
+        for path in sorted((wiki_dir / cartella).glob("*.md")):
             frontmatter, corpo = leggi_pagina(path)
             if frontmatter.get("tipo") != TIPO_ATTESO[cartella]:
                 print(f"  SALTATA (non è una pagina entità, manca 'tipo: {TIPO_ATTESO[cartella]}'): "
@@ -244,6 +244,22 @@ def crea_arco(tx, source_slug, source_label, tipo, target_slug, target_label,
     tx.run(query, source_slug=source_slug, target_slug=target_slug, proprieta=proprieta)
 
 
+def primo_cambio_per_campo(storico):
+    """{campo: (sessione_del_cambio, valore_prima_del_cambio)} per il PRIMO cambio di ogni campo.
+
+    Necessario perché il frontmatter contiene sempre il valore *corrente*: se un campo è
+    già stato cambiato da una sessione, il frontmatter non rappresenta più il valore "di
+    creazione" e l'arco/stato iniziale va ricostruito dal primo valore_vecchio in ## Storico,
+    non dal frontmatter.
+    """
+    primi = {}
+    for numero, testo in storico:
+        match = STORICO_CAMPO_RE.match(testo)
+        if match and match.group(1) not in primi:
+            primi[match.group(1)] = (numero, match.group(2))
+    return primi
+
+
 def crea_relazioni_entita(tx, slug, info, tutte_entita):
     fm = info["frontmatter"]
     label = info["label"]
@@ -251,14 +267,25 @@ def crea_relazioni_entita(tx, slug, info, tutte_entita):
     collegati = set()
     sessione_iniziale = sessione_da_stato_da(fm.get("stato_da")) if label in CAMPI_STATO else 0
 
+    storico = estrai_storico(info["corpo"])
+    primi_cambi = primo_cambio_per_campo(storico)
+
     if label in CAMPI_STATO and fm.get("stato"):
-        tx.run(
-            "MATCH (n {slug: $slug}) "
-            "MERGE (n)-[r:HA_STATO {valido_da_sessione: $vds}]->(n) "
-            "SET r.valore = $valore, r.valido_a_sessione = null, "
-            "r.fonte = 'frontmatter:stato', r.pagina_origine = $pagina",
-            slug=slug, vds=sessione_iniziale, valore=fm.get("stato"), pagina=path,
-        )
+        if "stato" in primi_cambi:
+            n_cambio, valore_iniziale = primi_cambi["stato"]
+            tx.run(
+                "MATCH (n {slug: $slug}) MERGE (n)-[r:HA_STATO {valido_da_sessione: $vds}]->(n) "
+                "SET r.valore = $valore, r.valido_a_sessione = $fine, "
+                "r.fonte = 'storico', r.pagina_origine = $pagina",
+                slug=slug, vds=sessione_iniziale, valore=valore_iniziale, fine=n_cambio, pagina=path,
+            )
+        else:
+            tx.run(
+                "MATCH (n {slug: $slug}) MERGE (n)-[r:HA_STATO {valido_da_sessione: $vds}]->(n) "
+                "SET r.valore = $valore, r.valido_a_sessione = null, "
+                "r.fonte = 'frontmatter:stato', r.pagina_origine = $pagina",
+                slug=slug, vds=sessione_iniziale, valore=fm.get("stato"), pagina=path,
+            )
 
     if label == "Nemico":
         crea_arco(tx, slug, label, "NEMICO_DI", "party", "Party",
@@ -266,6 +293,10 @@ def crea_relazioni_entita(tx, slug, info, tutte_entita):
         collegati.add("party")
 
     for campo, tipo in CAMPI_RELAZIONALI_SEMPLICI.items():
+        if campo in primi_cambi:
+            print(f"  NOTA: {campo!r} di {slug!r} ha uno storico ma il target non viene "
+                  f"ricostruito retroattivamente in v1 (limite noto) — verrà comunque "
+                  f"aggiornato correttamente dalla sessione del cambio in poi.")
         target_slug = slug_da_wikilink(fm.get(campo))
         if not target_slug or target_slug not in tutte_entita:
             continue
@@ -289,26 +320,43 @@ def crea_relazioni_entita(tx, slug, info, tutte_entita):
                        slug, label, sessione_iniziale, "frontmatter:proprietario", path)
             collegati.add(target_slug)
 
-    valore_rapporto = fm.get("rapporto_col_party")
-    if isinstance(valore_rapporto, str):
-        tipo = tipo_da_rapporto_col_party(valore_rapporto)
+    if "rapporto_col_party" in primi_cambi:
+        n_cambio, valore_iniziale = primi_cambi["rapporto_col_party"]
+        tipo = tipo_da_rapporto_col_party(valore_iniziale)
         if tipo:
-            crea_arco(tx, slug, label, tipo, "party", "Party",
-                       sessione_iniziale, "frontmatter:rapporto_col_party", path)
-            collegati.add("party")
-
-    valore_relazione = fm.get("relazione_con_party")
-    if isinstance(valore_relazione, str) and valore_relazione.strip():
-        tipo = parola_chiave_relazione_party(valore_relazione)
-        if tipo:
-            crea_arco(tx, slug, label, tipo, "party", "Party",
-                       sessione_iniziale, "frontmatter:relazione_con_party", path)
-        else:
-            crea_arco(tx, slug, label, "CONNESSO_A", "party", "Party",
-                       sessione_iniziale, "frontmatter:relazione_con_party", path,
-                       extra={"descrizione": valore_relazione})
-            print(f"  NOTA: relazione_con_party di {slug!r} senza parola chiave riconosciuta: {valore_relazione!r}")
+            crea_arco(tx, slug, label, tipo, "party", "Party", sessione_iniziale,
+                       "storico", path, extra={"valido_a_sessione": n_cambio})
         collegati.add("party")
+    else:
+        valore_rapporto = fm.get("rapporto_col_party")
+        if isinstance(valore_rapporto, str):
+            tipo = tipo_da_rapporto_col_party(valore_rapporto)
+            if tipo:
+                crea_arco(tx, slug, label, tipo, "party", "Party",
+                           sessione_iniziale, "frontmatter:rapporto_col_party", path)
+                collegati.add("party")
+
+    if "relazione_con_party" in primi_cambi:
+        n_cambio, valore_iniziale = primi_cambi["relazione_con_party"]
+        tipo = parola_chiave_relazione_party(valore_iniziale) or "CONNESSO_A"
+        extra = {"valido_a_sessione": n_cambio}
+        if tipo == "CONNESSO_A":
+            extra["descrizione"] = valore_iniziale
+        crea_arco(tx, slug, label, tipo, "party", "Party", sessione_iniziale, "storico", path, extra=extra)
+        collegati.add("party")
+    else:
+        valore_relazione = fm.get("relazione_con_party")
+        if isinstance(valore_relazione, str) and valore_relazione.strip():
+            tipo = parola_chiave_relazione_party(valore_relazione)
+            if tipo:
+                crea_arco(tx, slug, label, tipo, "party", "Party",
+                           sessione_iniziale, "frontmatter:relazione_con_party", path)
+            else:
+                crea_arco(tx, slug, label, "CONNESSO_A", "party", "Party",
+                           sessione_iniziale, "frontmatter:relazione_con_party", path,
+                           extra={"descrizione": valore_relazione})
+                print(f"  NOTA: relazione_con_party di {slug!r} senza parola chiave riconosciuta: {valore_relazione!r}")
+            collegati.add("party")
 
     for testo_interno in WIKILINK_RE.findall(info["corpo"]):
         target_slug = normalizza_target(testo_interno)
@@ -320,7 +368,7 @@ def crea_relazioni_entita(tx, slug, info, tutte_entita):
                    sessione_iniziale, "wikilink-corpo", path)
         collegati.add(target_slug)
 
-    for numero_sessione, testo in estrai_storico(info["corpo"]):
+    for numero_sessione, testo in storico:
         applica_storico(tx, slug, label, numero_sessione, testo, path, tutte_entita)
 
 
@@ -393,15 +441,29 @@ def stampa_riepilogo(session):
 
 
 def main():
+    import argparse
+
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--wiki-dir", default=str(WIKI),
+        help="Cartella wiki/ da cui estrarre (default: wiki/ reale). Usare per puntare a una copia di test.",
+    )
+    parser.add_argument(
+        "--database", default=None,
+        help="Nome del database Neo4j di destinazione (default: quello di sistema, es. 'neo4j').",
+    )
+    args = parser.parse_args()
+
     load_dotenv(ROOT / ".env")
     driver = GraphDatabase.driver(
         os.environ["NEO4J_URI"],
         auth=(os.environ["NEO4J_USER"], os.environ["NEO4J_PASSWORD"]),
     )
-    entita = scopri_entita()
-    print(f"Trovate {len(entita)} entità in wiki/{{{','.join(CATEGORIE)}}}/.")
+    wiki_dir = Path(args.wiki_dir).resolve()
+    entita = scopri_entita(wiki_dir)
+    print(f"Trovate {len(entita)} entità in {wiki_dir}/{{{','.join(CATEGORIE)}}}/.")
 
-    with driver.session() as session:
+    with driver.session(database=args.database) as session:
         session.execute_write(svuota_grafo)
         session.execute_write(crea_vincoli)
         session.execute_write(crea_party)

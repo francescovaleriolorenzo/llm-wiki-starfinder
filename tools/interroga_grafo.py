@@ -118,6 +118,10 @@ def path_tra(session, slug_a, slug_b):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    parser.add_argument(
+        "--database", default=None,
+        help="Nome del database Neo4j da interrogare (default: quello di sistema, es. 'neo4j').",
+    )
     sotto = parser.add_subparsers(dest="comando", required=True)
 
     p1 = sotto.add_parser("stato_a_sessione")
@@ -135,7 +139,7 @@ def main():
     args = parser.parse_args()
     driver = connetti()
     try:
-        with driver.session() as session:
+        with driver.session(database=args.database) as session:
             if args.comando == "stato_a_sessione":
                 stato_a_sessione(session, args.slug, args.numero_sessione)
             elif args.comando == "connessi_a":
