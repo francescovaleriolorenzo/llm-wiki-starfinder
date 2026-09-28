@@ -3,7 +3,7 @@ tipo: fazione
 nome: Solmark Ricerche
 categoria: corporazione
 territorio: "[[sistema-di-ordessa|Sistema di Ordessa]] (Stazione Elice-7) e altre sedi non ancora definite"
-rapporto_col_party: alleata (datrice di lavoro)
+rapporto_col_party: alleata
 tags: [fazione, corporazione]
 ---
 

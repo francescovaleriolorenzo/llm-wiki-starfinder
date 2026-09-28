@@ -132,6 +132,14 @@ def parola_chiave_relazione_party(testo):
     return min(trovate, key=lambda coppia: coppia[0])[1]
 
 
+def tipo_da_rapporto_col_party(testo):
+    testo_minuscolo = testo.strip().lower()
+    for valore, tipo in RAPPORTO_PARTY.items():
+        if testo_minuscolo.startswith(valore):
+            return tipo
+    return None
+
+
 def sessione_da_stato_da(valore):
     if not valore or valore == "creazione":
         return 0
@@ -283,7 +291,7 @@ def crea_relazioni_entita(tx, slug, info, tutte_entita):
 
     valore_rapporto = fm.get("rapporto_col_party")
     if isinstance(valore_rapporto, str):
-        tipo = RAPPORTO_PARTY.get(valore_rapporto.strip().lower())
+        tipo = tipo_da_rapporto_col_party(valore_rapporto)
         if tipo:
             crea_arco(tx, slug, label, tipo, "party", "Party",
                        sessione_iniziale, "frontmatter:rapporto_col_party", path)
@@ -340,7 +348,7 @@ def applica_storico(tx, slug, label, numero_sessione, testo, pagina, tutte_entit
 
     if campo in ("relazione_con_party", "rapporto_col_party"):
         if campo == "rapporto_col_party":
-            tipo_nuovo = RAPPORTO_PARTY.get(valore_nuovo.strip().lower())
+            tipo_nuovo = tipo_da_rapporto_col_party(valore_nuovo)
         else:
             tipo_nuovo = parola_chiave_relazione_party(valore_nuovo)
         tipo_nuovo = tipo_nuovo or "CONNESSO_A"
