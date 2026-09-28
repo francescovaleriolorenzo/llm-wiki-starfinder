@@ -155,6 +155,12 @@ Vedi [[Ysoki]] per il testo completo. In sintesi: Umanoide di taglia Piccola, PF
 
 Parla velocissimo, salta da un argomento all'altro, e usa l'umorismo come prima linea di difesa quando le cose si fanno tese. Sotto la superficie chiassosa c'è un'osservatrice implacabile: nota tutto, ricorda tutto, e usa quell'informazione con più cura di quanto lasci trasparire. Fedeltà adamantina verso chi considera "suo" — party incluso, nel giro di poche sessioni.
 
+### Spunti rapidi per l'interprete
+
+- **Tic**: parla a raffica quando è nervosa o eccitata, spesso interrompendo se stessa per cambiare argomento.
+- **Sotto pressione**: accelera il ritmo delle battute invece di ammutolirsi — l'umorismo cresce con la tensione, non diminuisce.
+- **Con il party**: adora stuzzicare [[kesh-vantor|Kesh Vantor]], che la sopporta con pazienza quasi paterna.
+
 ## Note per il GM
 
 - Scheda costruita con le regole di [[Operativo]] e [[Ysoki]] da [[wiki/regole/indice-regolamento|regolamento]] locale, formattata secondo lo standard descritto in `CLAUDE.md`.

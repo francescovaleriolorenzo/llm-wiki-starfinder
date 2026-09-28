@@ -172,6 +172,12 @@ Vedi [[Lashunta]] per il testo completo. In sintesi: Umanoide di taglia Media, P
 
 Calma quasi fino all'esasperazione altrui, parla poco e ascolta molto — non per timidezza, ma perché la sua specie processa gli stati d'animo altrui più velocemente delle parole. Sente una responsabilità profonda verso la sopravvivenza del gruppo, al punto da anteporre la sicurezza altrui alla propria (vedi Legame Vitale). Dietro la compostezza da studiosa, cova un'autentica curiosità per l'ignoto: fenomeni come l'Ordito la affascinano tanto quanto la allarmano.
 
+### Spunti rapidi per l'interprete
+
+- **Tic**: fa una pausa prima di rispondere, come se stesse "leggendo" l'umore di chi ha davanti prima di scegliere le parole.
+- **Sotto pressione**: diventa ancora più calma — è quando è più efficace, mai il contrario.
+- **Con il party**: protettiva in modo particolare verso [[whix-chitterclaw|Whix Chitterclaw]], la più esposta e temeraria del gruppo.
+
 ## Note per il GM
 
 - Scheda costruita con le regole di [[Mistico]] e [[Lashunta]] da [[wiki/regole/indice-regolamento|regolamento]] locale, formattata secondo lo standard descritto in `CLAUDE.md`.

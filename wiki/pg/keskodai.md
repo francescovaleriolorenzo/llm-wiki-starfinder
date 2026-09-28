@@ -163,6 +163,12 @@ Vedi [[Shirren]] per il testo completo. In sintesi: Umanoide di taglia Media, PF
 
 Analitica fino all'ironia, tratta quasi ogni situazione come un problema da hackerare — incluse le conversazioni. Il suo umorismo è secco, spesso criptico, e arriva più naturalmente via telepatia che a voce. Nonostante l'individualismo shirren, porta con sé un residuo di istinto comunitario: si getta senza esitazione in situazioni pericolose per proteggere il gruppo, un comportamento che lei stessa fatica a spiegare del tutto razionalmente.
 
+### Spunti rapidi per l'interprete
+
+- **Tic**: preferisce comunicare per via telepatica anche quando parlare a voce sarebbe più semplice, specie con chi conosce bene.
+- **Sotto pressione**: diventa più fredda e clinica nell'analisi — un contrasto netto col suo umorismo abituale.
+- **Con il party**: scambia spesso osservazioni tecniche/mistiche con [[naeva-thess|Naeva Thess]], per cui nutre una genuina curiosità intellettuale.
+
 ## Note per il GM
 
 - Scheda costruita con le regole di [[Tecnomante]] e [[Shirren]] da [[wiki/regole/indice-regolamento|regolamento]] locale, formattata secondo lo standard descritto in `CLAUDE.md`.

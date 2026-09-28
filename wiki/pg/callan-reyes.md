@@ -150,6 +150,12 @@ Vedi [[Umano]] per il testo completo. In sintesi: Umanoide di taglia Media, PF r
 
 Cordiale quasi di default, con un sorriso che mette a proprio agio anche chi ha tutte le ragioni per diffidare di lui. Crede sinceramente che quasi ogni conflitto abbia una soluzione negoziata, se solo si trova la leva giusta — il che lo rende ottimo con [[png/ilsa-draak|Ilsa Draak]] e i suoi mercenari, meno efficace (e lo sa) contro qualcosa come [[nemici/ordito|l'Ordito]], che non negozia. Usa l'umorismo per stemperare la tensione del gruppo, ma sa quando smettere di scherzare.
 
+### Spunti rapidi per l'interprete
+
+- **Tic**: sorride prima di parlare, anche quando la situazione non lo richiederebbe affatto.
+- **Sotto pressione**: cerca la battuta o la leva diplomatica anche quando servirebbe azione diretta — è il suo riflesso, non sempre la scelta giusta.
+- **Con il party**: scontro bonario con [[kesh-vantor|Kesh Vantor]] sull'approccio (parole contro violenza) — ma i due si rispettano profondamente.
+
 ## Note per il GM
 
 - Scheda costruita con le regole di [[Emissario]] e [[Umano]] da [[wiki/regole/indice-regolamento|regolamento]] locale, formattata secondo lo standard descritto in `CLAUDE.md`.

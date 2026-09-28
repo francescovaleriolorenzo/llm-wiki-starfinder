@@ -159,6 +159,12 @@ Vedi [[Kasatha]] per il testo completo. In sintesi: Umanoide di taglia Media, PF
 
 Formale, quasi cerimonioso, con un codice personale di condotta che segue più rigidamente di qualsiasi legge esterna. Copre la bocca in pubblico davanti a chi non considera un intimo, secondo l'usanza kasatha, e questo lo rende inizialmente distante agli occhi di chi non conosce la cultura. Rispetta profondamente chi dimostra disciplina o abilità in combattimento, a prescindere dalla razza o dal ruolo — è così che giudica il valore di uno sconosciuto. In battaglia trova una chiarezza quasi meditativa; fuori dal combattimento, osserva più di quanto parli.
 
+### Spunti rapidi per l'interprete
+
+- **Tic**: si copre la bocca in pubblico davanti a chi non considera un intimo — un gesto quasi automatico, non calcolato.
+- **Sotto pressione**: trova chiarezza quasi meditativa — più calmo, non più agitato, specialmente in combattimento.
+- **Con il party**: rispetto quasi da pari con [[kesh-vantor|Kesh Vantor]] — la loro è una rivalità amichevole fondata sul valore dimostrato in battaglia.
+
 ## Note per il GM
 
 - Scheda costruita con le regole di [[Solarian]] e [[Kasatha]] da [[wiki/regole/indice-regolamento|regolamento]] locale, formattata secondo lo standard descritto in `CLAUDE.md`.

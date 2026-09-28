@@ -153,6 +153,12 @@ Vedi [[Vesk]] per il testo completo. In sintesi: Umanoide di taglia Media, PF ra
 
 Formale e diretto, valuta gli altri in base al valore dimostrato in combattimento e al rispetto della parola data, non per lignaggio o ricchezza. Con gli sconosciuti è taciturno fino alla ruvidezza; con chi si è guadagnato la sua fiducia mostra una lealtà totale e, di rado ma inequivocabilmente, momenti di calore quasi imbarazzato per lui stesso. Cerca ancora lo scontro "degno" che non ha mai trovato in patria — un tema che il GM può sfruttare facendogli incontrare avversari che lo mettano davvero alla prova, come [[nemici/ordito|l'Ordito]].
 
+### Spunti rapidi per l'interprete
+
+- **Tic**: giudica ad alta voce chi ha davanti in base all'onore dimostrato, spesso senza filtri sociali.
+- **Sotto pressione**: si calma, non si agita — il combattimento è il suo elemento naturale.
+- **Con il party**: attrito bonario con [[callan-reyes|Callan Reyes]] — trova le sue tattiche "troppo furbe", ma ammette (a denti stretti) che funzionano.
+
 ## Note per il GM
 
 - Scheda costruita con le regole di [[Soldato]] e [[Vesk]] da [[wiki/regole/indice-regolamento|regolamento]] locale, formattata secondo lo standard descritto in `CLAUDE.md` (vedi [[wiki/pg/vela-9|Vela-9]] come modello).

@@ -191,6 +191,12 @@ Vedi [[Androide]] per il testo completo. In sintesi: Umanoide/Costrutto ibrido, 
 
 Razionale fino all'osso, pianifica sempre una via di fuga prima ancora di sedersi a un tavolo. Diffida per natura dell'autorità — retaggio non dimenticato della storia di schiavitù della sua specie — ed è insolitamente attenta a come gli altri trattano macchine, animali e subordinati: è il suo modo per giudicare il carattere di qualcuno. Le emozioni ci sono, ma arrivano in ritardo e filtrate; chi si aspetta reazioni immediate da lei resta deluso, chi ha pazienza scopre una lealtà totale, sempre espressa in azioni pratiche (una riparazione fatta senza essere chiesta, un rischio calcolato preso per un compagno) piuttosto che in parole.
 
+### Spunti rapidi per l'interprete
+
+- **Tic**: descrive spesso le persone in termini tecnici, quasi diagnostici ("il suo battito cardiaco è irregolare", "sta compensando").
+- **Sotto pressione**: si zittisce e si concentra sulla soluzione pratica immediata — niente sfoghi, niente esitazioni visibili.
+- **Con il party**: rispetto silenzioso reciproco con [[kesh-vantor|Kesh Vantor]] — due "pratici" che si capiscono senza tante parole.
+
 ## Note per il GM
 
 - Scheda costruita con le regole di [[Meccanico]] e [[Androide]] da [[wiki/regole/indice-regolamento|regolamento]] locale. Formattazione allineata alla scheda personaggio ufficiale (vedi `raw/regole/Starfinder - Core Rulebook.pdf`, usato solo come riferimento di impaginazione). Livello di dettaglio pensato per essere giocabile subito; numeri di talenti/modifiche minori possono essere aggiustati al tavolo senza problemi.

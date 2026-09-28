@@ -35,6 +35,7 @@ wiki/                  pagine mantenute dall'agente (fonte di verità "viva" del
   fazioni/               organizzazioni, gilde, governi, culti, corporazioni
   storia/                sintesi narrativa evolutiva della trama principale e degli archi narrativi
   sessioni/              un recap per ogni sessione giocata (cosa è successo, chi c'era, conseguenze)
+  guide-gm/              una guida di preparazione per ogni quest — vedi sezione dedicata sotto
 
 index.md               catalogo di tutte le pagine del wiki, organizzato per categoria
 log.md                 log cronologico append-only di tutto ciò che è successo (in gioco) e di ogni manutenzione del wiki
@@ -245,6 +246,20 @@ La campagna può avere più di un party/storyline attivo in parallelo — il par
 - **`wiki/sessioni/*.md`** ha un campo `party` che identifica a quale party/storyline appartiene quella sessione (es. `principale`, o uno slug legato alla side-story, es. `conti-in-sospeso`). La numerazione delle sessioni (`numero`) resta un unico contatore globale e cronologico condiviso da tutti i party — non ricomincia da 1 per ogni storyline: serve a sapere "cosa è successo prima di cosa" nel tempo reale della campagna, non a contare le sessioni di un party specifico.
 - **`wiki/png/*.md`**, **`wiki/nemici/*.md`** e **`wiki/fazioni/*.md`** hanno un campo `party` opzionale (default: `principale` se omesso) che indica a quale party si riferiscono i loro campi `relazione_con_party`/`rapporto_col_party` (o, per i nemici, l'ostilità implicita) — necessario perché nel grafo Neo4j (vedi sotto) ogni party è un nodo `Party` separato: un'entità della side-story non deve risultare automaticamente ostile/alleata/nemica del party principale solo perché esiste un unico nodo condiviso.
 - Le pagine `wiki/pg/*.md` non hanno bisogno di questo campo: l'appartenenza a una storyline si vede da quali sessioni/quest li coinvolgono (`pg_coinvolti`, `pg_presenti`).
+
+### `wiki/guide-gm/*.md` — Guida di preparazione per quest
+
+Una pagina per ogni quest (stesso slug della quest corrispondente, es. `wiki/guide-gm/il-filo-spezzato.md` per `wiki/quest/il-filo-spezzato.md`), pensata per essere l'unico file che il GM deve aprire per prepararsi a giocarla. **Non duplica contenuto**: collega con wikilink le pagine già esistenti (PNG, nemici, luoghi, oggetti, PG coinvolti) invece di ripeterne il testo, e aggiunge solo ciò che non esiste ancora altrove in forma comoda:
+```yaml
+---
+tipo: guida-gm
+quest: "[[...]]"
+tags: [guida-gm]
+---
+```
+Formattazione del corpo, nell'ordine: colpo d'occhio sulla premessa (poche righe), elenco di PNG/nemici/luoghi/oggetti coinvolti con un link e un promemoria di una riga ciascuno (non l'intera pagina), una tabella riassuntiva delle statistiche di combattimento di tutti i nemici della quest (per non dover saltare da una pagina all'altra durante uno scontro), i segreti/colpi di scena da centellinare aggregati in un unico punto, e un elenco di regole del regolamento rilevanti per quella quest specifica — ciascuna con wikilink alla voce raw pertinente (mai a memoria, vedi "Il regolamento" sotto). Per la struttura scena-per-scena e i tempi stimati, rimanda alla quest stessa invece di ripeterli.
+
+**Quando crearla**: quando una quest è pronta per essere giocata (di solito subito dopo averla scritta, o su richiesta esplicita). **Quando aggiornarla**: se la quest cambia in modo sostanziale (nuove scene, nuovi PNG/nemici coinvolti).
 
 ## Il regolamento (`wiki/regole/`)
 

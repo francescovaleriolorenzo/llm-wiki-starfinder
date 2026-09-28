@@ -71,5 +71,9 @@ _Nessuna pagina ancora._
 ## Storia
 - [[storia/la-rete-dei-telai|La Rete dei Telai]] — In corso. Sintesi della trama principale: l'Ordito, Meridian Holdings, e il gancio "L'Eco nel Filo" verso un secondo sito.
 
+## Guide GM
+- [[guide-gm/il-filo-spezzato|Guida GM — Il Filo Spezzato]] — tutto il necessario per condurre la quest in un unico posto: PNG, nemici (con statistiche riassunte), luoghi, segreti da centellinare, regolamento rilevante.
+- [[guide-gm/conti-in-sospeso|Guida GM — Conti in Sospeso]] — idem per la side-story.
+
 ## Sessioni
 _Nessuna pagina ancora._
