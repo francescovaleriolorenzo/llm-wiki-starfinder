@@ -31,3 +31,9 @@ Xenoarcheologa umana, capo del team che ha scoperto il Telaio sei mesi fa. Si na
 ## Personalità
 
 Metodica anche nel terrore: ha tenuto un diario vocale ininterrotto durante l'isolamento, per abitudine professionale più che per lucidità. Si sente responsabile per quello che è successo ai suoi colleghi e questo la rende disposta a rischiare per aiutare i PG a fermare l'Ordito, una volta che si fida di loro.
+
+### Spunti rapidi per l'interprete
+
+- **Tic**: narra ad alta voce quello che sta facendo, abitudine da diario vocale ormai automatica.
+- **Se messa alle strette**: si aggrappa alla procedura e al metodo — è quello che l'ha tenuta lucida finora.
+- **Con chi**: si fida rapidamente di chi dimostra competenza tecnica, molto più lentamente di chi si limita a rassicurarla a parole.

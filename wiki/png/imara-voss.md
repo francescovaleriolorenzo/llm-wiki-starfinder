@@ -26,6 +26,12 @@ Non mente ai PG, ma non dice tutto quello che sa: è al corrente che un'altra co
 
 Pragmatica, abituata a gestire crisi aziendali con la minima esposizione possibile. Non è fredda per natura — è visibilmente preoccupata per l'equipaggio della stazione, in particolare per [[renn-kade|Renn Kade]], con cui ha un rapporto di stima personale oltre che professionale — ma anni di gestione del rischio corporativo le hanno insegnato a non mostrarlo se non è strettamente necessario.
 
+### Spunti rapidi per l'interprete
+
+- **Tic**: riformula le domande scomode in termini "operativi" prima di rispondere, come per prendere tempo.
+- **Se messa alle strette**: diventa più formale e distaccata, mai aggressiva — è il suo modo di guadagnare tempo.
+- **Con chi**: la preoccupazione per [[renn-kade|Renn Kade]] è l'unica crepa reale nella sua compostezza professionale — un PG che la nomina ottiene da lei una reazione più genuina.
+
 ## Cosa sa (da rivelare col contagocce)
 
 - Il Telaio è stato scoperto sei mesi fa, la ricerca si è intensificata nell'ultimo mese.

@@ -32,6 +32,12 @@ In alternativa al confronto diretto, il GM può far sì che i PG trovino la squa
 
 Calcolatrice, leale alla propria squadra più che al contratto. Non ama le sorprese e odia essere stata mandata in una situazione sottostimata dal suo committente — leva narrativa utile se i PG vogliono provare a convincerla a defezionare o a collaborare temporaneamente.
 
+### Spunti rapidi per l'interprete
+
+- **Tic**: dà ordini brevi e diretti, mai superflui — anche nei momenti di massima tensione.
+- **Se messa alle strette**: valuta lucidamente costi e benefici prima di reagire, mai un attacco d'istinto.
+- **Con chi**: leale ai suoi uomini più che al contratto — minacciarli per fare pressione su di lei rischia di irrigidirla invece di piegarla.
+
 ## Statistiche di Combattimento (leader, Battaglia 2)
 
 | GS | Allineamento | Taglia/Tipo | Iniziativa | Sensi |

@@ -27,6 +27,12 @@ Meccanico freelance, passa più serate a [[../luoghi/avamposto-tregua#Il Retro d
 
 Non è ostile, solo prudente. Diplomazia o Raggirare CD 16 per convincerlo che non finirà nei guai; Intimidire funziona ma CD 18 e lo rende meno disposto a condividere il pettegolezzo su Doss (si limita ai fatti diretti). Se gli si offre da bere o un piccolo favore prima di chiedere, -2 alla CD.
 
+### Spunti rapidi per l'interprete
+
+- **Tic**: minimizza tutto quello che sa finché non si sente al sicuro ("non ho visto niente di che").
+- **Se messo alle strette**: si chiude ulteriormente sotto pressione diretta — Intimidire funziona, ma lo rende meno collaborativo, non di più.
+- **Con chi**: si scioglie molto più facilmente con un piccolo gesto (un drink offerto, un favore) prima di essere interrogato, che davanti a qualsiasi forma di autorità.
+
 ## Note per il GM
 
 Va usato come fonte di due informazioni distinte, da dare anche separatamente se il giocatore fa più tentativi: (1) la pista fisica verso [[../nemici/ressa-doon|Ressa Doon]] e i corridoi di manutenzione, necessaria per far avanzare la trama; (2) il sospetto su Doss, opzionale ma utile per la scelta finale in [[../quest/conti-in-sospeso|Conti in Sospeso]].

@@ -91,6 +91,8 @@ tags: [pg]
 ```
 Formattazione del corpo pagina: segui lo stile della scheda personaggio ufficiale Starfinder (vedi [[wiki/pg/vela-9|Vela-9]] come modello) — tabelle con scomposizione dei bonus (Totale = Base + Modificatore + Varie) per Iniziativa, Salute e Risolutezza, Classe Armatura, Tiri Salvezza, Bonus di Attacco, Armi, Abilità; sezioni nell'ordine: intestazione (classe/livello/razza/tema, taglia/velocità/genere/mondo natale, allineamento/divinità/giocatore), concept, punteggi di caratteristica, blocchi di combattimento, abilità, talenti/competenze, privilegi di classe, equipaggiamento, lingue, eventuali compagni (droni, IA, veicoli), tratti razziali, personalità, note per il GM. Se l'utente fornisce un manuale ufficiale come riferimento di stile, usalo solo per l'impaginazione — non per estrarne regole o contenuti aggiuntivi non richiesti.
 
+La sezione di personalità (sia per PG sia per PNG, vedi sotto) include sempre una sottosezione `### Spunti rapidi per l'interprete` con 3 punti fissi: **Tic** (un'abitudine verbale o comportamentale riconoscibile), **Sotto pressione / se messo alle strette** (come reagisce quando la situazione si complica — non è scontato che coincida col comportamento normale), **Con chi** (un legame specifico con un altro PG o PNG che dà spunti di scena concreti, non solo un aggettivo). Serve a chi deve interpretare il personaggio per la prima volta, in aggiunta — non al posto — del paragrafo di personalità discorsivo che già racconta il carattere in generale.
+
 ### `wiki/png/*.md` — Personaggi non giocanti
 ```yaml
 ---

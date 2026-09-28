@@ -23,10 +23,10 @@ Il party viene assunto da [[../png/imara-voss|Imara Voss]] (Solmark Ricerche) pe
 
 | Chi | GS | CAE/CAC | PF | RD | Note tattiche |
 |---|---|---|---|---|---|
-| [[../nemici/tessuto-corrotto|Tessuto Corrotto]] (×4) | 5 | 17/19 | 65 | — | Battaglia 1, Braccio B. Sincronizzati, nessuna scelta morale propria. |
-| [[../nemici/mercenari-kestrel|Mercenario Kestrel]] (×3) | 5 | 18/19 | 58 | — | Battaglia 2. Coperture attive, si ritirano verso Ilsa sotto 1/3 PF. |
-| [[../png/ilsa-draak|Ilsa Draak]] (leader) | 8 | 21/22 | 88 | — | Battaglia 2. Negoziabile — vedi la sua pagina per come gestire un esito non violento. |
-| [[../nemici/ordito|L'Ordito]] (boss) | 9 | 24/26 | 260 | 5/– | Battaglia finale. **Vulnerabilità sonora** (+50% danni, ignora RD) — Vela-9 e il drone la sfruttano di default. Richiama Tessuti Corrotti come rinforzi. |
+| [[../nemici/tessuto-corrotto\|Tessuto Corrotto]] (×4) | 5 | 17/19 | 65 | — | Battaglia 1, Braccio B. Sincronizzati, nessuna scelta morale propria. |
+| [[../nemici/mercenari-kestrel\|Mercenario Kestrel]] (×3) | 5 | 18/19 | 58 | — | Battaglia 2. Coperture attive, si ritirano verso Ilsa sotto 1/3 PF. |
+| [[../png/ilsa-draak\|Ilsa Draak]] (leader) | 8 | 21/22 | 88 | — | Battaglia 2. Negoziabile — vedi la sua pagina per come gestire un esito non violento. |
+| [[../nemici/ordito\|L'Ordito]] (boss) | 9 | 24/26 | 260 | 5/– | Battaglia finale. **Vulnerabilità sonora** (+50% danni, ignora RD) — Vela-9 e il drone la sfruttano di default. Richiama Tessuti Corrotti come rinforzi. |
 
 ## Luoghi
 

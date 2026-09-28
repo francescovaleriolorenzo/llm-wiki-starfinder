@@ -29,6 +29,12 @@ La Chiave di Memoria non contiene semplici conti: sono registri dettagliati di p
 
 Cordiale, un po' insistente su tempistiche e discrezione ("meglio se la cosa resta tra noi"). Prova di [[Intuizione]] CD 15 per notare che è più nervoso di quanto un semplice furto di "documenti contabili" giustificherebbe.
 
+### Spunti rapidi per l'interprete
+
+- **Tic**: tratta ogni cliente, anche chi vede per la prima volta, come un vecchio amico di lunga data.
+- **Se messo alle strette**: non è un bugiardo navigato — nega debolmente, poi crolla in fretta sotto pressione diretta.
+- **Con chi**: insiste sulla riservatezza ("meglio se resta tra noi") ogni volta che la conversazione si avvicina troppo al vero contenuto della Chiave di Memoria.
+
 ## Note per il GM
 
 Non è pensato come un vero criminale pericoloso — è un piccolo usuraio locale, la cui minaccia è economica e sociale, non fisica. Il vero nodo morale della quest è cosa fare della Chiave di Memoria una volta recuperata: restituirla a Doss (pagamento pieno, ma il suo racket continua), tenerla/distruggerla (nessun pagamento o pagamento ridotto, ma i mercanti della stazione ne beneficiano), o usarla per costringerlo a smettere. Vedi [[../quest/conti-in-sospeso|Conti in Sospeso]], Scena 6.

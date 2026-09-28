@@ -22,7 +22,7 @@ Qualcuno ha svaligiato la cassaforte di [[../png/doss-kellum|Doss Kellum]] ad [[
 
 | Chi | GS | CAE/CAC | PF | Note tattiche |
 |---|---|---|---|---|
-| [[../nemici/ressa-doon|Ressa Doon]] | 1 | 13/14 | 15 | Fugge se può, usa il Fumogeno Tascabile per un round, combatte solo se attaccata per prima. Si arrende sotto 1/3 PF. |
+| [[../nemici/ressa-doon\|Ressa Doon]] | 1 | 13/14 | 15 | Fugge se può, usa il Fumogeno Tascabile per un round, combatte solo se attaccata per prima. Si arrende sotto 1/3 PF. |
 
 Pensata per essere sconfitta senza rischi seri per un PG di 1° livello solitario (PF 11 di Vey) — vedi le note complete nella pagina del nemico.
 

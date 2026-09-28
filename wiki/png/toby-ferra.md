@@ -32,3 +32,9 @@ Può accompagnare il party per un tratto se richiesto, ma preferisce restare all
 ## Personalità
 
 Diretto, brusco ma non ostile, con un umorismo secco da persona che ha visto troppe emergenze tecniche per spaventarsi facilmente — finché non si spaventa davvero. Rispetta la competenza più delle credenziali: un PG che risolve un problema tecnico davanti a lui guadagna la sua fiducia più in fretta di uno che si limita a mostrare l'autorizzazione di [[imara-voss|Imara Voss]].
+
+### Spunti rapidi per l'interprete
+
+- **Tic**: valuta chiunque incontri dal modo in cui maneggia strumenti o problemi tecnici, prima ancora di ascoltarlo parlare.
+- **Se messo alle strette**: l'umorismo secco sparisce di colpo — quando è davvero spaventato, si vede.
+- **Con chi**: rispetta più un PG che risolve un problema tecnico sul posto che uno che si limita a mostrare l'autorizzazione di Imara Voss.
