@@ -7,7 +7,7 @@ classe: "[[Operativo]] (Detective)"
 livello: 8
 stato: attivo
 stato_da: creazione
-luogo_attuale: "Stazione Varrow (avamposto franco, prima dell'incarico di Imara Voss)"
+luogo_attuale: "[[../luoghi/stazione-varrow|Stazione Varrow]] (avamposto franco, prima dell'incarico di Imara Voss)"
 fazioni: []
 tags: [pg, ysoki, operativo]
 ---

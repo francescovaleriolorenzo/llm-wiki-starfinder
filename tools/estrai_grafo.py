@@ -292,6 +292,15 @@ def crea_relazioni_entita(tx, slug, info, tutte_entita):
                    0, "implicito:categoria-nemico", path)
         collegati.add("party")
 
+    if label == "Quest":
+        for valore in fm.get("pg_coinvolti") or []:
+            target_slug = slug_da_wikilink(valore)
+            if not target_slug or target_slug not in tutte_entita:
+                continue
+            crea_arco(tx, target_slug, tutte_entita[target_slug]["label"], "PARTECIPA_A",
+                       slug, label, sessione_iniziale, "frontmatter:pg_coinvolti", path)
+            collegati.add(target_slug)
+
     for campo, tipo in CAMPI_RELAZIONALI_SEMPLICI.items():
         if campo in primi_cambi:
             print(f"  NOTA: {campo!r} di {slug!r} ha uno storico ma il target non viene "

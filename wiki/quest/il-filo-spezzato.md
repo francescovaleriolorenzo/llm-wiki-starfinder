@@ -34,7 +34,7 @@ Ordine flessibile per le scene 4-6: il party può esplorare i tre bracci della s
 
 ## Scena 1 — Il contratto
 
-I PG vengono contattati (o si presentano su chiamata pregressa) da [[png/imara-voss|Imara Voss]] per conto di [[fazioni/solmark-ricerche|Solmark Ricerche]]. Briefing essenziale: la stazione è silenziosa, il lavoro va fatto con discrezione, viene fornita la nave [[navi/filo-di-arianna|Filo di Arianna]] per il viaggio. Imara risponde a domande dirette ma non offre volontariamente i dettagli più delicati (vedi "Cosa sa" nella sua pagina) — un party che fa le domande giuste scopre di più.
+A [[luoghi/stazione-varrow|Stazione Varrow]], base operativa del party, i PG vengono contattati (o si presentano su chiamata pregressa) da [[png/imara-voss|Imara Voss]] per conto di [[fazioni/solmark-ricerche|Solmark Ricerche]]. Briefing essenziale: la stazione è silenziosa, il lavoro va fatto con discrezione, viene fornita la nave [[navi/filo-di-arianna|Filo di Arianna]] per il viaggio. Imara risponde a domande dirette ma non offre volontariamente i dettagli più delicati (vedi "Cosa sa" nella sua pagina) — un party che fa le domande giuste scopre di più.
 
 ## Scena 2 — Il viaggio
 

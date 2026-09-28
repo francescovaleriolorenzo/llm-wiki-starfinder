@@ -56,6 +56,7 @@ _Nessuna pagina ancora._
 ## Luoghi
 - [[luoghi/sistema-di-ordessa|Sistema di Ordessa]] — Sistema binario, sede della quest [[quest/il-filo-spezzato|Il Filo Spezzato]].
 - [[luoghi/stazione-elice-7|Stazione Elice-7]] — Stazione di ricerca di Solmark Ricerche, location principale della quest.
+- [[luoghi/stazione-varrow|Stazione Varrow]] — Avamposto franco, base operativa ricorrente del party tra una quest e l'altra.
 
 ## Fazioni
 - [[fazioni/solmark-ricerche|Solmark Ricerche]] — Corporazione di ricerca, alleata/datrice di lavoro.

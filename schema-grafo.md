@@ -39,6 +39,7 @@ Una per categoria di `CLAUDE.md`, più una singola entità sintetica `Party` per
 | `RIVALE_DI` | `(Entità)→(Party)` | `relazione_con_party` contiene "rivale" | rivalità non ancora ostile/negoziabile |
 | `AMBIGUO_CON` | `(Entità)→(Party)` | `rapporto_col_party` = "ambigua" | rapporto non ancora definito |
 | `NEMICO_DI` | `(Nemico)→(Party)` | implicita per ogni nodo `Nemico` | ostilità di default per tutto ciò che è catalogato come nemico |
+| `PARTECIPA_A` | `(PG)→(Quest)` | `pg_coinvolti` (quest) | il PG è tra quelli coinvolti/disponibili per la quest |
 | `CONNESSO_A` | `(A)→(B)` | wikilink nel corpo non coperto da un campo sopra; fallback per `relazione_con_party` senza parola chiave riconosciuta | connessione generica, con `descrizione` come proprietà testuale quando disponibile |
 | `HA_STATO` | `(Entità)→(Entità)` (auto-relazione) | `stato` + `stato_da` + righe `## Storico` sullo stato | valore di stato nel tempo — vedi sezione 3 |
 
