@@ -145,6 +145,12 @@ RETURN a, r, b;
 MATCH (n) RETURN n LIMIT 300;
 ```
 
+**Cammino più breve tra due entità** (es. Kestrel Recovery → Solmark Ricerche, agganci non ovvi):
+```cypher
+MATCH (a {slug: "kestrel-recovery"}), (b {slug: "solmark-ricerche"}), p = shortestPath((a)-[*..15]-(b))
+RETURN p;
+```
+
 ## 7. Decisioni prese (rivedibili dopo la prima estrazione)
 
 Le domande aperte della prima stesura sono state chiuse con scelte di default ragionevoli, correggibili dopo aver visto l'output della prima estrazione reale (Passo 2):
