@@ -271,7 +271,13 @@ def primo_cambio_per_campo(storico):
     return primi
 
 
-def crea_relazioni_entita(tx, slug, info, tutte_entita):
+def crea_relazioni_tipizzate(tx, slug, info, tutte_entita):
+    """Crea tutte le relazioni derivate dal frontmatter (mai CONNESSO_A). Ritorna
+    l'insieme degli slug a cui questa entità è stata collegata, così le connessioni
+    generiche da wikilink nel corpo (vedi crea_connessioni_corpo) non le duplichino
+    — il controllo è globale su tutte le entità, non solo su questa pagina, perché
+    una relazione tipizzata può nascere dalla pagina "dall'altra parte" (es. POSSIEDE
+    nasce quando si processa l'Oggetto, non il PG proprietario)."""
     fm = info["frontmatter"]
     label = info["label"]
     path = info["path"]
@@ -379,17 +385,29 @@ def crea_relazioni_entita(tx, slug, info, tutte_entita):
                 print(f"  NOTA: relazione_con_party di {slug!r} senza parola chiave riconosciuta: {valore_relazione!r}")
             collegati.add(party_slug)
 
+    return collegati
+
+
+def crea_connessioni_corpo(tx, slug, info, tutte_entita, coppie_collegate):
+    fm = info["frontmatter"]
+    label = info["label"]
+    path = info["path"]
+    sessione_iniziale = sessione_da_stato_da(fm.get("stato_da")) if label in CAMPI_STATO else 0
     for testo_interno in WIKILINK_RE.findall(info["corpo"]):
         target_slug = normalizza_target(testo_interno)
         if not target_slug or target_slug == slug or target_slug not in tutte_entita:
             continue
-        if target_slug in collegati:
+        if frozenset((slug, target_slug)) in coppie_collegate:
             continue
         crea_arco(tx, slug, label, "CONNESSO_A", target_slug, tutte_entita[target_slug]["label"],
                    sessione_iniziale, "wikilink-corpo", path)
-        collegati.add(target_slug)
+        coppie_collegate.add(frozenset((slug, target_slug)))
 
-    for numero_sessione, testo in storico:
+
+def applica_storico_pagina(tx, slug, info, tutte_entita):
+    label = info["label"]
+    path = info["path"]
+    for numero_sessione, testo in estrai_storico(info["corpo"]):
         applica_storico(tx, slug, label, numero_sessione, testo, path, tutte_entita)
 
 
@@ -494,8 +512,17 @@ def main():
         for slug, info in entita.items():
             session.execute_write(crea_nodo, slug, info)
 
+        coppie_collegate = set()
         for slug, info in entita.items():
-            session.execute_write(crea_relazioni_entita, slug, info, entita)
+            collegati = session.execute_write(crea_relazioni_tipizzate, slug, info, entita)
+            for target in collegati:
+                coppie_collegate.add(frozenset((slug, target)))
+
+        for slug, info in entita.items():
+            session.execute_write(crea_connessioni_corpo, slug, info, entita, coppie_collegate)
+
+        for slug, info in entita.items():
+            session.execute_write(applica_storico_pagina, slug, info, entita)
 
         stampa_riepilogo(session)
 

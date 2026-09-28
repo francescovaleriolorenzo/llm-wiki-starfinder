@@ -6,6 +6,7 @@ razza: "[[Verthani]]"
 classe: "[[Operativo]]"
 livello: 1
 stato: attivo
+stato_da: creazione
 luogo_attuale: "[[avamposto-tregua|Avamposto Tregua]]"
 fazioni: []
 tags: [pg, verthani, operativo, side-story]

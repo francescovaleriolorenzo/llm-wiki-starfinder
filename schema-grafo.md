@@ -42,7 +42,7 @@ Una per categoria di `CLAUDE.md`, più un'entità sintetica `Party` per rapprese
 | `AMBIGUO_CON` | `(Entità)→(Party)` | `rapporto_col_party` = "ambigua" | rapporto non ancora definito |
 | `NEMICO_DI` | `(Nemico)→(Party)` | implicita per ogni nodo `Nemico` | ostilità di default per tutto ciò che è catalogato come nemico |
 | `PARTECIPA_A` | `(PG)→(Quest)` | `pg_coinvolti` (quest) | il PG è tra quelli coinvolti/disponibili per la quest |
-| `CONNESSO_A` | `(A)→(B)` | wikilink nel corpo non coperto da un campo sopra; fallback per `relazione_con_party` senza parola chiave riconosciuta | connessione generica, con `descrizione` come proprietà testuale quando disponibile |
+| `CONNESSO_A` | `(A)→(B)` | wikilink nel corpo non coperto da un campo sopra e da nessun'altra relazione tipizzata già creata tra la stessa coppia (controllo globale, non solo sulla pagina corrente — vedi nota sotto); fallback per `relazione_con_party` senza parola chiave riconosciuta | connessione generica, con `descrizione` come proprietà testuale quando disponibile |
 | `HA_STATO` | `(Entità)→(Entità)` (auto-relazione) | `stato` + `stato_da` + righe `## Storico` sullo stato | valore di stato nel tempo — vedi sezione 3 |
 
 **Nota sulla mappatura testo libero → tipo chiuso**: `relazione_con_party` (PNG) è oggi testo libero (es. "fonte chiave, da trovare e proteggere"). L'estrazione deterministica cerca le parole chiave sopra (case-insensitive, substring match) in ordine; se nessuna corrisponde, usa `CONNESSO_A` col testo originale in `descrizione`. È una perdita di informazione accettabile per la v1 — se il testo non si presta, meglio un arco generico che nessun arco. Rivedi tu se le parole chiave ti sembrano giuste prima che scriva l'estrazione.
@@ -163,6 +163,6 @@ Le domande aperte della prima stesura sono state chiuse con scelte di default ra
 1. **`Party` come nodo sintetico**: confermato, resta com'è.
 2. **Parole chiave per `relazione_con_party`**: resta la lista mandante/alleat/ostile/rivale. Lo script di estrazione logga ogni PNG il cui `relazione_con_party` non matcha nessuna parola chiave (fallback `CONNESSO_A`), così dopo la prima run si vede subito se la lista va allargata.
 3. **`Storia`/`Sessione`/`Incontro`/`Loot` esclusi dalla v1**: confermato. `Sessione` resta un numero intero nelle proprietà temporali, non un nodo.
-4. **`CONNESSO_A` come fallback generico**: confermato per la v1, tipo unico indifferenziato per i wikilink nel corpo non coperti da un campo frontmatter.
+4. **`CONNESSO_A` come fallback generico**: confermato per la v1, tipo unico indifferenziato per i wikilink nel corpo non coperti da un campo frontmatter. **Nota**: il controllo "non duplicare una relazione già tipizzata" è globale su tutta l'estrazione, non solo sulla pagina in lavorazione — una relazione tipizzata può nascere dalla pagina "dall'altra parte" (es. `POSSIEDE` nasce processando l'Oggetto, non il proprietario; `PARTECIPA_A` nasce processando la Quest, non il PG). `tools/estrai_grafo.py` esegue quindi l'estrazione in tre passate separate: relazioni tipizzate su tutte le entità, poi connessioni generiche da wikilink su tutte le entità (con il controllo globale), poi replay di `## Storico`.
 
 Passo al Passo 2 (`tools/estrai_grafo.py`).
