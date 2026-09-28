@@ -38,8 +38,9 @@ wiki/                  pagine mantenute dall'agente (fonte di verità "viva" del
 
 index.md               catalogo di tutte le pagine del wiki, organizzato per categoria
 log.md                 log cronologico append-only di tutto ciò che è successo (in gioco) e di ogni manutenzione del wiki
+schema-grafo.md         schema del grafo temporale Neo4j derivato dal wiki — vedi "Grafo temporale" più sotto
 
-tools/                  script di supporto (non contenuto di campagna) — genera_schede_pdf.py, genera_legenda_gm_pdf.py, genera_rosa_pdf.py, pdf_common.py (stile condiviso)
+tools/                  script di supporto (non contenuto di campagna) — genera_schede_pdf.py, genera_legenda_gm_pdf.py, genera_rosa_pdf.py, pdf_common.py (stile condiviso), estrai_grafo.py e interroga_grafo.py (grafo Neo4j)
 export/                 artefatti generati/derivati dal wiki, non sorgenti e non pagine vive
   schede-pg/             un PDF per PG, rigenerato da wiki/pg/*.md con tools/genera_schede_pdf.py
   domande-frequenti-gm.pdf   FAQ per il GM in PDF, rigenerata da wiki/regole/domande-frequenti-gm.md con tools/genera_legenda_gm_pdf.py
@@ -257,6 +258,20 @@ Ogni PG ha un PDF stampabile in `export/schede-pg/<slug>-scheda.pdf`, generato d
 
 **Rosa dei personaggi** (`wiki/pg/rosa-personaggi.md` → `export/rosa-personaggi.pdf`): quando si crea un nuovo PG pensato come alternativa di scelta per i giocatori (non un PG già assegnato a un giocatore specifico), aggiungi una sezione alla rosa (stesso formato: ritratto, paragrafo di concept, "Come si gioca", "Momento forte", link alla scheda) e aggiorna la tabella di riepilogo in fondo, poi rigenera con `python3 tools/genera_rosa_pdf.py`.
 
+## Grafo temporale (Neo4j)
+
+Il wiki ha anche un **derivato** in forma di grafo Neo4j: stesse entità e relazioni già presenti in frontmatter/wikilink/`## Storico`, ma navigabili con query e con validità temporale (`valido_da_sessione`/`valido_a_sessione` su ogni relazione), utile per rispondere a "qual era lo stato di X alla sessione N" o "quali entità collegano X e Y, anche indirettamente" — a supporto della generazione di nuovi contenuti coerenti con quanto già stabilito (quest, nemici, agganci narrativi). Schema completo, vocabolario delle relazioni e query pronte per Neo4j Browser in `schema-grafo.md`.
+
+**Il grafo non è una seconda fonte di verità**: è ricostruibile da zero a partire dal wiki in qualunque momento. Se grafo e wiki divergono, si ricostruisce il grafo — mai il contrario.
+
+**Prerequisito**: un'istanza Neo4j locale attiva (Neo4j Desktop) e un file `.env` nella radice del repo con `NEO4J_URI`/`NEO4J_USER`/`NEO4J_PASSWORD` (mai committato, è in `.gitignore`). Se Neo4j non è raggiungibile in una sessione, salta questo passo senza bloccare il resto del workflow — annotalo in `log.md` così si recupera all'occasione successiva.
+
+**Quando rigenerarlo**: dopo l'aggiornamento delle pagine di una sessione (Fase 2 del workflow "Nuova sessione" sotto), esegui `python3 tools/estrai_grafo.py` dalla radice del repo — svuota e ricostruisce il grafo da zero, leggendo tutte le pagine reali di `wiki/{pg,png,nemici,oggetti,navi,quest,luoghi,fazioni}/`.
+
+**Come interrogarlo**: `python3 tools/interroga_grafo.py stato_a_sessione <slug> <numero>`, `connessi_a <slug> [--salti N]`, `path_tra <slug_a> <slug_b>`. Utile prima di creare una nuova quest, un nemico o un aggancio narrativo — `connessi_a`/`path_tra` mostrano cosa è già collegato a un'entità (anche indirettamente), per evitare contraddizioni o per trovare spunti non ovvi.
+
+**Test isolati**: mai testare modifiche sperimentali sul grafo reale (database Neo4j di sistema, di solito `neo4j`). Entrambi gli script accettano `--wiki-dir` (per puntare a una copia di prova invece di `wiki/`) e `--database` (per un database Neo4j separato, es. `CREATE DATABASE grafotest` da Neo4j Browser sul database `system`) — copia `wiki/` in una cartella scollegata tipo `test-grafo/` (con un suo `README.md`, sullo stile di `quest-prova/`), modifica lì, poi cancella tutto (cartella + database di test) a fine prova.
+
 ## Workflow
 
 ### Nuova sessione (l'operazione più frequente)
@@ -273,8 +288,9 @@ Processo in due fasi, appoggiato su `raw/sessioni/template-note-sessione.md`:
 5. Aggiorna **tutte** le pagine toccate dalla sessione: PNG incontrati o morti, quest avanzate/completate, loot assegnato, incontri avvenuti, luoghi visitati, navi usate/danneggiate, e la/le pagine di `wiki/storia/` se la trama principale è avanzata. Una sessione tipica tocca facilmente 10+ pagine — non limitarti al solo recap. Per ogni entità nuova incontrata in sessione, applica prima il controllo duplicati. Ogni volta che cambi un campo `stato` (o un campo relazionale come `fazione`, `relazione_con_party`, `rapporto_col_party`, `proprietario`), aggiorna anche `stato_da` con un wikilink alla pagina di questa sessione e aggiungi la riga corrispondente in `## Storico` — vedi "Stato e provenienza"/"Storico" nelle Convenzioni generali.
 6. Aggiorna `index.md` con le nuove pagine o le voci cambiate di stato.
 7. Aggiungi una entry a `log.md`.
+8. Rigenera il grafo temporale: `python3 tools/estrai_grafo.py` (vedi "Grafo temporale" sopra — se Neo4j non è raggiungibile, salta questo passo e annotalo in `log.md`).
 
-Se l'utente manda invece appunti sciolti in chat o una trascrizione (senza passare dal template), salvali comunque in `raw/sessioni/` prima di procedere, poi segui gli stessi passi 2-7.
+Se l'utente manda invece appunti sciolti in chat o una trascrizione (senza passare dal template), salvali comunque in `raw/sessioni/` prima di procedere, poi segui gli stessi passi 2-8.
 
 ### Aggiornamenti manuali dell'utente
 L'utente potrebbe modificare file direttamente (fuori da questa chat). Quando riprendi il lavoro, se hai dubbi sullo stato attuale di una pagina, rileggila invece di fidarti della cronologia della conversazione. Guarda anche le ultime righe di `log.md` per capire cosa è successo di recente.
@@ -282,11 +298,13 @@ L'utente potrebbe modificare file direttamente (fuori da questa chat). Quando ri
 ### Creazione di una nuova entità su richiesta
 Quando l'utente chiede di creare un PNG, nemico, oggetto, nave, luogo, ecc. fuori da un recap di sessione: **prima di creare la pagina**, applica il controllo duplicati (vedi Convenzioni generali). Se un'entità simile esiste già, anche come stub minimo generato da un wikilink non ancora risolto altrove, aggiorna quella pagina invece di crearne una nuova. Solo se non esiste, crea la pagina con lo schema corretto, collega le entità correlate con wikilink, aggiorna `index.md` e aggiungi una entry a `log.md` (tipo `creazione`).
 
+Se la nuova entità deve collegarsi in modo coerente a quanto già stabilito (es. un nemico legato a una fazione esistente, un aggancio di quest che sfrutti una connessione non ovvia), consulta il grafo temporale prima di scrivere: `python3 tools/interroga_grafo.py connessi_a <slug-entità-esistente>` o `path_tra <slug-a> <slug-b>` (vedi "Grafo temporale" sopra) — più veloce che rileggere a mano le pagine correlate, specialmente quando la campagna cresce.
+
 ### Query
-Quando l'utente fa una domanda sulla campagna (es. "cosa sappiamo di questa fazione", "riassumi la relazione tra questi due PNG", "quali quest sono ancora aperte"), leggi prima `index.md` per orientarti, poi le pagine pertinenti in `wiki/`, e rispondi con citazioni/link alle pagine. Se la risposta è sostanziosa (es. un riassunto della trama, un confronto), valuta se salvarla come pagina in `wiki/storia/` invece di lasciarla solo in chat.
+Quando l'utente fa una domanda sulla campagna (es. "cosa sappiamo di questa fazione", "riassumi la relazione tra questi due PNG", "quali quest sono ancora aperte"), leggi prima `index.md` per orientarti, poi le pagine pertinenti in `wiki/`, e rispondi con citazioni/link alle pagine. Se la risposta è sostanziosa (es. un riassunto della trama, un confronto), valuta se salvarla come pagina in `wiki/storia/` invece di lasciarla solo in chat. Per domande specificamente sul *tempo* ("qual era lo stato di X prima della sessione N", "da quando X e Y sono collegati") usa `python3 tools/interroga_grafo.py stato_a_sessione <slug> <numero>` invece di ricostruire la timeline a mano dai vari `## Storico`.
 
 ### Lint (su richiesta o periodicamente)
-Controlla: contraddizioni tra pagine, stati non aggiornati (PNG morti ancora segnati "vivo", quest completate ancora "attiva"), pagine orfane senza link in entrata, entità menzionate ripetutamente ma senza una pagina propria, wikilink rotti. Riporta i problemi trovati e proponi correzioni prima di applicarle.
+Controlla: contraddizioni tra pagine, stati non aggiornati (PNG morti ancora segnati "vivo", quest completate ancora "attiva"), pagine orfane senza link in entrata, entità menzionate ripetutamente ma senza una pagina propria, wikilink rotti. Riporta i problemi trovati e proponi correzioni prima di applicarle. Se il grafo è aggiornato, un conteggio nodi/relazioni via `tools/interroga_grafo.py` o una query diretta in Neo4j Browser può aiutare a individuare rapidamente entità isolate o incoerenze nei vocabolari controllati (es. valori di `categoria` che lo script di estrazione non riconosce — controlla l'output di `tools/estrai_grafo.py` per i messaggi `NOTA`/`SALTATA`).
 
 ## index.md
 
