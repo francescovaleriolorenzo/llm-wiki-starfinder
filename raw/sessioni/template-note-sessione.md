@@ -7,13 +7,21 @@ Basta scrivere appunti veloci, anche solo parole chiave o frasi sciolte — non 
 prosa curata. In fase di aggiornamento leggo questo file e faccio domande mirate
 per completare o chiarire quello che manca, prima di aggiornare tutte le pagine
 del wiki toccate dalla sessione (PNG, nemici, quest, luoghi, loot, index.md, log.md,
-e creare wiki/sessioni/sessione-NN.md).
+creare wiki/sessioni/sessione-NN.md, e rigenerare il grafo temporale).
+
+La campagna può avere più party/storyline in parallelo (es. il party principale e
+una side-story con un solo giocatore) — vedi "Più party/storyline" in CLAUDE.md.
+Il campo "Party/storyline" sotto serve a distinguerle. Il numero di sessione resta
+invece un unico contatore cronologico globale, condiviso da tutti i party: non
+ricomincia da 1 per ogni storyline, segna solo "cosa è successo prima di cosa" nel
+tempo reale della campagna.
 -->
 
 # Note di Sessione — N. ___ — [data]
 
 ## Info rapide
-- **Numero sessione**:
+- **Numero sessione** (contatore globale, condiviso da tutti i party — non riparte da 1 per storyline):
+- **Party/storyline** (es. `principale`, o lo slug della side-story, es. `conti-in-sospeso`):
 - **Data reale**:
 - **Data in gioco** (se la tracciate):
 - **PG presenti** (e chi li interpreta, se serve):
