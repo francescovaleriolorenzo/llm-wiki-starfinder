@@ -145,11 +145,13 @@ RETURN a, r, b;
 MATCH (n) RETURN n LIMIT 300;
 ```
 
-## 7. Domande aperte per te
+## 7. Decisioni prese (rivedibili dopo la prima estrazione)
 
-1. **`Party` come nodo sintetico**: ti torna, o preferisci modellare "il rapporto col party" diversamente (es. come proprietà invece che relazione)?
-2. **Parole chiave per `relazione_con_party`**: la lista in sezione 2 (mandante/alleat/ostile/rivale) ti sembra sufficiente, o ce ne sono altre ricorrenti nel tuo modo di scrivere le pagine PNG?
-3. **`Storia`/`Sessione`/`Incontro`/`Loot` esclusi dalla v1**: confermi, o vuoi già includerne qualcuna (in particolare `Sessione` come nodo invece che solo numero, se ti serve navigare "tutte le pagine toccate dalla sessione N" nel grafo)?
-4. **`CONNESSO_A` come fallback generico**: per i wikilink nel corpo pagina non coperti da un campo frontmatter — va bene un tipo unico indifferenziato, o preferisci provare a distinguerne almeno alcuni casi comuni (es. "menzionato in" vs "coinvolto in un incontro con")?
+Le domande aperte della prima stesura sono state chiuse con scelte di default ragionevoli, correggibili dopo aver visto l'output della prima estrazione reale (Passo 2):
 
-Dimmi cosa correggere, poi passo al Passo 2 (`tools/estrai_grafo.py`).
+1. **`Party` come nodo sintetico**: confermato, resta com'è.
+2. **Parole chiave per `relazione_con_party`**: resta la lista mandante/alleat/ostile/rivale. Lo script di estrazione logga ogni PNG il cui `relazione_con_party` non matcha nessuna parola chiave (fallback `CONNESSO_A`), così dopo la prima run si vede subito se la lista va allargata.
+3. **`Storia`/`Sessione`/`Incontro`/`Loot` esclusi dalla v1**: confermato. `Sessione` resta un numero intero nelle proprietà temporali, non un nodo.
+4. **`CONNESSO_A` come fallback generico**: confermato per la v1, tipo unico indifferenziato per i wikilink nel corpo non coperti da un campo frontmatter.
+
+Passo al Passo 2 (`tools/estrai_grafo.py`).
