@@ -6,7 +6,9 @@ Principio guida (vedi anche `CLAUDE.md`): il markdown resta l'unica fonte di ver
 
 ## 1. Etichette dei nodi
 
-Una per categoria di `CLAUDE.md`, più una singola entità sintetica `Party` per rappresentare il gruppo dei PG collettivamente (necessaria per modellare `relazione_con_party` e `rapporto_col_party`, che nel wiki sono testo/enum riferiti "al party" senza un nodo esplicito).
+Una per categoria di `CLAUDE.md`, più un'entità sintetica `Party` per rappresentare un party/gruppo di PG collettivamente (necessaria per modellare `relazione_con_party` e `rapporto_col_party`, che nel wiki sono testo/enum riferiti "al party" senza un nodo esplicito).
+
+**Aggiornamento (non più un nodo singolo)**: la campagna può avere più party/storyline in parallelo (es. `principale` e una side-story a sé stante). Esiste quindi **un nodo `Party` per ogni valore distinto** del campo `party` incontrato in `wiki/png/`, `wiki/nemici/`, `wiki/fazioni/` (default `principale` se il campo è omesso — retrocompatibile con le entità esistenti). Ogni `PNG`/`Nemico`/`Fazione` genera i suoi archi verso `Party` (`MANDANTE_DI`, `ALLEATO_DI`, `OSTILE_A`, `RIVALE_DI`, `AMBIGUO_CON`, `NEMICO_DI`) verso il nodo `Party` corrispondente al **proprio** campo `party`, mai verso un party diverso — così un'entità di una side-story non risulta ostile/alleata/nemica del party principale solo per condividere il grafo.
 
 | Etichetta | Cartella sorgente | Proprietà principali |
 |---|---|---|
@@ -18,7 +20,7 @@ Una per categoria di `CLAUDE.md`, più una singola entità sintetica `Party` per
 | `Quest` | `wiki/quest/` | `slug`, `nome`, `categoria`, `stato`, `stato_da`, `pagina_origine` |
 | `Luogo` | `wiki/luoghi/` | `slug`, `nome`, `categoria`, `pagina_origine` |
 | `Fazione` | `wiki/fazioni/` | `slug`, `nome`, `categoria`, `pagina_origine` |
-| `Party` | — (sintetico, un solo nodo) | `nome: "Party"` |
+| `Party` | — (sintetico, un nodo per ogni valore distinto del campo `party`) | `slug`, `nome` (= `slug`) |
 
 **Deliberatamente escluse dalla v1**: `Storia`, `Sessione`, `Incontro`, `Loot`. `Sessione` non diventa un nodo — resta un numero intero nelle proprietà temporali delle relazioni (vedi sotto), più semplice da interrogare per gli use case attuali ("stato a sessione N"). `Storia`/`Incontro`/`Loot` non hanno ancora campi relazionali strutturati abbastanza ricchi da giustificare un'etichetta propria: le pagine di `wiki/storia/` restano fuori dal grafo per ora (sono sintesi narrative, non entità), e se in futuro serve, si aggiungono senza rompere lo schema esistente. Dimmi se preferisci includerle già da subito.
 
@@ -71,7 +73,7 @@ CREATE CONSTRAINT nave_slug IF NOT EXISTS FOR (n:Nave) REQUIRE n.slug IS UNIQUE;
 CREATE CONSTRAINT quest_slug IF NOT EXISTS FOR (n:Quest) REQUIRE n.slug IS UNIQUE;
 CREATE CONSTRAINT luogo_slug IF NOT EXISTS FOR (n:Luogo) REQUIRE n.slug IS UNIQUE;
 CREATE CONSTRAINT fazione_slug IF NOT EXISTS FOR (n:Fazione) REQUIRE n.slug IS UNIQUE;
-CREATE CONSTRAINT party_nome IF NOT EXISTS FOR (n:Party) REQUIRE n.nome IS UNIQUE;
+CREATE CONSTRAINT party_slug IF NOT EXISTS FOR (n:Party) REQUIRE n.slug IS UNIQUE;
 ```
 
 ## 5. Esempi `CREATE` (dati reali della campagna)
@@ -79,7 +81,7 @@ CREATE CONSTRAINT party_nome IF NOT EXISTS FOR (n:Party) REQUIRE n.nome IS UNIQU
 Nodi:
 
 ```cypher
-MERGE (party:Party {nome: "Party"});
+MERGE (party:Party {slug: "principale"}) SET party.nome = "principale";
 
 MERGE (ilsa:PNG {slug: "ilsa-draak"})
 SET ilsa.nome = "Ilsa Draak",
@@ -109,7 +111,7 @@ SET r.valido_da_sessione = 0,
     r.fonte = "frontmatter:fazione",
     r.pagina_origine = "wiki/png/ilsa-draak.md";
 
-MATCH (ilsa:PNG {slug: "ilsa-draak"}), (party:Party {nome: "Party"})
+MATCH (ilsa:PNG {slug: "ilsa-draak"}), (party:Party {slug: "principale"})
 MERGE (ilsa)-[r:RIVALE_DI]->(party)
 SET r.valido_da_sessione = 0,
     r.valido_a_sessione = null,

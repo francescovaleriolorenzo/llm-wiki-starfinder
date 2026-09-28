@@ -201,12 +201,23 @@ def svuota_grafo(tx):
 
 def crea_vincoli(tx):
     for label in list(CATEGORIE.values()) + ["Party"]:
-        campo = "nome" if label == "Party" else "slug"
-        tx.run(f"CREATE CONSTRAINT IF NOT EXISTS FOR (n:{label}) REQUIRE n.{campo} IS UNIQUE")
+        tx.run(f"CREATE CONSTRAINT IF NOT EXISTS FOR (n:{label}) REQUIRE n.slug IS UNIQUE")
 
 
-def crea_party(tx):
-    tx.run("MERGE (p:Party {nome: 'Party'}) SET p.slug = 'party'")
+def party_di(fm):
+    """Il party/storyline a cui appartiene un'entità (PNG/Nemico/Fazione) — vedi
+    "Più party/storyline" in CLAUDE.md. Default 'principale' se il campo è omesso."""
+    return fm.get("party") or "principale"
+
+
+def crea_party_nodi(tx, entita):
+    slugs = {"principale"}
+    for info in entita.values():
+        if info["label"] in ("PNG", "Nemico", "Fazione"):
+            slugs.add(party_di(info["frontmatter"]))
+    for slug in slugs:
+        tx.run("MERGE (p:Party {slug: $slug}) SET p.nome = $slug", slug=slug)
+    return slugs
 
 
 def crea_nodo(tx, slug, info):
@@ -266,6 +277,7 @@ def crea_relazioni_entita(tx, slug, info, tutte_entita):
     path = info["path"]
     collegati = set()
     sessione_iniziale = sessione_da_stato_da(fm.get("stato_da")) if label in CAMPI_STATO else 0
+    party_slug = party_di(fm)
 
     storico = estrai_storico(info["corpo"])
     primi_cambi = primo_cambio_per_campo(storico)
@@ -288,9 +300,9 @@ def crea_relazioni_entita(tx, slug, info, tutte_entita):
             )
 
     if label == "Nemico":
-        crea_arco(tx, slug, label, "NEMICO_DI", "party", "Party",
+        crea_arco(tx, slug, label, "NEMICO_DI", party_slug, "Party",
                    0, "implicito:categoria-nemico", path)
-        collegati.add("party")
+        collegati.add(party_slug)
 
     if label == "Quest":
         for valore in fm.get("pg_coinvolti") or []:
@@ -333,17 +345,17 @@ def crea_relazioni_entita(tx, slug, info, tutte_entita):
         n_cambio, valore_iniziale = primi_cambi["rapporto_col_party"]
         tipo = tipo_da_rapporto_col_party(valore_iniziale)
         if tipo:
-            crea_arco(tx, slug, label, tipo, "party", "Party", sessione_iniziale,
+            crea_arco(tx, slug, label, tipo, party_slug, "Party", sessione_iniziale,
                        "storico", path, extra={"valido_a_sessione": n_cambio})
-        collegati.add("party")
+        collegati.add(party_slug)
     else:
         valore_rapporto = fm.get("rapporto_col_party")
         if isinstance(valore_rapporto, str):
             tipo = tipo_da_rapporto_col_party(valore_rapporto)
             if tipo:
-                crea_arco(tx, slug, label, tipo, "party", "Party",
+                crea_arco(tx, slug, label, tipo, party_slug, "Party",
                            sessione_iniziale, "frontmatter:rapporto_col_party", path)
-                collegati.add("party")
+                collegati.add(party_slug)
 
     if "relazione_con_party" in primi_cambi:
         n_cambio, valore_iniziale = primi_cambi["relazione_con_party"]
@@ -351,21 +363,21 @@ def crea_relazioni_entita(tx, slug, info, tutte_entita):
         extra = {"valido_a_sessione": n_cambio}
         if tipo == "CONNESSO_A":
             extra["descrizione"] = valore_iniziale
-        crea_arco(tx, slug, label, tipo, "party", "Party", sessione_iniziale, "storico", path, extra=extra)
-        collegati.add("party")
+        crea_arco(tx, slug, label, tipo, party_slug, "Party", sessione_iniziale, "storico", path, extra=extra)
+        collegati.add(party_slug)
     else:
         valore_relazione = fm.get("relazione_con_party")
         if isinstance(valore_relazione, str) and valore_relazione.strip():
             tipo = parola_chiave_relazione_party(valore_relazione)
             if tipo:
-                crea_arco(tx, slug, label, tipo, "party", "Party",
+                crea_arco(tx, slug, label, tipo, party_slug, "Party",
                            sessione_iniziale, "frontmatter:relazione_con_party", path)
             else:
-                crea_arco(tx, slug, label, "CONNESSO_A", "party", "Party",
+                crea_arco(tx, slug, label, "CONNESSO_A", party_slug, "Party",
                            sessione_iniziale, "frontmatter:relazione_con_party", path,
                            extra={"descrizione": valore_relazione})
                 print(f"  NOTA: relazione_con_party di {slug!r} senza parola chiave riconosciuta: {valore_relazione!r}")
-            collegati.add("party")
+            collegati.add(party_slug)
 
     for testo_interno in WIKILINK_RE.findall(info["corpo"]):
         target_slug = normalizza_target(testo_interno)
@@ -404,6 +416,7 @@ def applica_storico(tx, slug, label, numero_sessione, testo, pagina, tutte_entit
         return
 
     if campo in ("relazione_con_party", "rapporto_col_party"):
+        party_slug = party_di(tutte_entita[slug]["frontmatter"])
         if campo == "rapporto_col_party":
             tipo_nuovo = tipo_da_rapporto_col_party(valore_nuovo)
         else:
@@ -411,11 +424,11 @@ def applica_storico(tx, slug, label, numero_sessione, testo, pagina, tutte_entit
         tipo_nuovo = tipo_nuovo or "CONNESSO_A"
         for tipo in TIPI_RELAZIONE_PARTY:
             tx.run(
-                f"MATCH (n {{slug: $slug}})-[r:{tipo}]->(:Party) WHERE r.valido_a_sessione IS NULL "
-                f"SET r.valido_a_sessione = $n",
-                slug=slug, n=numero_sessione,
+                f"MATCH (n {{slug: $slug}})-[r:{tipo}]->(:Party {{slug: $party_slug}}) "
+                f"WHERE r.valido_a_sessione IS NULL SET r.valido_a_sessione = $n",
+                slug=slug, party_slug=party_slug, n=numero_sessione,
             )
-        crea_arco(tx, slug, label, tipo_nuovo, "party", "Party", numero_sessione, "storico", pagina)
+        crea_arco(tx, slug, label, tipo_nuovo, party_slug, "Party", numero_sessione, "storico", pagina)
         return
 
     tipo = CAMPI_RELAZIONALI_SEMPLICI.get(campo)
@@ -475,7 +488,8 @@ def main():
     with driver.session(database=args.database) as session:
         session.execute_write(svuota_grafo)
         session.execute_write(crea_vincoli)
-        session.execute_write(crea_party)
+        party_trovati = session.execute_write(crea_party_nodi, entita)
+        print(f"Party: {', '.join(sorted(party_trovati))}")
 
         for slug, info in entita.items():
             session.execute_write(crea_nodo, slug, info)

@@ -99,6 +99,7 @@ ruolo:
 fazione: "[[...]]"
 luogo: "[[...]]"
 relazione_con_party: 
+party: principale   # opzionale, omissibile — vedi "Più party/storyline" più sotto
 stato: vivo   # vivo | morto | scomparso | sconosciuto
 stato_da: creazione   # wikilink a wiki/sessioni/sessione-NN, o "creazione"
 tags: [png]
@@ -113,6 +114,7 @@ nome:
 categoria: # minaccia minore | minaccia maggiore | boss | mostro | gregario
 cr: 
 luogo_associato: "[[...]]"
+party: principale   # opzionale, omissibile — vedi "Più party/storyline" più sotto
 stato: attivo   # attivo | sconfitto | fuggito
 stato_da: creazione   # wikilink a wiki/sessioni/sessione-NN, o "creazione"
 tags: [nemico]
@@ -205,6 +207,7 @@ nome:
 categoria: # governo | corporazione | gilda | culto | criminale | altro
 territorio: "[[...]]"
 rapporto_col_party: neutrale   # alleata | ostile | neutrale | ambigua
+party: principale   # opzionale, omissibile — vedi "Più party/storyline" più sotto
 tags: [fazione]
 ---
 ```
@@ -226,6 +229,7 @@ tags: [storia]
 ---
 tipo: sessione
 numero: 
+party: principale   # quale party/storyline — vedi "Più party/storyline" più sotto
 data_reale: 
 data_in_gioco: 
 pg_presenti: []
@@ -233,6 +237,14 @@ luoghi_visitati: []
 tags: [sessione]
 ---
 ```
+
+### Più party/storyline
+
+La campagna può avere più di un party/storyline attivo in parallelo — il party principale (7 PG, trama principale) e, potenzialmente, side-story con un sottoinsieme di giocatori o un singolo personaggio (es. una quest secondaria giocata da un solo giocatore). Per non perdere questa distinzione:
+
+- **`wiki/sessioni/*.md`** ha un campo `party` che identifica a quale party/storyline appartiene quella sessione (es. `principale`, o uno slug legato alla side-story, es. `conti-in-sospeso`). La numerazione delle sessioni (`numero`) resta un unico contatore globale e cronologico condiviso da tutti i party — non ricomincia da 1 per ogni storyline: serve a sapere "cosa è successo prima di cosa" nel tempo reale della campagna, non a contare le sessioni di un party specifico.
+- **`wiki/png/*.md`**, **`wiki/nemici/*.md`** e **`wiki/fazioni/*.md`** hanno un campo `party` opzionale (default: `principale` se omesso) che indica a quale party si riferiscono i loro campi `relazione_con_party`/`rapporto_col_party` (o, per i nemici, l'ostilità implicita) — necessario perché nel grafo Neo4j (vedi sotto) ogni party è un nodo `Party` separato: un'entità della side-story non deve risultare automaticamente ostile/alleata/nemica del party principale solo perché esiste un unico nodo condiviso.
+- Le pagine `wiki/pg/*.md` non hanno bisogno di questo campo: l'appartenenza a una storyline si vede da quali sessioni/quest li coinvolgono (`pg_coinvolti`, `pg_presenti`).
 
 ## Il regolamento (`wiki/regole/`)
 
