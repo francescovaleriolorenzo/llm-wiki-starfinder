@@ -14,7 +14,7 @@ tags: [pg, ysoki, operativo]
 
 # Whix Chitterclaw
 
-![Ritratto di Whix Chitterclaw](../../raw/assets/whix-chitterclaw-ritratto.png)
+![Ritratto di Whix Chitterclaw](../../raw/assets/ritratti/whix-chitterclaw-ritratto.png)
 
 | Classe/Livello | Razza | Tema |
 |---|---|---|

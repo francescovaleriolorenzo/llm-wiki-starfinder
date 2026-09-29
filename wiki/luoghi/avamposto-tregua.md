@@ -9,7 +9,7 @@ tags: [luogo, side-story]
 
 # Avamposto Tregua
 
-![Veduta di Avamposto Tregua](../../raw/assets/avamposto-tregua-illustrazione.png)
+![Veduta di Avamposto Tregua](../../raw/assets/illustrazioni/avamposto-tregua-illustrazione.png)
 
 Piccola stazione di scambio neutrale in un tratto di spazio poco sorvegliato, punto d'appoggio per mercanti indipendenti, cacciatori di taglie e chiunque preferisca non farsi troppe domande a vicenda. Il nome è un vecchio scherzo locale: nessuno ricorda più chi lo diede per primo, ma la regola non scritta — niente vendette a bordo, i conti si saldano fuori — è rispettata quasi sempre.
 

@@ -14,7 +14,7 @@ tags: [pg, shirren, tecnomante]
 
 # Keskodai
 
-![Ritratto di Keskodai](../../raw/assets/keskodai-ritratto.png)
+![Ritratto di Keskodai](../../raw/assets/ritratti/keskodai-ritratto.png)
 
 | Classe/Livello | Razza | Tema |
 |---|---|---|

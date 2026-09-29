@@ -14,7 +14,7 @@ tags: [pg, kasatha, solarian]
 
 # Jehir Voloteo
 
-![Ritratto di Jehir Voloteo](../../raw/assets/jehir-voloteo-ritratto.png)
+![Ritratto di Jehir Voloteo](../../raw/assets/ritratti/jehir-voloteo-ritratto.png)
 
 | Classe/Livello | Razza | Tema |
 |---|---|---|

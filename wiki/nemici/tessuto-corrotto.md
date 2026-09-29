@@ -11,7 +11,7 @@ tags: [nemico, battaglia-1, ordito]
 
 # Tessuto Corrotto
 
-![Ritratto di un Tessuto Corrotto](../../raw/assets/tessuto-corrotto-ritratto.png)
+![Ritratto di un Tessuto Corrotto](../../raw/assets/ritratti/tessuto-corrotto-ritratto.png)
 
 Ciò che resta di un membro dell'equipaggio (o di un drone di sicurezza) dopo che l'[[ordito|Ordito]] lo ha "tessuto": carne, metallo e filamenti cresciuti dal nulla, fusi in un'unica massa che si muove con movenze innaturalmente sincronizzate quando più di uno è presente nella stessa stanza. Nemico della **Battaglia 1**, nel Braccio B — Sistemi e Ingegneria della [[stazione-elice-7|Stazione Elice-7]].
 

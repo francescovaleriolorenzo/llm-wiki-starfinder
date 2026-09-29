@@ -14,7 +14,7 @@ tags: [pg, verthani, operativo, side-story]
 
 # Vey Ashkora
 
-![Ritratto di Vey Ashkora](../../raw/assets/vey-ashkora-ritratto.png)
+![Ritratto di Vey Ashkora](../../raw/assets/ritratti/vey-ashkora-ritratto.png)
 
 | Classe/Livello | Razza | Tema |
 |---|---|---|

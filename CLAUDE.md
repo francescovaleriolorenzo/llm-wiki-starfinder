@@ -19,7 +19,10 @@ raw/                  sorgenti immutabili (l'agente legge, non modifica)
   regole/              estratti di regolamento Starfinder rilevanti (statblock ufficiali, tabelle, house rules)
     wiki-completo/       mirror locale completo (5207 pagine) del wiki OGL italiano starfinder.altervista.org — wikitext grezzo, un file per pagina. Fonte immutabile: non modificare, non re-scaricare a meno che l'utente non lo chieda esplicitamente (il wiki potrebbe aggiornarsi nel tempo).
   mappe/               mappe di luoghi, settori, stazioni, navi
-  assets/              immagini (ritratti PNG/PG, artwork, mappe scansionate)
+  assets/              immagini, organizzate per tipo
+    ritratti/             un ritratto per PG/PNG/nemico, `<slug>-ritratto.png`
+    illustrazioni/        luoghi, navi, concept art di scena, `<slug>-illustrazione.png` (o `<slug>-concept.png`)
+    presentazioni-quest/  le due illustrazioni evocative per quest usate solo nel PDF di presentazione ai giocatori, `<slug-quest>-presentazione-1.png`/`-2.png` — vedi "Schede PDF" più sotto
 
 wiki/                  pagine mantenute dall'agente (fonte di verità "viva" della campagna)
   regole/              catalogo di navigazione sul regolamento mirrorato in raw/regole/wiki-completo/ — vedi sezione dedicata sotto
@@ -41,9 +44,10 @@ index.md               catalogo di tutte le pagine del wiki, organizzato per cat
 log.md                 log cronologico append-only di tutto ciò che è successo (in gioco) e di ogni manutenzione del wiki
 schema-grafo.md         schema del grafo temporale Neo4j derivato dal wiki — vedi "Grafo temporale" più sotto
 
-tools/                  script di supporto (non contenuto di campagna) — genera_schede_pdf.py, genera_legenda_gm_pdf.py, genera_rosa_pdf.py, pdf_common.py (stile condiviso), estrai_grafo.py e interroga_grafo.py (grafo Neo4j)
+tools/                  script di supporto (non contenuto di campagna) — genera_schede_pdf.py, genera_legenda_gm_pdf.py, genera_rosa_pdf.py, genera_presentazioni_quest_pdf.py, pdf_common.py (stile condiviso), estrai_grafo.py e interroga_grafo.py (grafo Neo4j)
 export/                 artefatti generati/derivati dal wiki, non sorgenti e non pagine vive
   schede-pg/             un PDF per PG, rigenerato da wiki/pg/*.md con tools/genera_schede_pdf.py
+  presentazioni-quest/   un PDF "presentazione ai giocatori" per quest, rigenerato da wiki/quest/*.md (sezione "## Presentazione ai giocatori") con tools/genera_presentazioni_quest_pdf.py
   domande-frequenti-gm.pdf   FAQ per il GM in PDF, rigenerata da wiki/regole/domande-frequenti-gm.md con tools/genera_legenda_gm_pdf.py
   rosa-personaggi.pdf        rosa di tutti i PG disponibili con descrizione per la scelta dei giocatori, rigenerata da wiki/pg/rosa-personaggi.md con tools/genera_rosa_pdf.py
 ```
@@ -173,10 +177,14 @@ categoria: principale   # principale | secondaria
 stato: attiva   # attiva | completata | fallita | in pausa
 stato_da: creazione   # wikilink a wiki/sessioni/sessione-NN, o "creazione"
 pg_coinvolti: []
+png_noti: []   # opzionale — PNG già pubblici/non spoiler (es. il mandante) da ritrarre nel PDF di presentazione
 ricompense: 
 tags: [quest]
 ---
 ```
+Subito dopo l'intestazione (H1 + riga corsivo con livello/durata/party consigliato), ogni quest include una sezione `## Presentazione ai giocatori`, prima di `## Premessa`: un pitch breve (una frase a effetto in corsivo + 1-3 paragrafi discorsivi) pensato per incuriosire, non per riassumere — un riepilogo che fa venire voglia di giocarla, non un trailer che rivela la trama. **Scritto in terza persona/tono narrativo** (mai "tu"/"voi", niente indirizzo diretto al giocatore): descrive la situazione come farebbe una sinossi, lasciando che sia chi legge a volersi immaginare dentro la scena. Segue una riga `**Cosa aspettarsi:**` con genere/tono, livello, dimensione del party e durata. **Deve restare spoiler-free**: niente nomi di antagonisti, colpi di scena, esiti o dettagli meccanici — è l'unica sezione della pagina scritta per i giocatori, non per il GM, ed è l'unica estratta da `tools/genera_presentazioni_quest_pdf.py` per generare il PDF di presentazione (vedi "Schede PDF" sotto). Nessun wikilink al suo interno: il PDF è per i giocatori, non naviga il wiki.
+
+Il campo opzionale `png_noti` elenca i PNG che i giocatori conoscono fin dall'inizio senza che sia uno spoiler (tipicamente il mandante) — i loro ritratti (`raw/assets/ritratti/<slug>-ritratto.png`) compaiono nel PDF di presentazione insieme a quelli dei PG coinvolti (`pg_coinvolti`), a comporre un piccolo "cast" visivo. Non elencarci mai un antagonista o chiunque riveli qualcosa della trama.
 
 ### `wiki/incontri/*.md` — Incontri
 ```yaml
@@ -284,6 +292,8 @@ Ogni voce in questi cataloghi è un wikilink `[[Titolo]]` che Obsidian risolve a
 Ogni PG ha un PDF stampabile in `export/schede-pg/<slug>-scheda.pdf`, generato da `wiki/pg/<slug>.md` con `tools/genera_schede_pdf.py`. Il PDF omette la sezione "Note per il GM" (resta nel markdown sorgente, è contenuto per l'agente/GM, non per il giocatore) — vedi `skip_titles` in `assemble_sections` (`tools/pdf_common.py`) se serve escludere altre sezioni in futuro. Esiste anche `export/domande-frequenti-gm.pdf`, generato da `wiki/regole/domande-frequenti-gm.md` con `tools/genera_legenda_gm_pdf.py` — una FAQ rapida per il GM (meccaniche generali, domande specifiche della quest in corso, domande sulle capacità dei singoli PG). Entrambi gli script condividono lo stile in `tools/pdf_common.py` (Python, richiede il pacchetto `markdown` e Google Chrome per la stampa headless). L'impaginazione è ispirata alla scheda personaggio ufficiale del Core Rulebook (banner scuri, accento arancione, tabelle con scomposizione dei bonus) — solo come riferimento di stile, non contenuto riprodotto. Ogni scheda PG termina con una pagina di legenda condivisa delle sigle (PF, PS, CAE, CAC, BAB, TS, GS, RD, tipi di danno, ecc.).
 
 **Quando rigenerare**: dopo qualsiasi modifica a `wiki/pg/*.md` (level up, nuovo equipaggiamento, correzioni) esegui `python3 tools/genera_schede_pdf.py` dalla radice del repo; dopo modifiche a `wiki/regole/domande-frequenti-gm.md` (nuove domande, quest successive) esegui `python3 tools/genera_legenda_gm_pdf.py`. Non modificare mai i PDF direttamente: sono un output compilato, la fonte di verità resta il markdown. Se cambia il testo della legenda delle schede PG, modifica `LEGEND_HTML` in `tools/genera_schede_pdf.py`; per lo stile condiviso modifica `tools/pdf_common.py`.
+
+**Presentazione ai giocatori** (`export/presentazioni-quest/<slug>-presentazione.pdf`): un PDF per quest da mostrare ai giocatori per invogliarli a giocarla, generato da `tools/genera_presentazioni_quest_pdf.py`, che estrae **solo** la sezione `## Presentazione ai giocatori` della pagina quest (vedi schema di `wiki/quest/*.md` sopra) — mai il resto della pagina, che contiene la trama completa, i segreti e la struttura delle scene. Include anche un piccolo "cast" di ritratti (PG da `pg_coinvolti`, PNG da `png_noti`, da `raw/assets/ritratti/`) e, se presenti, due illustrazioni rappresentative della quest in `raw/assets/presentazioni-quest/<slug>-presentazione-1.png` e `-2.png` (opzionali: il PDF si genera comunque senza, l'immagine semplicemente non compare) — evocative dell'atmosfera, mai una scena che riveli l'antagonista o il colpo di scena finale, generate con lo stesso processo diretto via API OpenAI già usato per gli altri asset della campagna (vedi log del 2026-09-23). Lo script ridimensiona automaticamente (via `sips`, cache in scratch) sia i ritratti che le illustrazioni prima di incorporarli: gli originali in `raw/assets/` sono a piena risoluzione (fino a 1024×1536), che gonfierebbe il PDF a decine di MB senza motivo dato che nel PDF compaiono in piccolo — non serve produrre a mano versioni ridotte. Aggiungi lo slug della nuova quest alla lista `QUESTS` nello script. **Quando crearlo**: appena la quest è pronta per essere proposta ai giocatori (stesso momento della guida GM, di solito). **Quando rigenerare**: se cambia il testo della sezione `## Presentazione ai giocatori`, il cast coinvolto, o le illustrazioni — esegui `python3 tools/genera_presentazioni_quest_pdf.py`.
 
 **Manutenzione della FAQ**: quando inizia una nuova quest o emergono domande ricorrenti al tavolo non ancora coperte, aggiungi una voce a `wiki/regole/domande-frequenti-gm.md` (stesso stile Q&A in grassetto) e rigenera il PDF — è pensata per crescere sessione dopo sessione, non per restare statica.
 

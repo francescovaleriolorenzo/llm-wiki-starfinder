@@ -10,7 +10,7 @@ Nessuna combinazione è obbligatoria: scegliete in base a cosa vi diverte di pi�
 
 **Ruolo: SUPPORTO TECNICO / COMPAGNO DRONE**
 
-![Vela-9](../../raw/assets/vela-9-ritratto.png)
+![Vela-9](../../raw/assets/ritratti/vela-9-ritratto.png)
 
 Un'androide costruita per il lavoro industriale, emancipata ma mai del tutto a suo agio tra gli organici. Il suo legame più profondo non è con una persona, ma con **Unità-Falco**, il drone da combattimento che ha costruito con le proprie mani — letteralmente la sua famiglia. Razionale, pianifica sempre una via di fuga, e le sue emozioni arrivano in ritardo e filtrate, ma sono reali.
 
@@ -34,7 +34,7 @@ Un'androide costruita per il lavoro industriale, emancipata ma mai del tutto a s
 
 **Ruolo: TANK / DANNO IN MISCHIA**
 
-![Kesh Vantor](../../raw/assets/kesh-vantor-ritratto.png)
+![Kesh Vantor](../../raw/assets/ritratti/kesh-vantor-ritratto.png)
 
 Un vesk che ha lasciato l'impero natale non per rigetto, ma perché cercava altrove lo scontro "degno" che non trovava più in patria. Crede fermamente in onore, lealtà e prova di sé in battaglia. Taciturno con gli estranei fino alla ruvidezza, capace di scoppi di affetto sorprendenti con chi si guadagna la sua fiducia.
 
@@ -58,7 +58,7 @@ Un vesk che ha lasciato l'impero natale non per rigetto, ma perché cercava altr
 
 **Ruolo: GUARITRICE / SUPPORTO**
 
-![Naeva Thess](../../raw/assets/naeva-thess-ritratto.png)
+![Naeva Thess](../../raw/assets/ritratti/naeva-thess-ritratto.png)
 
 Una studiosa lashunta che ha scelto la guarigione non per vocazione religiosa ma per un'intuizione: la forza vitale che scorre tra le cose può essere ascoltata, e a volte reindirizzata. Calma fino all'esasperazione altrui, parla poco e ascolta molto — la sua specie processa gli stati d'animo più in fretta delle parole.
 
@@ -82,7 +82,7 @@ Una studiosa lashunta che ha scelto la guarigione non per vocazione religiosa ma
 
 **Ruolo: SKILL MONSTER / DANNO FURTIVO A DISTANZA**
 
-![Whix Chitterclaw](../../raw/assets/whix-chitterclaw-ritratto.png)
+![Whix Chitterclaw](../../raw/assets/ritratti/whix-chitterclaw-ritratto.png)
 
 Un'ysoki minuta che parla in fretta, si muove più in fretta ancora, e ha imparato presto che nessuno si aspetta granché da lei — un vantaggio che sfrutta sistematicamente. Ex borseggiatrice riconvertita a investigatrice, nota il dettaglio fuori posto prima di chiunque altro e non lo dimentica mai.
 
@@ -106,7 +106,7 @@ Un'ysoki minuta che parla in fretta, si muove più in fretta ancora, e ha impara
 
 **Ruolo: FACCIA DEL GRUPPO / VERSATILE**
 
-![Callan Reyes](../../raw/assets/callan-reyes-ritratto.png)
+![Callan Reyes](../../raw/assets/ritratti/callan-reyes-ritratto.png)
 
 Un ex mediatore commerciale riconvertito a negoziatore freelance, con un sorriso che mette a proprio agio anche chi ha tutte le ragioni per diffidare di lui. Crede sinceramente che quasi ogni conflitto abbia una soluzione negoziata, se solo si trova la leva giusta.
 
@@ -130,7 +130,7 @@ Un ex mediatore commerciale riconvertito a negoziatore freelance, con un sorriso
 
 **Ruolo: DANNO MAGICO / CONTROLLO**
 
-![Keskodai](../../raw/assets/keskodai-ritratto.png)
+![Keskodai](../../raw/assets/ritratti/keskodai-ritratto.png)
 
 Una shirren nata generazioni dopo la scissione della sua specie dalla mente collettiva dello Sciame. Ha trasformato la fame ancestrale dei suoi antenati in fame di sapere: ogni incantesimo hackerato è per lei un piccolo atto di individualità. Comunica più volentieri per telepatia che a voce, e il suo umorismo secco spesso passa inosservato.
 
@@ -154,7 +154,7 @@ Una shirren nata generazioni dopo la scissione della sua specie dalla mente coll
 
 **Ruolo: DUELLANTE / DANNO IN MISCHIA (a crescita progressiva)**
 
-![Jehir Voloteo](../../raw/assets/jehir-voloteo-ritratto.png)
+![Jehir Voloteo](../../raw/assets/ritratti/jehir-voloteo-ritratto.png)
 
 Cresciuto a bordo di una nave generazionale kasatha tra rituali personali e racconti di eroi storici, Jehir ha intrapreso il tradizionale vagabondaggio di fine adolescenza della sua cultura e non ha più smesso di viaggiare. Formale, quasi cerimonioso, tratta ogni duello serio come un momento quasi sacro.
 

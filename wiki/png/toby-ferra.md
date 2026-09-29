@@ -12,7 +12,7 @@ tags: [png, superstite, alleato]
 
 # Tobias "Toby" Ferra
 
-![Ritratto di Toby Ferra](../../raw/assets/toby-ferra-ritratto.png)
+![Ritratto di Toby Ferra](../../raw/assets/ritratti/toby-ferra-ritratto.png)
 
 Capo ingegnere della [[stazione-elice-7|Stazione Elice-7]], umano sulla cinquantina. È il primo PNG che i PG incontrano: si è rifugiato nell'hangar d'attracco, l'unica zona che è riuscito a isolare e mettere in sicurezza manualmente, e li contatta via radio locale non appena la loro nave attracca (le interferenze del sistema impediscono comunicazioni a lungo raggio, vedi [[sistema-di-ordessa|Sistema di Ordessa]]).
 

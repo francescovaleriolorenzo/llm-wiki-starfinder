@@ -5,6 +5,7 @@ categoria: principale
 stato: attiva
 stato_da: creazione
 pg_coinvolti: ["[[pg/vela-9|Vela-9]]", "[[pg/kesh-vantor|Kesh Vantor]]", "[[pg/naeva-thess|Naeva Thess]]", "[[pg/whix-chitterclaw|Whix Chitterclaw]]", "[[pg/callan-reyes|Callan Reyes]]", "[[pg/keskodai|Keskodai]]", "[[pg/jehir-voloteo|Jehir Voloteo]]"]
+png_noti: ["[[png/imara-voss|Imara Voss]]"]
 ricompense: Pagamento da Solmark Ricerche (base + bonus discrezione), uso prolungato della nave [[navi/filo-di-arianna|Filo di Arianna]], materiale di ricerca sul Telaio, gancio aperto per la trama principale della campagna
 tags: [quest, principale, investigativo]
 ---
@@ -12,6 +13,16 @@ tags: [quest, principale, investigativo]
 # Il Filo Spezzato
 
 Quest investigativa/esplorativa per **5-6 PG di livello 8**, durata stimata **~5 ore**. Prima quest della campagna: introduce l'[[luoghi/sistema-di-ordessa|Sistema di Ordessa]], [[fazioni/solmark-ricerche|Solmark Ricerche]] e pianta il seme della trama principale attorno all'[[nemici/ordito|Ordito]] e al Telaio.
+
+## Presentazione ai giocatori
+
+*Dieci giorni di silenzio. Nessuna risposta. Solmark Ricerche vuole sapere perché.*
+
+La Stazione Elice-7 è un tranquillo avamposto di ricerca ai margini del Sistema di Ordessa — o almeno lo era, fino a dieci giorni fa. Da allora, nessun segnale, nessun rapporto, nessuna traccia di cosa sia successo là dentro. Solmark Ricerche non vuole che la notizia esca dai canali interni, non prima di saperne di più.
+
+Un gruppo di professionisti viene ingaggiato per raggiungere la stazione e scoprire la verità con la massima discrezione. Ma un campo di detriti da attraversare, una trasmissione indecifrabile captata durante il viaggio e i segni di un passaggio non autorizzato già presente sul posto suggeriscono che Elice-7 non abbia semplicemente perso la corrente.
+
+**Cosa aspettarsi:** un mix di investigazione, esplorazione e combattimento, per un party navigato di 5-6 avventurieri di livello 8 — una sessione lunga (~5 ore) che pianta il primo seme di qualcosa di più grande.
 
 ## Premessa
 

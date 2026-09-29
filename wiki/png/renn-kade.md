@@ -12,7 +12,7 @@ tags: [png, superstite]
 
 # Dr.ssa Renn Kade
 
-![Ritratto della Dr.ssa Renn Kade](../../raw/assets/renn-kade-ritratto.png)
+![Ritratto della Dr.ssa Renn Kade](../../raw/assets/ritratti/renn-kade-ritratto.png)
 
 Xenoarcheologa umana, capo del team che ha scoperto il Telaio sei mesi fa. Si nasconde nel **Braccio A — Laboratori** della [[stazione-elice-7|Stazione Elice-7]], barricata in un archivio dati con supporto vitale d'emergenza, da quando l'Ordito ha iniziato a "tessere" l'equipaggio.
 

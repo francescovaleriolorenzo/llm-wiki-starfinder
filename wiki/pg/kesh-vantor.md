@@ -14,7 +14,7 @@ tags: [pg, vesk, soldato]
 
 # Kesh Vantor
 
-![Ritratto di Kesh Vantor](../../raw/assets/kesh-vantor-ritratto.png)
+![Ritratto di Kesh Vantor](../../raw/assets/ritratti/kesh-vantor-ritratto.png)
 
 | Classe/Livello | Razza | Tema |
 |---|---|---|

@@ -9,7 +9,7 @@ tags: [luogo, side-story]
 
 # Il Retro del Motore
 
-![Interno de Il Retro del Motore](../../raw/assets/il-retro-del-motore-illustrazione.png)
+![Interno de Il Retro del Motore](../../raw/assets/illustrazioni/il-retro-del-motore-illustrazione.png)
 
 Il bar/cantina di [[avamposto-tregua|Avamposto Tregua]], gestito da [[../png/doss-kellum|Doss Kellum]] da quindici anni. Ricavato letteralmente nel vano di un vecchio motore a fusione dismesso — da cui il nome — con tavoli sistemati tra le paratie curve originali e i condotti del vecchio impianto ancora visibili a vista in pareti e soffitto. È il fulcro sociale della stazione: se succede qualcosa ad Avamposto Tregua, prima o poi se ne parla qui, tra un giro di bevande e l'altro.
 

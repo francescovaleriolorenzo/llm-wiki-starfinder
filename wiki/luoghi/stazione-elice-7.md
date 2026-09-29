@@ -9,7 +9,7 @@ tags: [luogo, stazione, dungeon]
 
 # Stazione Elice-7
 
-![Stazione Elice-7 in orbita sopra Tessitrice](../../raw/assets/stazione-elice-7-illustrazione.png)
+![Stazione Elice-7 in orbita sopra Tessitrice](../../raw/assets/illustrazioni/stazione-elice-7-illustrazione.png)
 
 Avamposto di ricerca xenoarcheologica di [[../fazioni/solmark-ricerche|Solmark Ricerche]], in orbita bassa attorno a [[sistema-di-ordessa#Tessitrice (luna di Kaldenor)|Tessitrice]]. Costruita a forma di doppia elica attorno a un nucleo centrale (da cui il nome), ospitava un equipaggio di 34 persone tra scienziati, tecnici e sicurezza. Silenzio radio da 10 giorni. Location principale della quest [[il-filo-spezzato|Il Filo Spezzato]].
 

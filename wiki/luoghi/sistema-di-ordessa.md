@@ -9,7 +9,7 @@ tags: [luogo, sistema-stellare]
 
 # Sistema di Ordessa
 
-![Veduta del Sistema di Ordessa](../../raw/assets/sistema-di-ordessa-illustrazione.png)
+![Veduta del Sistema di Ordessa](../../raw/assets/illustrazioni/sistema-di-ordessa-illustrazione.png)
 
 Sistema binario ai margini delle rotte commerciali principali, poco popolato e privo di governo centrale — il tipo di posto dove le corporazioni mandano le operazioni che non vogliono agli occhi di nessuno. Ambientazione della quest [[il-filo-spezzato|Il Filo Spezzato]].
 

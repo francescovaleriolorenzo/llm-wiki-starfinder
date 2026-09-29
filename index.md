@@ -50,10 +50,10 @@ _Nessuna pagina ancora._
 ## Quest
 
 ### Principali
-- [[quest/il-filo-spezzato|Il Filo Spezzato]] — Attiva. Investigativa/esplorativa, 5-6 PG livello 8, ~5 ore. Stazione Elice-7, Sistema di Ordessa.
+- [[quest/il-filo-spezzato|Il Filo Spezzato]] — Attiva. Investigativa/esplorativa, 5-6 PG livello 8, ~5 ore. Stazione Elice-7, Sistema di Ordessa. [PDF per i giocatori](export/presentazioni-quest/il-filo-spezzato-presentazione.pdf)
 
 ### Secondarie
-- [[quest/conti-in-sospeso|Conti in Sospeso]] — Attiva. Side-story investigativa/roleplay per 1 PG livello 1, ~2 ore. Avamposto Tregua — scollegata dalla trama principale per ora.
+- [[quest/conti-in-sospeso|Conti in Sospeso]] — Attiva. Side-story investigativa/roleplay per 1 PG livello 1, ~2 ore. Avamposto Tregua — scollegata dalla trama principale per ora. [PDF per i giocatori](export/presentazioni-quest/conti-in-sospeso-presentazione.pdf)
 
 ## Incontri
 _Nessuna pagina ancora._

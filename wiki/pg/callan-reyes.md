@@ -14,7 +14,7 @@ tags: [pg, umano, emissario]
 
 # Callan Reyes
 
-![Ritratto di Callan Reyes](../../raw/assets/callan-reyes-ritratto.png)
+![Ritratto di Callan Reyes](../../raw/assets/ritratti/callan-reyes-ritratto.png)
 
 | Classe/Livello | Razza | Tema |
 |---|---|---|

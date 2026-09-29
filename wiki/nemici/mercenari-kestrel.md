@@ -11,7 +11,7 @@ tags: [nemico, battaglia-2, kestrel-recovery]
 
 # Mercenario Kestrel
 
-![Ritratto di un mercenario Kestrel](../../raw/assets/mercenario-kestrel-ritratto.png)
+![Ritratto di un mercenario Kestrel](../../raw/assets/ritratti/mercenario-kestrel-ritratto.png)
 
 Soldato professionista della compagnia mercenaria **[[../fazioni/kestrel-recovery|Kestrel Recovery]]**, agli ordini di [[ilsa-draak|Ilsa Draak]]. Combattenti competenti ed equipaggiati, ma non fanatici: combattono per obiettivi tattici, non fino alla morte certa (vedi Tattiche). Nemici della **Battaglia 2**, nel Braccio C — Sicurezza e Alloggi.
 

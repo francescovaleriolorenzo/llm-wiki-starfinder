@@ -11,7 +11,7 @@ tags: [nave, party]
 
 # Filo di Arianna
 
-![La Filo di Arianna in orbita nel Sistema di Ordessa](../../raw/assets/filo-di-arianna-illustrazione.png)
+![La Filo di Arianna in orbita nel Sistema di Ordessa](../../raw/assets/illustrazioni/filo-di-arianna-illustrazione.png)
 
 Nave assegnata al party da [[imara-voss|Imara Voss]] per raggiungere il [[sistema-di-ordessa|Sistema di Ordessa]] e la [[stazione-elice-7|Stazione Elice-7]] — un prestito di Solmark Ricerche, non una proprietà del party (almeno per ora). Il nome, scelto da un membro dello staff con un debole per i miti antichi, si rivelerà involontariamente calzante.
 

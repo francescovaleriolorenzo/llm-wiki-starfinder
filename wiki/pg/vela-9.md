@@ -14,7 +14,7 @@ tags: [pg, androide, meccanico]
 
 # Vela-9
 
-![Ritratto di Vela-9](../../raw/assets/vela-9-ritratto.png)
+![Ritratto di Vela-9](../../raw/assets/ritratti/vela-9-ritratto.png)
 
 | Classe/Livello | Razza | Tema |
 |---|---|---|
@@ -161,7 +161,7 @@ Comune, più lingue aggiuntive a scelta pari al mod. Int (fino a 4).
 
 ## Unità-Falco — il Drone
 
-![Unità-Falco, il drone da combattimento di Vela-9](../../raw/assets/unita-falco-ritratto.png)
+![Unità-Falco, il drone da combattimento di Vela-9](../../raw/assets/ritratti/unita-falco-ritratto.png)
 
 Telaio: **Drone da Combattimento**, taglia Media, IA di livello 8.
 

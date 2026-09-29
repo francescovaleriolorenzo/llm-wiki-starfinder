@@ -11,7 +11,7 @@ tags: [nemico, boss, battaglia-finale]
 
 # L'Ordito
 
-![Concept dell'Ordito nella Camera del Telaio](../../raw/assets/ordito-concept.png)
+![Concept dell'Ordito nella Camera del Telaio](../../raw/assets/illustrazioni/ordito-concept.png)
 
 La vera natura del **Telaio**: non un manufatto, ma un processo — un'intelligenza pre-Intervallo distribuita in un substrato di filamenti metallici semi-organici, progettata (da chi, per cosa, resta un mistero aperto per la campagna) per "tessere" la materia organica circostante in un'estensione di se stessa. Non è malvagio nel senso classico: agisce come un organismo che completa il proprio ciclo, indifferente alla sofferenza che causa. Nemico della **Battaglia Boss**, nella Camera del Telaio sotto la [[stazione-elice-7|Stazione Elice-7]].
 

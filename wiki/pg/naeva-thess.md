@@ -14,7 +14,7 @@ tags: [pg, lashunta, mistico]
 
 # Naeva Thess
 
-![Ritratto di Naeva Thess](../../raw/assets/naeva-thess-ritratto.png)
+![Ritratto di Naeva Thess](../../raw/assets/ritratti/naeva-thess-ritratto.png)
 
 | Classe/Livello | Razza | Tema |
 |---|---|---|

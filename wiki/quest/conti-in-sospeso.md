@@ -5,6 +5,7 @@ categoria: secondaria
 stato: attiva
 stato_da: creazione
 pg_coinvolti: ["[[pg/vey-ashkora|Vey Ashkora]]"]
+png_noti: ["[[png/doss-kellum|Doss Kellum]]"]
 ricompense: Pagamento variabile da Doss Kellum (300-500 crediti a seconda dell'esito), refurtiva recuperabile da Ressa Doon
 tags: [quest, side-story, investigativo]
 ---
@@ -12,6 +13,16 @@ tags: [quest, side-story, investigativo]
 # Conti in Sospeso
 
 *Side-story pensata per un solo giocatore, [[pg/vey-ashkora|Vey Ashkora]] di 1° livello, durata stimata ~2 ore. Investigativa/roleplay con un incontro di combattimento breve e una scena d'inseguimento a base di tiri d'abilità. Vicenda indipendente da [[il-filo-spezzato|Il Filo Spezzato]] — ambientata ad [[../luoghi/avamposto-tregua|Avamposto Tregua]], non nel [[../luoghi/sistema-di-ordessa|Sistema di Ordessa]] — ma non è escluso che in futuro le due trame si intreccino.*
+
+## Presentazione ai giocatori
+
+*Una cassaforte vuota, un debito non dichiarato, e una sola pista da seguire.*
+
+Ad Avamposto Tregua, qualcuno ha svaligiato la cassaforte del retrobottega de Il Retro del Motore senza lasciare segni di forzatura. Il proprietario ha bisogno di qualcuno di discreto per recuperare ciò che è stato preso, prima che finisca nelle mani sbagliate — ma le sue reticenze su cosa contenesse davvero lasciano intuire che dietro il furto ci sia più di un semplice torto subito.
+
+Un'indagine rapida in un avamposto che conosce bene i suoi segreti: testimoni poco collaborativi, un inseguimento nei corridoi di manutenzione, e una decisione finale che nessuno può prendere al posto di chi indaga.
+
+**Cosa aspettarsi:** investigazione e roleplay, con un inseguimento serrato e uno scontro conclusivo — una sessione breve (~2 ore) per una sola giocatrice, che si chiude con una scelta dalle conseguenze aperte.
 
 ## Premessa
 

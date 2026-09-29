@@ -12,7 +12,7 @@ tags: [png, rivale, mercenario]
 
 # Ilsa Draak
 
-![Ritratto di Ilsa Draak](../../raw/assets/ilsa-draak-ritratto.png)
+![Ritratto di Ilsa Draak](../../raw/assets/ritratti/ilsa-draak-ritratto.png)
 
 Capitana della squadra mercenaria **[[../fazioni/kestrel-recovery|Kestrel Recovery]]**, presente sulla [[stazione-elice-7|Stazione Elice-7]] da circa una settimana per conto di un committente non dichiarato — quasi certamente un rivale corporativo di [[../fazioni/solmark-ricerche|Solmark Ricerche]] interessato a impossessarsi del Telaio prima che venga catalogato ufficialmente.
 

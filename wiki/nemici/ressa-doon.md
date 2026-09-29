@@ -12,7 +12,7 @@ tags: [nemico, side-story]
 
 # Ressa Doon
 
-![Ritratto di Ressa Doon](../../raw/assets/ressa-doon-ritratto.png)
+![Ritratto di Ressa Doon](../../raw/assets/ritratti/ressa-doon-ritratto.png)
 
 Ladra di piccolo cabotaggio, specializzata in colpi mirati e silenziosi — mai violenza, mai bersagli scelti a caso. Ha rubato la [[../oggetti/chiave-di-memoria|Chiave di Memoria]] di [[../png/doss-kellum|Doss Kellum]] non per soldi, ma perché uno dei mercanti strozzati dai suoi prestiti è un'amica: voleva prove per farlo smettere, non un bottino da rivendere.
 

@@ -12,7 +12,7 @@ tags: [png, mandante]
 
 # Imara Voss
 
-![Ritratto di Imara Voss](../../raw/assets/imara-voss-ritratto.png)
+![Ritratto di Imara Voss](../../raw/assets/ritratti/imara-voss-ritratto.png)
 
 Umana sulla quarantina, liaison operativa di [[../fazioni/solmark-ricerche|Solmark Ricerche]]. È lei ad assumere il party all'inizio di [[il-filo-spezzato|Il Filo Spezzato]].
 
